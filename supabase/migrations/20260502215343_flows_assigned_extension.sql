@@ -1,0 +1,1 @@
+ALTER TABLE public.flows ADD COLUMN IF NOT EXISTS assigned_extension text;

@@ -10,15 +10,7 @@ lerna-debug.log*
 node_modules
 dist
 dist-ssr
-.output
-.vinxi
-.tanstack/**
-.nitro
 *.local
-
-# Wrangler / Cloudflare
-.wrangler/
-.dev.vars
 
 # Editor directories and files
 .vscode/*
@@ -30,3 +22,26 @@ dist-ssr
 *.njsproj
 *.sln
 *.sw?
+
+# C# / .NET build artifacts (backend/csharp)
+backend/csharp/**/bin/
+backend/csharp/**/obj/
+backend/csharp/**/.vs/
+backend/csharp/**/packages/
+backend/csharp/**/*.user
+backend/csharp/**/*.suo
+backend/csharp/**/*.userosscache
+backend/csharp/**/*.sln.docstates
+backend/csharp/**/*.nupkg
+backend/csharp/**/*.snupkg
+backend/csharp/**/*.dll
+backend/csharp/**/*.exe
+backend/csharp/**/*.pdb
+
+docs/
+
+# Local dev SSH tunnel script (contains infra hosts)
+tunnel-ccs.sh
+
+# CodeGraph local index
+.codegraph/

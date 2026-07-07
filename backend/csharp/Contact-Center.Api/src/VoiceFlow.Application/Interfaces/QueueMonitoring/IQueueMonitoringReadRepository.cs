@@ -1,0 +1,15 @@
+using VoiceFlow.Contracts.Queues.Monitoring;
+
+namespace VoiceFlow.Application.Interfaces.QueueMonitoring;
+
+/// <summary>Read-only access to the queue-monitoring Redis state written by CTI_Backend.</summary>
+public interface IQueueMonitoringReadRepository
+{
+    Task<IReadOnlyCollection<string>> ListQueueNamesAsync(string tenantId, string serverId, CancellationToken ct);
+    Task<QueueLiveStateDto?> GetQueueAsync(string tenantId, string serverId, string queue, CancellationToken ct);
+    Task<IReadOnlyCollection<QueueAgentLiveStateDto>> GetQueueAgentsAsync(string tenantId, string serverId, string queue, CancellationToken ct);
+    Task<IReadOnlyCollection<QueueWaitingCallerStateDto>> GetWaitingCallersAsync(string tenantId, string serverId, string queue, CancellationToken ct);
+    Task<IReadOnlyCollection<string>> ListAgentIdsAsync(string tenantId, string serverId, CancellationToken ct);
+    Task<QueueAgentLiveStateDto?> GetAgentAsync(string tenantId, string serverId, string agentId, CancellationToken ct);
+    Task<AmiServerStatusDto?> GetAmiStatusAsync(string tenantId, string serverId, CancellationToken ct);
+}

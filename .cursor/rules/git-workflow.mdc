@@ -1,0 +1,12 @@
+---
+description: Git workflow for contact-center.web — commit and push only when asked
+alwaysApply: true
+---
+
+# Git Workflow
+
+For this project (`contact-center.web`):
+
+- **Do not commit or push** unless the user explicitly asks.
+- When asked to commit: stage only relevant changes (skip `obj/`, `.cache`, local config unless requested), write a concise message focused on why, then commit.
+- When asked to push: push to `main` (`git push origin main`) unless the user specifies otherwise.

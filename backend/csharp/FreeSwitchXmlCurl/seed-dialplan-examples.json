@@ -1,0 +1,126 @@
+[
+  {
+    "_id": "dp_tenant_a_internal_4_digits",
+    "tenantId": "tenant_a",
+    "domain": "tenant-a.example.com",
+    "context": "from-internal",
+    "name": "Internal 4-digit extensions",
+    "enabled": true,
+    "priority": 100,
+    "renderMode": "structured",
+    "entries": [
+      {
+        "name": "Internal 4-digit extension route",
+        "routeType": "extension",
+        "priority": 100,
+        "match": { "field": "destination_number", "type": "regex", "pattern": "^\\d{4}$" },
+        "validation": { "validateExtensionExists": false },
+        "actions": [
+          { "application": "set", "data": "tenant_id=${tenant_id}" },
+          { "application": "set", "data": "domain_name=${domain_name}" },
+          { "application": "bridge", "data": "user/${destination_number}@${domain_name}" }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "dp_tenant_a_outbound_mobile",
+    "tenantId": "tenant_a",
+    "domain": "tenant-a.example.com",
+    "context": "from-internal",
+    "name": "Outbound Saudi mobile numbers",
+    "enabled": true,
+    "priority": 200,
+    "renderMode": "structured",
+    "entries": [
+      {
+        "name": "Saudi mobile outbound",
+        "routeType": "gateway",
+        "priority": 100,
+        "match": { "field": "destination_number", "type": "regex", "pattern": "^05\\d{8}$" },
+        "validation": { "validateGatewayExists": false },
+        "actions": [
+          { "application": "set", "data": "tenant_id=${tenant_id}" },
+          { "application": "set", "data": "domain_name=${domain_name}" },
+          { "application": "set", "data": "effective_caller_id_number=966500000001" },
+          { "application": "bridge", "data": "sofia/gateway/stc-main/${destination_number}" }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "dp_global_inbound_did",
+    "tenantId": null,
+    "domain": "pstn.example.com",
+    "context": "from-pstn",
+    "name": "Generic inbound DID router",
+    "enabled": true,
+    "priority": 100,
+    "renderMode": "structured",
+    "entries": [
+      {
+        "name": "Match inbound DID numbers",
+        "routeType": "did",
+        "priority": 100,
+        "match": { "field": "destination_number", "type": "regex", "pattern": "^\\+?\\d{8,15}$" },
+        "validation": { "validateDidExists": false },
+        "actions": [
+          { "application": "answer", "data": "" },
+          { "application": "set", "data": "inbound_did=${normalized_destination_number}" },
+          { "application": "set", "data": "source_ip=${network_addr}" },
+          { "application": "hangup", "data": "NORMAL_CLEARING" }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "dp_run_ivr_z3opo0",
+    "tenantId": "tenant_a",
+    "domain": "tenant-a.example.com",
+    "context": "ivr-routing",
+    "name": "Run IVR Options",
+    "enabled": true,
+    "priority": 100,
+    "renderMode": "structured",
+    "entries": [
+      {
+        "name": "Start IVR",
+        "routeType": "ivr",
+        "priority": 100,
+        "match": { "field": "destination_number", "type": "exact", "value": "ivr-z3opo0" },
+        "validation": { "validateIvrExists": false },
+        "actions": [
+          { "application": "answer", "data": "" },
+          { "application": "set", "data": "tenant_id=${tenant_id}" },
+          { "application": "set", "data": "domain_name=${domain_name}" },
+          { "application": "play_and_get_digits", "data": "1 1 3 10000 # /var/lib/freeswitch/sounds/ivr-menu1.wav /var/lib/freeswitch/sounds/invalid.wav ivr_digit [123]" },
+          { "application": "execute_extension", "data": "ivrroute__ivr-z3opo0__${ivr_digit} XML ivr-option-routing" },
+          { "application": "hangup", "data": "NORMAL_CLEARING" }
+        ]
+      }
+    ]
+  },
+  {
+    "_id": "dp_ivr_option_1",
+    "tenantId": "tenant_a",
+    "domain": "tenant-a.example.com",
+    "context": "ivr-option-routing",
+    "name": "IVR option 1 to extension",
+    "enabled": true,
+    "priority": 100,
+    "renderMode": "structured",
+    "entries": [
+      {
+        "name": "IVR option 1",
+        "routeType": "ivr_option",
+        "priority": 100,
+        "match": { "field": "destination_number", "type": "exact", "value": "ivrroute__ivr-z3opo0__1" },
+        "validation": { "validateExtensionExists": false },
+        "actions": [
+          { "application": "set", "data": "ivr_digit=1" },
+          { "application": "bridge", "data": "user/1002@${domain_name}" }
+        ]
+      }
+    ]
+  }
+]

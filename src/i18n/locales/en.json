@@ -1,0 +1,3464 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "save": "Save",
+    "cancel": "Cancel",
+    "delete": "Delete",
+    "edit": "Edit",
+    "add": "Add",
+    "create": "Create",
+    "ok": "OK",
+    "close": "Close",
+    "search": "Search",
+    "apply": "Apply",
+    "reset": "Reset",
+    "settings": "Settings",
+    "remove": "Remove",
+    "previous": "Previous",
+    "next": "Next",
+    "all": "All",
+    "none": "None",
+    "yes": "Yes",
+    "no": "No",
+    "saved": "Saved",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "exportCsv": "Export CSV",
+    "exportExcel": "Export Excel",
+    "exportPdf": "Export PDF",
+    "soon": "Soon",
+    "demo": "demo",
+    "download": "Download",
+    "export": "Export",
+    "exported": "Exported",
+    "min": "min",
+    "hr": "hr",
+    "second": "sec",
+    "seconds": "seconds",
+    "rowsPerPage": "Rows per page",
+    "pageOf": "Page {{page}} of {{total}}",
+    "showingRange": "Showing {{from}}–{{to}} of {{total}}"
+  },
+  "nav": {
+    "dashboard": "Dashboard",
+    "aiAnalysis": "AI Analysis",
+    "live": "Live Data",
+    "usersMap": "Users Map",
+    "calls": "Calls",
+    "visitors": "Visitors",
+    "missedCalls": "Missed Calls",
+    "users": "Users & Roles",
+    "groups": "Groups",
+    "queues": "Queues",
+    "groupsAndQueues": "Groups & Queues",
+    "reports": "Reports",
+    "directory": "Directory & CRMs",
+    "ivr": "IVR",
+    "digitalWorkspace": "Digital Workspace",
+    "softphone": "Softphone",
+    "softphoneNew": "New softphone",
+    "voiceAgent": "Voice Agent",
+    "aiSettings": "AI Settings",
+    "campaigns": "Campaigns",
+    "ivrSurveys": "IVR Surveys",
+    "accountSettings": "Account Settings",
+    "logs": "Audit Logs",
+    "systemSettings": "System Settings"
+  },
+  "layout": {
+    "title": "Layout",
+    "classic": "Classic",
+    "classicDesc": "Sidebar + top bar. Comfortable spacing.",
+    "rail": "Rail",
+    "railDesc": "Compact icon-only sidebar rail.",
+    "topnav": "Top Nav",
+    "topnavDesc": "Horizontal navigation, no sidebar.",
+    "modern": "Modern",
+    "modernDesc": "Floating sidebar with gradient accents.",
+    "bento": "Modern",
+    "bentoDesc": "Floating panels on a tinted canvas.",
+    "split": "Split",
+    "splitDesc": "Sidebar plus secondary context panel.",
+    "brutalist": "Neo-Brutalist",
+    "brutalistDesc": "Thick borders, hard shadows, bold contrast.",
+    "fancy": "Fancy",
+    "fancyDesc": "Editorial dashboard with serif accents and emerald glow."
+  },
+  "focusMode": {
+    "enter": "Enter focus mode",
+    "exit": "Exit focus mode",
+    "unavailable": "Focus mode is unavailable here"
+  },
+  "studio": {
+    "title": "Theme Studio",
+    "sections": {
+      "theme": "Theme",
+      "layout": "Layout",
+      "style": "Style",
+      "palette": "Color Palette",
+      "sidebar": "Sidebar"
+    },
+    "sidebar": {
+      "bgColor": "Background color"
+    },
+    "theme": {
+      "lite": "Lite",
+      "dark": "Dark",
+      "dim": "Dim",
+      "neon": "Neon",
+      "brut": "Brut"
+    },
+    "layout": {
+      "classic": "Classic",
+      "rail": "Rail",
+      "topnav": "Topnav",
+      "bento": "Modern",
+      "split": "Split",
+      "brutalist": "Brut",
+      "fancy": "Fancy"
+    },
+    "style": {
+      "flat": "Flat",
+      "gradient": "Gradient",
+      "glass": "Glass",
+      "soft": "Soft",
+      "sharp": "Sharp",
+      "fancy": "Fancy"
+    },
+    "palette": {
+      "emerald": "Emerald",
+      "indigo": "Indigo",
+      "violet": "Violet",
+      "rose": "Rose",
+      "amber": "Amber",
+      "sky": "Sky",
+      "teal": "Teal",
+      "slate": "Slate"
+    }
+  },
+  "style": {
+    "flat": "Flat",
+    "flatDesc": "Solid surfaces, minimal shadows.",
+    "gradient": "Gradient",
+    "gradientDesc": "Smooth color blends on accents.",
+    "glass": "Glass",
+    "glassDesc": "Translucent blurred chrome.",
+    "soft": "Soft",
+    "softDesc": "Rounded corners, gentle shadows.",
+    "sharp": "Sharp",
+    "sharpDesc": "Zero radius, crisp edges.",
+    "fancy": "Fancy",
+    "fancyDesc": "Editorial serif accents, emerald glow, grain background."
+  },
+  "theme": {
+    "switchToDark": "Switch to dark mode",
+    "switchToLight": "Switch to light mode"
+  },
+  "softphone": {
+    "label": "Phone",
+    "title": "Softphone",
+    "call": "Call",
+    "endCall": "End call",
+    "callBack": "Call back",
+    "addContact": "Add contact",
+    "placeholder": "+1 555 555 5555",
+    "searchContacts": "Search contacts or enter a number",
+    "searchCalls": "Search calls",
+    "noCallsFilter": "No calls match your filter.",
+    "paste": "Paste",
+    "pasteFailed": "Couldn't read clipboard",
+    "selectContact": "Select a contact to see details",
+    "selectCall": "Select a call to see details",
+    "recentCalls": "Recent calls",
+    "noRecent": "No recent activity with this contact.",
+    "notes": "Notes",
+    "notesPlaceholder": "Add a private note about this contact…",
+    "type": "Type",
+    "duration": "Duration",
+    "when": "When",
+    "number": "Number",
+    "you": "You",
+    "unknown": "Unknown",
+    "activeCall": "On a call",
+    "incomingCall": "Incoming call",
+    "accept": "Accept",
+    "decline": "Decline",
+    "couldNotConnect": "Couldn't connect — please try again",
+    "openSoftphone": "Open softphone",
+    "popup": "Popup",
+    "openInPopup": "Open in popup window",
+    "toggleTheme": "Toggle theme",
+    "connectedSip": "Connected · SIP",
+    "offline": "Offline",
+    "workspaceTitle": "Softphone · Workspace",
+    "extension": "Ext",
+    "enterNumber": "Enter number",
+    "dialerHint": "Type, tap the keypad, or pick a contact",
+    "videoCall": "Video call",
+    "videoSoon": "Video calls coming soon",
+    "calling": "Calling {{name}}…",
+    "notRegistered": "Configure and register your SIP account first.",
+    "dialing": "Dialing…",
+    "ringing": "Ringing…",
+    "ended": "Call ended",
+    "failed": "Call failed",
+    "onHold": "On hold",
+    "muted": "Muted",
+    "callOnHold": "Call on hold",
+    "callResumed": "Call resumed",
+    "connecting": "Connecting…",
+    "slowConnect": "Call connected but UI is taking a moment…",
+    "sendToVoicemail": "Voicemail",
+    "transfer": "Transfer",
+    "transferCall": "Transfer call",
+    "transferTo": "Transfer to",
+    "transferTarget": "Number, extension, or SIP URI",
+    "transferred": "Call transferred",
+    "back": "Back",
+    "backspace": "Backspace",
+    "nothingHere": "Nothing here yet.",
+    "hasRecording": "Has recording",
+    "copied": "Copied",
+    "copyFailed": "Copy failed",
+    "couldNotDelete": "Could not delete call",
+    "previousCallEnded": "Previous call with {{number}} ended when the page reloaded.",
+    "outboundNumber": "Outbound number",
+    "tenantNumbers": "Account numbers",
+    "callThisNumber": "Call this number",
+    "tags": {
+      "title": "Tags",
+      "add": "Add",
+      "tag": "Tag",
+      "newPlaceholder": "New tag…",
+      "noneYet": "No tags yet.",
+      "noneOnCall": "No tags on this call yet.",
+      "remove": "Remove {{tag}}",
+      "color": "Color {{value}}",
+      "added": "Tag added",
+      "typeAndEnter": "Type a tag, press Enter"
+    },
+    "nav": {
+      "dialer": "Dialer",
+      "contacts": "Contacts",
+      "recents": "Recents",
+      "voicemail": "Voicemail",
+      "messages": "Messages",
+      "settings": "Settings"
+    },
+    "status": {
+      "available": "Available",
+      "busy": "Busy",
+      "away": "Away",
+      "offline": "Offline"
+    },
+    "callType": {
+      "in": "Incoming",
+      "out": "Outgoing",
+      "missed": "Missed"
+    },
+    "controls": {
+      "mute": "Mute",
+      "unmute": "Unmute",
+      "keypad": "Keypad",
+      "speaker": "Speaker",
+      "hold": "Hold",
+      "resume": "Resume",
+      "transfer": "Transfer",
+      "record": "Record",
+      "add": "Add"
+    },
+    "tabs": {
+      "users": "Users",
+      "contacts": "Contacts",
+      "recents": "Recents"
+    },
+    "search": {
+      "namesNumbers": "Search name, number, or tag…"
+    },
+    "empty": {
+      "recents": "No calls yet. When you make or receive calls, they'll show up here.",
+      "contacts": "No contacts",
+      "voicemailTitle": "No voicemails",
+      "voicemailDesc": "When someone leaves you a voicemail, you'll see it here.",
+      "messagesTitle": "No messages",
+      "messagesDesc": "Your conversations will appear here once you start messaging."
+    },
+    "rel": {
+      "justNow": "just now",
+      "minutes": "{{count}}m ago",
+      "hours": "{{count}}h ago",
+      "days": "{{count}}d ago"
+    },
+    "recents": {
+      "tabs": {
+        "all": "All",
+        "in": "Inbound",
+        "out": "Outbound",
+        "missed": "Missed"
+      },
+      "buckets": {
+        "today": "Today",
+        "yesterday": "Yesterday",
+        "week": "This week",
+        "older": "Older"
+      }
+    },
+    "callDetail": {
+      "status": "Status",
+      "duration": "Duration",
+      "started": "Started",
+      "answered": "Answered",
+      "ended": "Ended",
+      "hangupCause": "Hangup cause",
+      "recording": "Recording",
+      "technical": "Technical details",
+      "callId": "Call-ID",
+      "from": "From",
+      "to": "To",
+      "copy": "Copy",
+      "copyLabel": "Copy {{label}}"
+    },
+    "permissions": {
+      "title": "Verify softphone permissions",
+      "description": "We need to confirm a few capabilities before you can make or receive calls.",
+      "required": "required",
+      "recheck": "Re-check",
+      "requestAll": "Request all",
+      "continue": "Continue",
+      "rows": {
+        "secure": {
+          "label": "Secure connection (HTTPS)",
+          "desc": "Required for microphone and WebRTC."
+        },
+        "webrtc": {
+          "label": "WebRTC support",
+          "desc": "Browser must support real-time audio."
+        },
+        "mic": {
+          "label": "Microphone access",
+          "desc": "Needed to speak during calls."
+        },
+        "audioIn": {
+          "label": "Microphone device",
+          "desc": "An input device must be available."
+        },
+        "audioOut": {
+          "label": "Speaker device",
+          "desc": "An output device must be available."
+        },
+        "audioCtx": {
+          "label": "Audio playback",
+          "desc": "Required for ringtone and remote audio."
+        },
+        "notifications": {
+          "label": "Browser notifications",
+          "desc": "Alerts for incoming calls when tab is hidden."
+        },
+        "sipAccount": {
+          "label": "SIP account",
+          "desc": "Credentials to register with the server."
+        }
+      }
+    },
+    "settings": {
+      "status": "Availability",
+      "appearance": "Appearance",
+      "darkMode": "Dark mode",
+      "demo": "Demo",
+      "simulate": "Simulate incoming call",
+      "window": "Window",
+      "openInPopup": "Open softphone in popup window",
+      "openInPopupHint": "Launch a compact dialer window instead of navigating in-app.",
+      "tabs": {
+        "account": "Account",
+        "audio": "Audio",
+        "appearance": "Appearance",
+        "debug": "Debug"
+      },
+      "regStatus": {
+        "unregistered": "Unregistered",
+        "connecting": "Connecting…",
+        "registered": "Registered",
+        "failed": "Failed"
+      },
+      "testRegister": "Test register",
+      "reRegister": "Re-register",
+      "unregister": "Unregister",
+      "lastError": "Last error",
+      "hint": "Hint",
+      "wireTrace": "SIP wire trace",
+      "waitingRegister": "waiting for REGISTER…",
+      "noWireMessages": "No SIP messages captured yet. Click Test register to send a REGISTER and watch traffic here.",
+      "outboundOnly": "Outbound only — server is not replying.",
+      "autoRegister": "Auto-connect on load",
+      "autoRegisterHelp": "Automatically register when the app opens, using saved credentials.",
+      "demoMode": "Demo mode",
+      "demoModeHelp": "Simulate registration and calls without a real SIP server.",
+      "simulateRegister": "Simulate register",
+      "simulateInbound": "Simulate inbound call",
+      "credentials": "SIP credentials",
+      "active": "Active",
+      "displayName": "Display name",
+      "authId": "Auth ID",
+      "password": "Password",
+      "togglePassword": "Toggle password visibility",
+      "microphone": "Microphone",
+      "speaker": "Speaker",
+      "ringtone": "Ringtone",
+      "systemDefault": "System default",
+      "micLevel": "Input level",
+      "echoCancellation": "Echo cancellation",
+      "noiseSuppression": "Noise suppression",
+      "autoGain": "Auto gain",
+      "sinkUnsupported": "Output device selection is only supported in Chromium-based browsers.",
+      "refreshDevices": "Refresh devices",
+      "dialTimeline": "Dial → INVITE timeline",
+      "dialTimelineHelp": "Time from clicking dial to the SIP INVITE actually being transmitted, plus ICE gathering steps.",
+      "noDialYet": "No dial recorded yet. Place a call to see the timeline.",
+      "sipTargets": "SIP targets (INVITE / REFER)",
+      "sipTargetsHelp": "The exact target URI generated by the app right before sending each request.",
+      "noTargetsYet": "No outbound INVITE/REFER yet. Place a call to see the generated target here.",
+      "copyTarget": "Copy target",
+      "copiedTarget": "Copied SIP target",
+      "debug": "Debug log",
+      "debugEmpty": "No events yet."
+    }
+  },
+  "user": {
+    "account": "Account",
+    "profile": "Profile",
+    "settings": "Settings",
+    "signOut": "Sign out",
+    "fallback": "User",
+    "signedOut": "Signed out",
+    "hidePassword": "Hide password",
+    "showPassword": "Show password"
+  },
+  "language": {
+    "switchTo": "العربية",
+    "current": "English"
+  },
+  "auth": {
+    "signIn": "Sign in",
+    "signUp": "Sign up",
+    "email": "Email",
+    "password": "Password",
+    "name": "Name",
+    "loginButton": "Sign in",
+    "signupButton": "Create account",
+    "loginSuccess": "Signed in",
+    "signupSuccess": "Account created — check your email to confirm",
+    "notLoggedIn": "Not signed in",
+    "organization": "Organization",
+    "missingFields": "Please fill in organization, email, and password.",
+    "forgotPassword": "Forgot password?",
+    "forgotPasswordTitle": "Forgot your password?",
+    "forgotPasswordHint": "Enter your email and we'll send you a reset link.",
+    "sendResetLink": "Send reset link",
+    "resetEmailSent": "If this email exists, a password reset link has been sent.",
+    "backToSignIn": "Back to sign in",
+    "resetPasswordTitle": "Choose a new password",
+    "newPassword": "New password",
+    "confirmPassword": "Confirm password",
+    "resetPasswordButton": "Reset password",
+    "passwordMismatch": "Passwords do not match.",
+    "resetSuccess": "Password reset successfully. You can sign in now.",
+    "invalidResetLink": "This reset link is invalid or incomplete. Request a new one from the sign-in page."
+  },
+  "aiAnalysis": {
+    "title": "AI Analysis",
+    "subtitle": "Conversational intelligence and sentiment insights across your calls",
+    "noData": "No data",
+    "callsCount": "{{count}} calls",
+    "kpi": {
+      "avgScore": "Avg Sentiment Score",
+      "positivePct": "Positive Calls",
+      "negativePct": "Negative Calls",
+      "analyzed": "Calls Analyzed"
+    },
+    "sentiment": {
+      "positive": "Positive",
+      "neutral": "Neutral",
+      "negative": "Negative"
+    },
+    "charts": {
+      "trend": "Sentiment Trend",
+      "distribution": "Sentiment Distribution",
+      "topTopics": "Top Topics",
+      "agentLeaderboard": "Agent Sentiment Leaderboard"
+    },
+    "insights": {
+      "title": "AI Insights",
+      "noData": "No analyzed calls in this range yet.",
+      "highNegative": "Negative sentiment is high ({{pct}}%). Review recent calls for recurring issues.",
+      "highPositive": "Customers sound happy — {{pct}}% positive calls in this range.",
+      "topTopic": "Top topic: \"{{topic}}\" mentioned in {{count}} calls.",
+      "topAgent": "Top performing agent: {{name}} (avg score {{score}})."
+    }
+  },
+  "dashboard": {
+    "title": "Dashboard",
+    "subtitle": "Overview of today's call center performance",
+    "tabs": {
+      "overview": "Overview"
+    },
+    "totalCallsToday": "Total Calls Today",
+    "missedCalls": "Missed Calls",
+    "avgWaitTime": "Avg Wait Time",
+    "activeAgents": "Active Agents",
+    "callsToday": "Calls Today",
+    "topAgents": "Top Agents",
+    "callStatusDistribution": "Call Status Distribution",
+    "recentActivity": "Recent Activity",
+    "answered": "Answered",
+    "missed": "Missed",
+    "agent": "Agent",
+    "agentAnswered": "{{name}} answered a call from",
+    "missedFrom": "Missed call from",
+    "callFrom": "Call from"
+  },
+  "live": {
+    "title": "Live Data",
+    "subtitle": "Real-time center status",
+    "activeCalls": "Active Calls",
+    "queue": "Queue",
+    "callsInQueue": "Calls in queue",
+    "longestWait": "Longest wait",
+    "agentsStatus": "Agents Status",
+    "ongoing": "Ongoing",
+    "noActiveCalls": "No active calls",
+    "noAgents": "No agents",
+    "agentStatus": {
+      "available": "Available",
+      "busy": "Busy",
+      "break": "Break",
+      "offline": "Offline"
+    },
+    "actions": {
+      "listen": "Listen",
+      "whisper": "Whisper",
+      "barge": "Barge",
+      "listenStarted": "Listening to call",
+      "whisperStarted": "Whispering to agent",
+      "bargeStarted": "Joined the call",
+      "failed": "Action failed"
+    },
+    "tabs": {
+      "overview": "Overview",
+      "usersMap": "Users Map",
+      "queueMonitor": "Live Queue"
+    },
+    "overview": {
+      "groups": {
+        "agents": "Agents",
+        "usersMap": "Users Journey",
+        "queue": "Queue"
+      },
+      "agents": {
+        "total": "Total Agents",
+        "available": "Available",
+        "busy": "On Call",
+        "break": "On Break",
+        "offline": "Offline"
+      },
+      "usersMap": {
+        "activeNow": "Active Callers",
+        "inIvr": "In IVR / Menu",
+        "avgHandle": "Avg Handle Time",
+        "sla": "SLA %"
+      },
+      "queue": {
+        "waiting": "Calls Waiting",
+        "longestWait": "Longest Wait",
+        "activeCalls": "Active Calls",
+        "abandoned": "Abandoned Today"
+      }
+    },
+    "queueMonitor": {
+      "live": "Live",
+      "paused": "Paused",
+      "pause": "Pause",
+      "resume": "Resume",
+      "allQueues": "All queues",
+      "sla": "SLA",
+      "waiting": "Waiting",
+      "longestWait": "Longest wait",
+      "oldestInQueue": "Oldest in queue",
+      "ewt": "Est. wait",
+      "abandons": "Abandons",
+      "serviceLevel": "Service level",
+      "agentsOverall": "Agents by state",
+      "activeCalls": "Active calls",
+      "noActiveCalls": "No active calls right now",
+      "onCallNow": "on call now",
+      "inWrapUp": "in wrap-up",
+      "none": "None",
+      "state": {
+        "available": "Available",
+        "onCall": "On call",
+        "wrapup": "Wrap-up",
+        "notReady": "Not ready",
+        "offline": "Offline"
+      },
+      "callStatus": {
+        "talking": "Talking",
+        "hold": "On hold"
+      },
+      "col": {
+        "agent": "Agent",
+        "customer": "Customer",
+        "queue": "Queue",
+        "status": "Status",
+        "duration": "Duration"
+      },
+      "kpi": {
+        "waiting": "Calls waiting",
+        "longestWait": "Longest wait",
+        "serviceLevel": "Service level",
+        "abandons": "Abandons",
+        "agentsAvailable": "Agents available",
+        "activeCalls": "Active calls"
+      }
+    }
+  },
+  "calls": {
+    "title": "Calls",
+    "tabs": {
+      "all": "All",
+      "incoming": "Incoming",
+      "outgoing": "Outgoing",
+      "missed": "Missed",
+      "internal": "Internal"
+    },
+    "loadFailed": "Failed to load calls.",
+    "empty": "No calls.",
+    "noResults": "No results",
+    "showing": "Showing {{start}} - {{end}} of {{total}} results",
+    "showingShort": "Showing {{start}} - {{end}} of {{total}}",
+    "rowsPerPage": "Rows per page:",
+    "expandCollapse": "Collapse / Expand",
+    "collapseAll": "Collapse all",
+    "expandAll": "Expand all",
+    "filter": "Filter",
+    "context": {
+      "callBack": "Call back",
+      "sendSms": "Send SMS",
+      "details": "View details",
+      "copyId": "Copy call ID",
+      "idCopied": "Call ID copied",
+      "callBackDemo": "Call back — demo",
+      "sendSmsDemo": "Send SMS — demo"
+    },
+    "columns": {
+      "id": "ID",
+      "tags": "Tags",
+      "autoTags": "Auto Tags",
+      "agent": "Agent",
+      "startedAt": "Started",
+      "status": "Status",
+      "ring": "Ring",
+      "hold": "Hold",
+      "active": "Active",
+      "totalSeconds": "Duration",
+      "totalHold": "Total Hold",
+      "caller": "Caller",
+      "called": "Called",
+      "callerName": "Caller Name",
+      "callerExtension": "Caller Ext",
+      "calledName": "Called Name",
+      "calledExtension": "Called Ext",
+      "sentiment": "Sentiment",
+      "inputs": "Inputs",
+      "recording": "Recording"
+    },
+    "columnsTitle": "Columns",
+    "columnsHeader": "Show / Hide Columns",
+    "filters": {
+      "date": "Date",
+      "dateRange": "Date Range",
+      "from": "From",
+      "to": "To",
+      "today": "Today",
+      "yesterday": "Yesterday",
+      "last7": "Last 7 days",
+      "last30": "Last 30 days",
+      "all": "All",
+      "status": "Status",
+      "allStatuses": "All statuses",
+      "agent": "Agents",
+      "allAgents": "All agents",
+      "caller": "Caller",
+      "callee": "Callee",
+      "callerSearch": "Search by phone",
+      "tags": "Tags",
+      "allTags": "All tags",
+      "group": "Groups",
+      "allGroups": "All groups",
+      "selected": "{{count}} selected",
+      "clear": "Clear filters",
+      "callId": "ID",
+      "referenceId": "Reference ID",
+      "keyword": "Keyword lookup",
+      "type": {
+        "title": "Type",
+        "incoming": "Incoming",
+        "outgoing": "Outgoing",
+        "internal": "Internal",
+        "self": "Self"
+      },
+      "states": {
+        "inbound": "Inbound States",
+        "outbound": "Outbound States",
+        "campaign": "Campaign States",
+        "internal": "Internal States",
+        "waiting": "Waiting",
+        "voicemail": "Voicemail",
+        "blocked": "Blocked",
+        "callback": "Callback",
+        "retry": "Retry",
+        "transfer": "Transferred",
+        "forward": "Forwarded"
+      },
+      "properties": {
+        "title": "Properties",
+        "recording": "Recording",
+        "voicemail": "Voicemail",
+        "transfer": "Transferred",
+        "hold": "Hold"
+      },
+      "hangUp": {
+        "title": "Hang up by",
+        "agent": "Agent"
+      },
+      "sentiment": {
+        "title": "Sentiment"
+      },
+      "abandonment": {
+        "title": "Abandonment Reason",
+        "callerHangup": "Caller hung up",
+        "error": "Error",
+        "timeout": "Timeout",
+        "unknown": "Unknown",
+        "queueFull": "Queue full",
+        "noAgents": "No agents"
+      },
+      "handledBy": {
+        "title": "Handled By",
+        "any": "Any",
+        "agent": "Agent",
+        "ai": "AI",
+        "ivr": "IVR"
+      },
+      "searchOperator": {
+        "title": "Search Operator",
+        "and": "AND",
+        "or": "OR",
+        "phrase": "Phrase"
+      },
+      "duration": {
+        "total": "Duration",
+        "handling": "Handling Duration",
+        "waiting": "Waiting Duration",
+        "holding": "Holding Duration"
+      },
+      "chip": {
+        "status": "Status: {{label}}",
+        "agent": "Agent: {{label}}",
+        "tag": "Tag: {{label}}",
+        "group": "Group: {{label}}",
+        "caller": "Phone: {{value}}",
+        "date": "Date: {{value}}"
+      }
+    },
+    "status": {
+      "answered": "Answered",
+      "missed": "Missed",
+      "noAnswer": "No answer",
+      "busy": "Busy",
+      "rejected": "Rejected"
+    },
+    "sentiment": {
+      "positive": "Positive",
+      "negative": "Negative",
+      "neutral": "Neutral"
+    },
+    "tagsCell": {
+      "userTags": "Tags",
+      "autoTags": "Auto Tags",
+      "addNew": "+ Add new tag"
+    },
+    "recording": {
+      "play": "Play recording",
+      "title": "Call Recording"
+    },
+    "rowDetail": {
+      "timeline": "Call Timeline",
+      "ring": "Ring",
+      "hold": "Hold",
+      "active": "Active",
+      "total": "Total",
+      "agent": "Agent",
+      "group": "Group",
+      "notes": "Agent Notes",
+      "notePlaceholder": "Write a note...",
+      "noteSaved": "Notes saved",
+      "tags": "Tags",
+      "callBack": "Call back",
+      "sendSms": "Send SMS"
+    },
+    "csvExported": "CSV exported",
+    "detail": {
+      "summaryTitle": "Conversation summary",
+      "noSummary": "No summary for this call",
+      "noRecording": "No recording for this call",
+      "recordingError": "Could not load recording",
+      "viewTranscript": "View full transcript",
+      "copy": "Copy",
+      "copied": "Summary copied",
+      "translate": "Translate",
+      "translating": "Translating...",
+      "showOriginal": "Show original",
+      "translateError": "Translation failed",
+      "accuratePrompt": "Was it accurate?",
+      "feedbackSaved": "Feedback recorded",
+      "feedbackError": "Could not save feedback",
+      "helpful": "Helpful",
+      "notHelpful": "Not helpful",
+      "tagsTitle": "Tags",
+      "noTagsHintBefore": "No call tags have been created in your account yet. To get started, please go to ",
+      "noTagsHintLink": "account settings",
+      "noTagsHintAfter": " and create a tag. If you need any help, feel free to contact our support team.",
+      "addTag": "+ Add tag",
+      "manageTags": "Manage tags",
+      "transcriptTitle": "Full call transcript",
+      "transcriptCopied": "Transcript copied",
+      "copyTranscript": "Copy transcript",
+      "loading": "Loading...",
+      "noTranscript": "No transcript for this call",
+      "dialogTitle": "Call details",
+      "tabs": {
+        "general": "General",
+        "transcript": "Full transcript",
+        "wrapup": "Wrap-up"
+      }
+    },
+    "wrapup": {
+      "empty": "No wrap-up recorded for this call.",
+      "disposition": "Disposition",
+      "status": "Status",
+      "agent": "Agent",
+      "acw": "After-call work",
+      "callbackScheduled": "Callback scheduled",
+      "completedAt": "Completed at",
+      "notes": "Notes",
+      "yes": "Yes",
+      "no": "No"
+    }
+  },
+  "tagsSettings": {
+    "title": "Manage call tags",
+    "subtitle": "Create tags to classify calls in your account.",
+    "addNew": "Add new tag",
+    "tagName": "Tag name",
+    "add": "Add",
+    "added": "Tag added",
+    "current": "Current tags ({{count}})",
+    "empty": "No tags yet.",
+    "confirmDelete": "Delete tag \"{{name}}\"?",
+    "deleted": "Tag deleted",
+    "saved": "Saved"
+  },
+  "missedCalls": {
+    "title": "Missed Calls",
+    "subtitle": "All calls that were not answered or were rejected",
+    "empty": "No missed calls."
+  },
+  "users": {
+    "title": "Users",
+    "subtitle": "Manage staff and permissions",
+    "tabs": {
+      "users": "Users",
+      "roles": "Roles & Permissions"
+    },
+    "addUser": "Add user",
+    "newUser": "New user",
+    "editUser": "Edit user",
+    "empty": "No users.",
+    "loadFailed": "Failed to load users",
+    "saved": "User saved",
+    "saveFailed": "Failed to save user",
+    "name": "Name",
+    "firstName": "First name",
+    "lastName": "Last name",
+    "email": "Email",
+    "timezone": "Timezone",
+    "language": "Language",
+    "browserNotifications": "Browser notifications",
+    "role": "Role",
+    "groups": "Groups",
+    "extensionNumber": "Extension number",
+    "extensionHint": "Numeric — IVR-related (requires support to update)",
+    "outboundCid": "Outbound CID",
+    "outboundCidNone": "None",
+    "outboundCidEmpty": "No phone numbers configured in Account Settings",
+    "recording": {
+      "title": "Recording options",
+      "subtitle": "Control which call types are recorded for this user.",
+      "inboundExternal": "Inbound external",
+      "inboundExternalDesc": "Record calls received from outside the company.",
+      "inboundInternal": "Inbound internal",
+      "inboundInternalDesc": "Record calls received from other extensions.",
+      "outboundExternal": "Outbound external",
+      "outboundExternalDesc": "Record calls placed to outside numbers.",
+      "outboundInternal": "Outbound internal",
+      "outboundInternalDesc": "Record calls placed to other extensions.",
+      "onDemand": "On-demand recording",
+      "onDemandDesc": "Allow this user to start/stop recording mid-call."
+    },
+    "extensionTakenUser": "This extension is already used by another user.",
+    "extensionTakenPipeline": "This extension is already used by a pipeline.",
+    "extensionChecking": "Checking extension...",
+    "createdAt": "Created at",
+    "status": "Agent status",
+    "statusDuration": "Status duration",
+    "search": "Search by name or email",
+    "selectGroups": "Select groups",
+    "noGroups": "No groups",
+    "required": "Required",
+    "invalidEmail": "Invalid email address",
+    "actions": "Actions",
+    "edit": "Edit",
+    "disable": "Disable",
+    "enable": "Enable",
+    "disabled": "Disabled",
+    "userDisabled": "User disabled",
+    "userEnabled": "User enabled",
+    "viewCalls": "View calls",
+    "view": "View",
+    "export": "Export",
+    "userDetails": "User details",
+    "permissions": "Agent permissions",
+    "permissionsValue": "Inbound, Outbound",
+    "filter": "Filter",
+    "apply": "Apply",
+    "clearFilters": "Clear filters",
+    "allRoles": "All roles",
+    "allStatuses": "All statuses",
+    "allLanguages": "All languages",
+    "allGroups": "All groups",
+    "accountState": "Account state",
+    "allAccounts": "All accounts",
+    "enabledOnly": "Enabled only",
+    "disabledOnly": "Disabled only",
+    "selectedCount": "{{count}} selected",
+    "filterRole": "Role",
+    "filterStatus": "Status",
+    "filterLanguage": "Language",
+    "filterGroup": "Group",
+    "roles": {
+      "owner": "Account owner",
+      "agent": "Service representative",
+      "admin": "Account administrator"
+    },
+    "statuses": {
+      "available": "Available",
+      "offline": "Offline",
+      "away": "Away",
+      "inactive": "Inactive"
+    },
+    "manageRoles": "Manage Roles",
+    "manageRolesDesc": "Quickly change roles for any user."
+  },
+  "groups": {
+    "title": "Groups",
+    "subtitle": "Manage ring groups and strategies",
+    "strategyLabel": "Strategy: {{strategy}} · Timeout {{timeout}}s",
+    "members": "{{count}} members",
+    "activeCalls": "Active calls",
+    "settings": "Group settings",
+    "groupName": "Group name",
+    "ringStrategy": "Ring strategy",
+    "ringTimeout": "Ring timeout (seconds)",
+    "savedSettings": "Settings saved",
+    "newGroup": "New group",
+    "createGroup": "Create group",
+    "selectMembers": "Select members",
+    "created": "Group created",
+    "strategy": {
+      "simultaneous": "Simultaneous",
+      "round-robin": "Round-robin",
+      "least-calls": "Least calls",
+      "random": "Random"
+    },
+    "usedInPublishedFlows_one": "Used in {{count}} published flow — republish to apply changes",
+    "usedInPublishedFlows_other": "Used in {{count}} published flows — republish to apply changes",
+    "republishWarningTitle": "Re-publish required",
+    "republishWarningBody": "{{count}} published flow(s) reference this group. Your changes won't apply until those flows are re-published.",
+    "openInEditor": "Open in editor"
+  },
+  "reports": {
+    "title": "Reports",
+    "subtitle": "Performance and statistics reports",
+    "tabs": {
+      "calls": "Calls Report",
+      "agents": "Agents Report",
+      "tags": "Tags Report"
+    },
+    "date": "Date",
+    "total": "Total",
+    "answered": "Answered",
+    "missed": "Missed",
+    "avgDuration": "Avg Duration",
+    "agent": "Agent",
+    "callsCount": "Calls",
+    "tag": "Tag",
+    "tagCallsCount": "Call count"
+  },
+  "directory": {
+    "title": "Directory",
+    "tabs": {
+      "contacts": "Contacts",
+      "integrations": "Integrations"
+    },
+    "subtitle": "Contacts",
+    "searchPlaceholder": "Search by name, phone, or company",
+    "name": "Name",
+    "phone": "Phone",
+    "email": "Email",
+    "company": "Company",
+    "notes": "Notes",
+    "lastCall": "Last Call",
+    "calls": "Calls",
+    "actions": "Actions",
+    "callDemo": "Call — demo",
+    "smsDemo": "SMS — demo",
+    "addContact": "Add contact",
+    "editContact": "Edit contact",
+    "newContact": "New contact",
+    "namePlaceholder": "Full name",
+    "phonePlaceholder": "+1 555 0100",
+    "emailPlaceholder": "name@company.com",
+    "companyPlaceholder": "Company name",
+    "notesPlaceholder": "Optional notes",
+    "deleteTitle": "Delete contact?",
+    "deleteDesc": "This will permanently remove this contact.",
+    "empty": "No contacts yet. Click \"Add\" to create your first contact.",
+    "noResults": "No contacts match your search.",
+    "loadError": "Failed to load contacts",
+    "saved": "Contact saved",
+    "deleted": "Contact deleted",
+    "nameRequired": "Name is required",
+    "tags": "Tags",
+    "tagsColumn": "Tags",
+    "manageTags": "Manage tags",
+    "filterByTags": "Filter by tags",
+    "allTags": "All tags",
+    "clearFilter": "Clear filter",
+    "newTag": "New tag",
+    "editTag": "Edit tag",
+    "tagLabel": "Label",
+    "tagLabelPlaceholder": "e.g. VIP, Lead, Customer",
+    "tagColor": "Color",
+    "tagSaved": "Tag saved",
+    "tagDeleted": "Tag deleted",
+    "tagDeleteTitle": "Delete tag?",
+    "tagDeleteDesc": "This will remove the tag. Contacts will no longer show it.",
+    "tagLabelRequired": "Tag label is required",
+    "noTags": "No tags yet",
+    "addTag": "Add tag",
+    "selectTags": "Select tags",
+    "importCsv": "Import CSV",
+    "exportCsv": "Export CSV",
+    "exportEmpty": "No contacts to export",
+    "exported": "Exported {{count}} contacts",
+    "importTitle": "Import contacts from CSV",
+    "importPreview": "Preview",
+    "importConfirm": "Import {{count}} contacts",
+    "importSummary": "Imported {{imported}}, skipped {{skipped}}",
+    "importErrorNoName": "Row {{row}}: name is required",
+    "importNoRows": "No valid rows found in the file",
+    "importInvalidFile": "Could not read the CSV file",
+    "importing": "Importing…",
+    "csvHeaderHint": "Expected columns: name (required), phone, email, company, notes, tags",
+    "importStats": "{{valid}} valid · {{skipped}} skipped of {{total}} rows",
+    "importErrors": "Errors"
+  },
+  "ivrList": {
+    "title": "IVR Flows",
+    "subtitle": "Design and manage call routing flows",
+    "createNew": "Create new flow",
+    "newFlow": "New IVR flow",
+    "newFlowDesc": "Enter the flow details, then go to the editor to design it.",
+    "flowName": "Flow name",
+    "flowNamePlaceholder": "Example: Sales flow",
+    "description": "Description",
+    "descriptionPlaceholder": "Brief description of this flow",
+    "status": "Status",
+    "draft": "Draft",
+    "published": "Published",
+    "createCta": "Create",
+    "loadFailed": "Failed to load flows",
+    "empty": "No flows. Start by creating a new one.",
+    "nameRequired": "Name required",
+    "nameRequiredDesc": "Please enter a name for the flow.",
+    "created": "Flow created",
+    "createFailed": "Create failed",
+    "deleted": "Flow deleted",
+    "deleteFailed": "Delete failed",
+    "deleteTitle": "Delete flow?",
+    "deleteDesc": "\"{{name}}\" will be permanently deleted. This cannot be undone.",
+    "deleteAria": "Delete {{name}}",
+    "duplicate": "Duplicate",
+    "duplicateSuffix": "(copy)",
+    "duplicateAria": "Duplicate {{name}}",
+    "duplicated": "Flow duplicated",
+    "duplicateFailed": "Failed to duplicate flow",
+    "noDescription": "No description",
+    "lastEdited": "Last edited {{when}}",
+    "tabs": {
+      "flows": "Flows",
+      "voiceLibrary": "Voice Library"
+    }
+  },
+  "voiceLibrary": {
+    "addVoice": "Add voice",
+    "newVoice": "New voice",
+    "newVoiceDesc": "Add a voice asset to reuse in IVR flows.",
+    "name": "Name",
+    "source": "Source",
+    "tts": "Text to speech",
+    "upload": "Upload audio",
+    "url": "URL",
+    "text": "Text",
+    "file": "Audio file",
+    "link": "URL",
+    "language": "Language",
+    "voice": "Voice",
+    "voiceFemale": "Female",
+    "voiceMale": "Male",
+    "interruptible": "Interruptible",
+    "addCta": "Add",
+    "editVoice": "Edit voice",
+    "editVoiceDesc": "Update the voice details and audio source.",
+    "editAria": "Edit {{name}}",
+    "currentFile": "Current file",
+    "updated": "Voice updated",
+    "updateFailed": "Failed to update voice",
+    "added": "Voice added",
+    "addFailed": "Failed to add voice",
+    "deleted": "Voice deleted",
+    "deleteFailed": "Failed to delete voice",
+    "deleteTitle": "Delete voice?",
+    "deleteDesc": "\"{{name}}\" will be permanently deleted. This cannot be undone.",
+    "loadFailed": "Failed to load voice library",
+    "empty": "No voices yet. Add one to get started.",
+    "searchPlaceholder": "Search voices...",
+    "nameRequired": "Name required",
+    "fileRequired": "Please choose an audio file",
+    "play": "Play",
+    "pause": "Pause",
+    "playFailed": "Playback failed",
+    "previewUnavailable": "Preview unavailable for TTS",
+    "columns": {
+      "name": "Name",
+      "source": "Source",
+      "content": "Content",
+      "language": "Language",
+      "voice": "Voice",
+      "interruptible": "Interruptible",
+      "actions": "Actions"
+    }
+  },
+  "ivrEditor": {
+    "loading": "Loading flow...",
+    "notFound": "Flow not found",
+    "loadFailed": "Failed to load flow",
+    "noId": "Cannot save: flow ID is unavailable",
+    "saved": "Flow saved",
+    "saveFailed": "Save failed",
+    "deployed": "Flow deployed",
+    "deployFailed": "Deploy failed",
+    "exported": "Flow exported",
+    "imported": "Flow imported",
+    "importFailed": "Import failed",
+    "deleteConfirm": "Delete the flow and start a new one?",
+    "topbar": {
+      "more": "More",
+      "rename": "Rename",
+      "exportJson": "Export JSON",
+      "importJson": "Import JSON",
+      "resetAll": "Delete & reset",
+      "saveBtn": "Save",
+      "deployBtn": "Deploy",
+      "exportDialplan": "Export dialplan",
+      "exportAra": "Export ARA SQL (MySQL)",
+      "exportPjsip": "Export pjsip.conf",
+      "dialplanBtn": "Dialplan",
+      "exportAsterisk": "Export Asterisk",
+      "exportFreeswitch": "Export FreeSWITCH",
+      "assignNumber": "Bind number",
+      "assignedNumber": "Number: {{n}}",
+      "validateBtn": "Validate"
+    },
+    "validate": {
+      "title": "Flow validation",
+      "allGood": "No issues found",
+      "errorsCount": "{{count}} error(s)",
+      "warningsCount": "{{count}} warning(s)",
+      "noStart": "Missing Call Start node",
+      "multipleStarts": "Multiple Call Start nodes",
+      "unreachable": "Unreachable from Call Start",
+      "disconnectedInput": "Input handle is not connected",
+      "disconnectedOutput": "Output \"{{handle}}\" is not connected",
+      "invalidExtension": "Assigned extension is invalid",
+      "fixToDeploy": "Resolve errors before deploying"
+    },
+    "status": {
+      "published": "Published",
+      "draft": "Draft"
+    },
+    "palette": {
+      "title": "Steps",
+      "show": "Show",
+      "hide": "Hide",
+      "new": "New",
+      "basic": "Basic Steps",
+      "advanced": "Advanced Steps"
+    },
+    "canvas": {
+      "zoomIn": "Zoom in",
+      "zoomOut": "Zoom out",
+      "fitView": "Fit view",
+      "lock": "Lock",
+      "minimap": "Minimap",
+      "undo": "Undo",
+      "redo": "Redo",
+      "duplicateBlocked": "This node cannot be added more than once",
+      "fullscreen": "Fullscreen",
+      "fullscreenExit": "Exit fullscreen",
+      "fullscreenUnavailable": "Fullscreen not available",
+      "alreadyConnected": "This option is already connected"
+    },
+    "node": {
+      "settings": "Settings",
+      "duplicate": "Duplicate",
+      "delete": "Delete",
+      "new": "New",
+      "connectedSuffix": "(connected)"
+    },
+    "dialplan": {
+      "title": "Generated dialplan",
+      "copy": "Copy",
+      "copied": "Dialplan copied",
+      "copyFailed": "Copy failed",
+      "empty": "(no output)",
+      "invalid": "Cannot generate dialplan — fix the following:"
+    },
+    "edge": {
+      "delete": "Delete"
+    },
+    "config": {
+      "close": "Close",
+      "saved": "Saved",
+      "viewDialplan": "View dialplan",
+      "viewFsDialplan": "FreeSWITCH Dialplan"
+    },
+    "serialization": {
+      "noFile": "No file selected",
+      "invalidJson": "Invalid JSON file",
+      "readFailed": "Failed to read file"
+    },
+    "store": {
+      "newFlow": "New flow",
+      "importedFlow": "Imported flow"
+    },
+    "dialplanFailed": "Export failed: {{details}}",
+    "dialplanSuccess": "extensions.conf exported",
+    "araFailed": "ARA SQL export failed: {{details}}",
+    "araSuccess": "ARA SQL file exported",
+    "araPreview": {
+      "title": "ARA SQL preview",
+      "description": "Review the generated CREATE TABLE and INSERT statements before downloading.",
+      "lines": "{{n}} lines",
+      "size": "{{n}} bytes",
+      "copy": "Copy SQL",
+      "download": "Download .sql"
+    },
+    "pjsipFailed": "pjsip.conf export failed: {{details}}",
+    "pjsipSuccess": "pjsip.conf exported",
+    "tenantMissingTitle": "Cannot export: no tenant found",
+    "tenantMissingDesc": "Your session does not include a tenant id. Sign out and sign back in, then retry the export.",
+    "tenantInvalidTitle": "Cannot export: invalid tenant id",
+    "tenantInvalidDesc": "The tenant id in your session is too short or contains invalid characters. Section names like [name-<tenantId>] cannot be generated. Sign out and sign back in, or contact support.",
+    "pjsipPreview": {
+      "title": "pjsip.conf preview",
+      "description": "Review the generated PJSIP transports and endpoint sections before downloading. Replace <CHANGE_ME> with a real password.",
+      "lines": "{{n}} lines",
+      "size": "{{n}} bytes",
+      "copy": "Copy config",
+      "download": "Download .conf"
+    },
+    "exportPreview": {
+      "title": "Export Asterisk configuration",
+      "description": "Review pjsip.conf, pjsip MySQL, extensions.conf, ARA SQL, queues.conf, and queues MySQL before downloading. The contexts in pjsip.conf are reused as landing contexts in extensions.conf, and queues.conf / queues MySQL contain the call-group definitions used by the dialplan.",
+      "tabs": {
+        "pjsip": "pjsip.conf",
+        "pjsipSql": "pjsip MySQL",
+        "extensions": "extensions.conf",
+        "ara": "ARA SQL",
+        "extensionsAra": "extensions.conf.ara",
+        "queues": "queues.conf",
+        "queuesSql": "queues MySQL"
+      },
+      "lines": "{{n}} lines",
+      "size": "{{n}} bytes",
+      "copy": "Copy",
+      "download": "Download",
+      "pushToBackend": "Push to backend",
+      "pushed": "Sent to backend",
+      "pushFailed": "Failed to send: {{details}}",
+      "pjsip": {
+        "authPasswordLabel": "SIP auth password",
+        "authPasswordPlaceholder": "Leave blank to keep <CHANGE_ME>",
+        "identifyMatchLabel": "Trunk match (IP / host)",
+        "identifyMatchPlaceholder": "Leave blank to keep <CHANGE_ME_TRUNK_IP>"
+      }
+    },
+    "fsExportPreview": {
+      "title": "Export FreeSWITCH configuration",
+      "description": "Review dialplan XML, MongoDB dialplan documents, Sofia profile, mod_callcenter queues and their SQL push scripts before downloading.",
+      "tabs": {
+        "dialplan": "dialplan.xml",
+        "dialplanDocs": "Dialplan documents",
+        "sofiaUsers": "Sofia Users",
+        "sofiaGateways": "Sofia Gateways",
+        "callcenter": "callcenter.xml",
+        "callcenterSql": "callcenter SQL"
+      }
+    },
+    "fsDialplanSuccess": "FreeSWITCH dialplan downloaded",
+    "fsDialplanFailed": "FreeSWITCH dialplan export failed: {{details}}",
+    "fsSofiaSuccess": "Sofia profile downloaded",
+    "fsSofiaFailed": "Sofia export failed: {{details}}",
+    "fsCallcenterSuccess": "Callcenter queues downloaded",
+    "fsCallcenterFailed": "Callcenter export failed: {{details}}",
+    "assignNumber": {
+      "title": "Bind flow to an internal number",
+      "description": "This number will be used as the extension in the Asterisk extensions.conf file.",
+      "label": "Internal number / extension",
+      "loading": "Loading numbers...",
+      "empty": "No registered numbers. Please add them under Account Settings > Numbers.",
+      "placeholder": "Choose a registered number",
+      "notRegistered": "The current number ({{n}}) is not registered. Pick one from the list.",
+      "removeBinding": "Remove binding",
+      "bindingRemoved": "Binding removed",
+      "bindingSaved": "Flow bound to number {{n}}"
+    }
+  },
+  "nodes": {
+    "call_start": {
+      "label": "Call Start",
+      "subtitle": "Entry point",
+      "description": "Entry point for every incoming call"
+    },
+    "working_hours": {
+      "label": "Working Hours",
+      "subtitle": "Schedule check",
+      "description": "Route calls based on business hours",
+      "defaultName": "Working hours",
+      "during": "During business hours",
+      "outside": "Outside business hours"
+    },
+    "ivr_menu": {
+      "label": "Options",
+      "subtitle": "Interactive voice options",
+      "description": "Show options for the caller to choose a digit",
+      "noInput": "No input",
+      "invalidInput": "Invalid input",
+      "option": "Option",
+      "errors": {
+        "libraryRequired": "Voice library selection is required",
+        "audioRequired": "Audio file required",
+        "voiceRequired": "Voice is required",
+        "optionsRequired": "Add at least one option"
+      }
+    },
+    "sound_file": {
+      "label": "Sound File",
+      "subtitle": "Play audio",
+      "description": "Play an audio file or text-to-speech",
+      "errors": {
+        "loopCountRange": "Loop count must be an integer between 1 and 100"
+      }
+    },
+    "call_forwarding": {
+      "label": "Call Forwarding",
+      "subtitle": "Forward to another destination",
+      "description": "Forward the call to a number, agent, or group",
+      "answered": "Answered",
+      "noAnswer": "No answer"
+    },
+    "ai_agent": {
+      "label": "AI Agent",
+      "subtitle": "AI conversation",
+      "description": "Smart voice agent that talks with the caller",
+      "defaultName": "AI Agent",
+      "answered": "Answered",
+      "noAnswer": "No answer"
+    },
+    "messages": {
+      "label": "Messages",
+      "subtitle": "SMS / WhatsApp",
+      "description": "Send a text or WhatsApp message to the caller"
+    },
+    "rule_routing": {
+      "label": "Rule Routing",
+      "subtitle": "Conditional rules",
+      "description": "Route the call based on specified conditions",
+      "rule": "Rule {{n}}",
+      "default": "Default"
+    },
+    "set_flags": {
+      "label": "Set Flags",
+      "subtitle": "Set variables",
+      "description": "Store values to use later in the flow"
+    },
+    "voicemail": {
+      "label": "Voicemail",
+      "subtitle": "Record a message",
+      "description": "Ask the caller to leave a voice message",
+      "defaultText": "Please leave your message after the tone"
+    },
+    "webhook": {
+      "label": "Webhooks API",
+      "subtitle": "External call",
+      "description": "Send an HTTP request to an external service",
+      "success": "Success",
+      "failure": "Failure"
+    },
+    "survey": {
+      "label": "Survey",
+      "subtitle": "Run a survey",
+      "description": "Run a predefined survey and send results to webhook",
+      "completed": "Completed",
+      "abandoned": "Abandoned",
+      "failed": "Failed",
+      "noSurveySelected": "No survey selected",
+      "questionsCount": "{{count}} questions",
+      "deletedShort": "Deleted",
+      "staleShort": "Updated",
+      "errors": {
+        "required": "Select a survey before deploying",
+        "notPublished": "Selected survey is not published",
+        "deleted": "Selected survey was deleted",
+        "invalidOverrideUrl": "Override webhook URL is invalid",
+        "missingFlowVariable": "A mapped variable is not provided by an upstream node"
+      }
+    },
+    "user_input": {
+      "label": "User Input",
+      "subtitle": "Collect input from caller",
+      "description": "Prompt the caller and save DTMF or speech into a variable",
+      "collected": "Collected",
+      "noInput": "No input",
+      "invalidInput": "Invalid input",
+      "errors": {
+        "invalidVariable": "Variable name must start with a letter or underscore and contain only letters, digits, and underscores",
+        "voiceRequired": "Voice prompt is required",
+        "invalidPattern": "Validation pattern is not a valid regular expression"
+      }
+    },
+    "end_call": {
+      "label": "End Call",
+      "subtitle": "End and close",
+      "description": "End the call (terminal node)"
+    }
+  },
+  "forms": {
+    "sections": {
+      "configuration": "Configuration",
+      "schedule": "Schedule",
+      "soundFiles": "Sound Files",
+      "options": "Menu Options",
+      "playback": "Playback",
+      "advanced": "Advanced",
+      "target": "Forward Target",
+      "ringQueue": "Ring & Queue",
+      "callerId": "Caller ID",
+      "pipeline": "Pipeline",
+      "behavior": "Behavior",
+      "recipient": "Recipient",
+      "messageBody": "Message Body",
+      "rules": "Rules",
+      "tags": "Flags",
+      "delivery": "Delivery & Notifications",
+      "request": "Request",
+      "headersBody": "Headers & Body",
+      "response": "Response"
+    },
+    "common": {
+      "name": "Name",
+      "key": "Key",
+      "value": "Value",
+      "addRow": "Add",
+      "addOption": "Add option",
+      "addRule": "Add rule",
+      "addHoliday": "Add holiday",
+      "addHeader": "Add header",
+      "label": "Label",
+      "language": "Language",
+      "voice": "Voice",
+      "tagPlaceholder": "Type and press Enter",
+      "digit": "Digit",
+      "menuOption": "e.g.: Sales",
+      "static": "Static",
+      "dynamic": "Dynamic",
+      "ruleN": "Rule {{n}}",
+      "outputLabel": "Output label",
+      "valuePlaceholder": "Value"
+    },
+    "days": {
+      "Sun": "Sunday",
+      "Mon": "Monday",
+      "Tue": "Tuesday",
+      "Wed": "Wednesday",
+      "Thu": "Thursday",
+      "Fri": "Friday",
+      "Sat": "Saturday"
+    },
+    "fields": {
+      "caller_number": "Caller number",
+      "caller_name": "Caller name",
+      "country_code": "Country code",
+      "call_count": "Call count",
+      "time_of_day": "Time",
+      "day_of_week": "Day",
+      "ivr_selection": "Options selection",
+      "custom_field": "Custom field"
+    },
+    "ops": {
+      "equals": "equals",
+      "not_equals": "not equals",
+      "starts_with": "starts with",
+      "ends_with": "ends with",
+      "contains": "contains",
+      "gt": "greater than",
+      "lt": "less than",
+      "empty": "empty",
+      "not_empty": "not empty"
+    },
+    "callStart": {
+      "welcome": "Welcome message",
+      "welcomePh": "Welcome...",
+      "record": "Record call",
+      "maxDuration": "Max duration (min)"
+    },
+    "workingHours": {
+      "scheduleName": "Schedule name",
+      "timezone": "Timezone",
+      "weeklySchedule": "Weekly schedule",
+      "holidays": "Holidays",
+      "offHoursMessage": "Off-hours message",
+      "holidayLabel": "Label"
+    },
+    "ivrMenu": {
+      "menuName": "Options name",
+      "promptType": "Prompt type",
+      "library": "From Voice Library",
+      "audio": "Audio file",
+      "selectVoice": "Select a voice",
+      "noVoices": "No voices yet. Add one in Voice Library.",
+      "audioFile": "Audio file",
+      "voiceFemale": "Female",
+      "voiceMale": "Male",
+      "options": "Options",
+      "timeout": "Timeout (seconds)",
+      "maxRetries": "Max retries",
+      "onInvalid": "On invalid input",
+      "repeat": "Repeat options",
+      "hangup": "End call"
+    },
+    "userInput": {
+      "variableName": "Variable name",
+      "variableHint": "Identifier used to store the captured value",
+      "inputSection": "Input",
+      "inputType": "Input type",
+      "dtmf": "DTMF (keypad)",
+      "speech": "Speech",
+      "both": "Both",
+      "minDigits": "Min digits",
+      "maxDigits": "Max digits",
+      "terminator": "Terminator key",
+      "none": "None",
+      "interDigitTimeout": "Inter-digit timeout (s)",
+      "speechMaxDuration": "Max speech duration (s)",
+      "validationSection": "Validation",
+      "pattern": "Regex pattern",
+      "patternHint": "Optional. Captured value must match this pattern",
+      "errorMessage": "Error message",
+      "continue": "Continue to next node"
+    },
+    "soundFile": {
+      "source": "Audio source",
+      "upload": "Upload file",
+      "tts": "Text-to-speech",
+      "url": "External link",
+      "library": "Voice library",
+      "librarySelect": "Select voice",
+      "libraryEmpty": "No voices in library",
+      "file": "File",
+      "text": "Text",
+      "link": "URL",
+      "interruptible": "Interruptible",
+      "loop": "Loop",
+      "loopCount": "Loop count"
+    },
+    "callForwarding": {
+      "forwardTo": "Forward to",
+      "phone": "Phone number",
+      "sip": "SIP address",
+      "agentT": "Agent",
+      "groupT": "Group",
+      "queueT": "Queue",
+      "queue": "Queue",
+      "number": "Number",
+      "sipAddr": "SIP address",
+      "agentSelect": "Choose agent",
+      "noAgents": "No agents found",
+      "noExtension": "No extension",
+      "groupSelect": "Choose group",
+      "queueSelect": "Choose queue",
+      "noQueues": "No queues found",
+      "queueManagedHint": "Ring strategy, timeout, and music are configured in the selected queue.",
+      "ringStrategy": "Ring strategy",
+      "simultaneous": "Simultaneous",
+      "round_robin": "Round-robin",
+      "random": "Random",
+      "ringall": "Ring all",
+      "leastrecent": "Least recent",
+      "fewestcalls": "Fewest calls",
+      "rrmemory": "Round robin (memory)",
+      "rrordered": "Round robin (ordered)",
+      "linear": "Linear",
+      "wrandom": "Weighted random",
+      "ringTimeout": "Ring timeout (seconds)",
+      "dialTimeout": "Dial timeout (seconds)",
+      "strategyManagedInGroup": "Managed in the queue",
+      "callerId": "Displayed caller ID",
+      "original": "Original caller",
+      "company": "Company number",
+      "custom": "Custom",
+      "customNumber": "Custom number",
+      "whisper": "Whisper message (optional)",
+      "record": "Record call",
+      "waitingMusic": "Waiting music",
+      "ringTone": "Custom ringing tone",
+      "audioSourceLibrary": "Voice library",
+      "audioSourceUpload": "Upload",
+      "audioLibrarySelect": "Choose audio",
+      "audioNone": "None",
+      "groups": {
+        "sales": "Sales",
+        "support": "Support"
+      },
+      "sharedGroupQueueHint": "Uses the queue's shared queue. All published flows referencing this queue share one queue block.",
+      "clonedGroupQueueHint": "On publish, a new queue is created from this queue with the strategy below. The queue's shared queue is not affected.",
+      "adhocQueueHint": "On publish, a dedicated queue is created for this node."
+    },
+    "aiAgent": {
+      "general": "General",
+      "advanced": "Advanced",
+      "agentName": "Agent name",
+      "pipelineLabel": "Active pipeline",
+      "pipelinePlaceholder": "Select a pipeline",
+      "pipelineEmpty": "No active pipelines available",
+      "pipelineLoading": "Loading pipelines...",
+      "voiceDefault": "Default",
+      "warmFemale": "Warm female",
+      "formalMale": "Formal male",
+      "maxDuration": "Max conversation duration (min)",
+      "handoffKeywords": "Handoff keywords",
+      "fallback": "Fallback behavior",
+      "fallbackHandoff": "Handoff to agent",
+      "fallbackVoicemail": "Voicemail",
+      "fallbackEnd": "End",
+      "logConversations": "Log conversations"
+    },
+    "messages": {
+      "channel": "Channel",
+      "template": "Template",
+      "templateSelect": "Choose template",
+      "tplWelcome": "Welcome",
+      "tplConfirmation": "Confirmation",
+      "tplReminder": "Reminder",
+      "body": "Message body",
+      "bodyHint": "Available variables: {{caller_number}}, {{caller_name}}, {{date}}, {{time}}",
+      "chars": "{{n}} chars",
+      "recipient": "Recipient",
+      "caller": "Caller",
+      "customNumber": "Custom number",
+      "timing": "Send timing",
+      "immediate": "Immediate",
+      "after": "After call",
+      "delayed": "Delayed",
+      "delayDuration": "Delay duration",
+      "attachment": "Attachment"
+    },
+    "ruleRouting": {
+      "rules": "Rules",
+      "rulesHint": "Rule order matters — they're applied top-down, and the first matching rule wins."
+    },
+    "setFlags": {
+      "flags": "Flags",
+      "overwrite": "Overwrite existing values"
+    },
+    "voicemail": {
+      "greetingType": "Greeting type",
+      "upload": "Upload file",
+      "tts": "Text-to-speech",
+      "file": "File",
+      "text": "Text",
+      "maxDuration": "Max recording duration (seconds)",
+      "beep": "Tone before recording",
+      "transcription": "Transcribe",
+      "emailNotify": "Email notification",
+      "smsNotify": "SMS notification",
+      "webhookNotify": "Webhook notification",
+      "storage": "Retention",
+      "days30": "30 days",
+      "days60": "60 days",
+      "days90": "90 days",
+      "year": "1 year",
+      "forever": "Forever",
+      "library": "Voice library",
+      "librarySelect": "Select voice",
+      "libraryEmpty": "No voices in library",
+      "greeting": "Greeting (voice library)",
+      "owner": "Assign to queue",
+      "queueSelect": "Choose queue",
+      "noQueues": "No queues found",
+      "queueHint": "Voicemails left here appear in the inboxes of this queue's agents. Leave empty to inherit the queue that overflowed into this node, otherwise it falls back to the flow (no agent audience)."
+    },
+    "webhook": {
+      "request": "Request",
+      "response": "Response",
+      "method": "Method",
+      "url": "URL",
+      "headers": "Headers",
+      "body": "Request body",
+      "bodyHint": "Enter JSON — you can use variables like {{caller_number}}",
+      "timeout": "Timeout (seconds)",
+      "retry": "Retry",
+      "retryCount": "Retry count",
+      "saveVar": "Save response to variable",
+      "successCondition": "Success condition",
+      "successHint": "Example: 200-299",
+      "test": "Send test request",
+      "testing": "Sending...",
+      "testError": "Error: {{msg}}",
+      "connectFailed": "Connection failed"
+    },
+    "endCall": {
+      "endMessage": "End message",
+      "none": "None",
+      "tts": "Text-to-speech",
+      "audio": "Audio file",
+      "text": "Text",
+      "file": "File",
+      "hangupDelay": "Hangup delay (seconds)",
+      "smsAfter": "Send SMS after call",
+      "smsBodyPh": "Message body...",
+      "webhookEnable": "Enable Webhook"
+    }
+  },
+  "account": {
+    "title": "Account",
+    "subtitle": "Manage your profile, preferences, and security.",
+    "saved": "Saved",
+    "tabs": {
+      "profile": "Profile",
+      "preferences": "Preferences",
+      "security": "Security",
+      "status": "Status"
+    },
+    "profile": {
+      "title": "Profile",
+      "desc": "Update your personal information.",
+      "firstName": "First name",
+      "lastName": "Last name",
+      "displayName": "Display name",
+      "email": "Email",
+      "emailHint": "Contact an admin to change your email.",
+      "extension": "Extension"
+    },
+    "preferences": {
+      "title": "Preferences",
+      "desc": "Customize your experience.",
+      "language": "Language",
+      "timezone": "Timezone",
+      "notifications": "Browser notifications",
+      "notificationsDesc": "Get notified about incoming calls and messages.",
+      "darkMode": "Dark mode",
+      "darkModeDesc": "Switch between light and dark themes."
+    },
+    "security": {
+      "title": "Change password",
+      "desc": "Use a strong, unique password.",
+      "newPassword": "New password",
+      "confirmPassword": "Confirm password",
+      "update": "Update password",
+      "tooShort": "Password must be at least 8 characters",
+      "mismatch": "Passwords do not match",
+      "passwordUpdated": "Password updated",
+      "session": "Session"
+    },
+    "status": {
+      "title": "Status",
+      "desc": "Set your availability.",
+      "available": "Available",
+      "away": "Away",
+      "offline": "Offline"
+    }
+  },
+  "accountSettings": {
+    "menu": "Account Settings",
+    "sub": {
+      "general": "General",
+      "billing": "Billing",
+      "integrations": "Integrations",
+      "numbers": "Numbers",
+      "alerts": "Keyword Alerts",
+      "autotags": "Auto Tags"
+    },
+    "comingSoon": "This section is coming soon.",
+    "autoTagsSection": {
+      "title": "Auto Tags",
+      "description": "Create and manage AI-powered auto tags to classify calls. Auto tags categorize calls automatically based on their content.",
+      "learnMore": "Learn more",
+      "create": "Create auto tag",
+      "showInactive": "Show inactive",
+      "hideInactive": "Hide inactive",
+      "edit": "Edit",
+      "empty": "No auto tags yet.",
+      "limitReached": "Active auto tags limit reached (50).",
+      "titleRequired": "Title is required.",
+      "createTitle": "Create auto tag",
+      "editTitle": "Edit auto tag",
+      "fieldTitle": "Title",
+      "fieldDescription": "Description",
+      "fieldPrompt": "AI instructions",
+      "promptPlaceholder": "Describe when this tag should be applied to a call...",
+      "fieldColor": "Color",
+      "fieldLinkedTag": "Linked tag",
+      "noLinkedTag": "No link",
+      "fieldActive": "Active",
+      "activeHelp": "When on, this tag will be applied automatically to matching calls.",
+      "col": {
+        "title": "Title",
+        "description": "Description",
+        "status": "Status"
+      }
+    },
+    "integrations": {
+      "title": "Explore Integrations",
+      "subtitle": "Get the most out of Maqsam by connecting it with your favorite apps.",
+      "connect": "Connect",
+      "comingSoon": "Coming soon",
+      "items": {
+        "hubspot": {
+          "desc": "Maqsam's integration with HubSpot allows you to sync and log call information seamlessly, helping your team work efficiently and access customer details instantly."
+        },
+        "zendesk": {
+          "desc": "Maqsam's Zendesk integration lets you log and sync all your call details, helping your team work efficiently and reach customer information easily."
+        },
+        "zoho": {
+          "desc": "Maqsam's Zoho CRM integration documents calls as activities, syncs recordings, and enables click-to-call for smooth direct dialing."
+        },
+        "salesloft": {
+          "desc": "Maqsam's Salesloft integration documents call details, adds recordings, creates activities, and enables click-to-call for a seamless customer experience."
+        },
+        "pipedrive": {
+          "desc": "Maqsam's Pipedrive integration logs your calls into your Pipedrive database, helping you track the sales pipeline and close deals effectively."
+        },
+        "intercom": {
+          "desc": "Connect Maqsam with Intercom to simplify customer communication, document calls, and manage conversations easily."
+        },
+        "salesforce": {
+          "desc": "Maqsam's Salesforce integration documents call details, adds recordings, creates activities, and enables instant click-to-call dialing."
+        },
+        "freshdesk": {
+          "desc": "Maqsam integrates seamlessly with Freshdesk, automatically creating a ticket for every call with all the customer call details included."
+        }
+      }
+    },
+    "orgName": "Organization name",
+    "orgNameHelp": "Use only lowercase letters, numbers, or dashes. Must be at least 5 characters long.",
+    "orgNameNote": "Once saved, your organization name cannot be changed.",
+    "serviceLevel": "Service level wait time",
+    "dialerUrl": "Dialer pop-up URL",
+    "urlPlaceholder": "https://example.com/popup",
+    "paramName": "Parameter name",
+    "numberFormat": "Number format",
+    "fmtIntlNoPrefix": "Intl. without prefix (e.g. 9665XXXXXXXXX)",
+    "fmtIntlPrefix": "Intl. with prefix (e.g. +9665XXXXXXXXX)",
+    "fmtLocal": "Local (e.g. 05XXXXXXXX)",
+    "awayStatuses": "Custom away statuses",
+    "domainList": "Domain list",
+    "domainTooltip": "Comma-separated list of allowed domains.",
+    "callTags": "Call tags",
+    "callTagsDesc": "You can choose to add tags one by one, or upload them in bulk via a csv file.",
+    "addTagPh": "Add tag...",
+    "uploadTags": "Upload tags",
+    "manageInactive": "Manage Inactive Tags",
+    "autoTagging": "Auto tagging enabled",
+    "outboundCountries": "Outbound countries",
+    "configureCountries": "Configure Countries",
+    "defaultCountry": "Default country in dialer",
+    "otherSettings": "Other settings",
+    "showInbound": "Show inbound calls input in the dialer",
+    "allowTransferAway": "Allow call transfer to away agents",
+    "allowReject": "Allow agents to reject calls",
+    "autoAssign": "Auto assign conversations",
+    "timeoutSettings": "Timeout settings",
+    "acwIn": "ACW inbound timeout",
+    "acwOut": "ACW outbound timeout",
+    "autoAnswer": "Calls auto answer",
+    "seconds": "seconds",
+    "internalTimeout": "Internal calls timeout (seconds)",
+    "outboundRingLimit": "Set limit to outbound ringing timeout",
+    "limitIvr": "Limit time spent on IVR",
+    "ivrTimeoutTitle": "IVR timeout after (minutes)",
+    "apologyAudio": "Apology audio message",
+    "holdAudio": "Hold audio message",
+    "noFile": "No file selected",
+    "update": "Update",
+    "updated": "Settings updated",
+    "numbersTable": {
+      "title": "Registered Numbers",
+      "description": "All phone numbers registered for your organization.",
+      "number": "Number",
+      "policy": "Policy",
+      "empty": "No numbers registered."
+    },
+    "userSettingsGroup": "User Settings",
+    "accountSettingsGroup": "Account Settings",
+    "userSub": {
+      "general": "General",
+      "changePassword": "Change Password"
+    },
+    "sub2": {
+      "userRoles": "User Roles"
+    },
+    "billing": {
+      "title": "General",
+      "subnav": {
+        "general": "General",
+        "balance": "Balance Info",
+        "invoices": "Invoices & Payments",
+        "statement": "Account Statement"
+      },
+      "invoiceName": "Invoice Name",
+      "invoiceNameTip": "Organization name as it will appear on invoices.",
+      "billingAddress": "Billing Address",
+      "country": "Country",
+      "contactBanner": "To update any of this information, please contact our team at ",
+      "vatNumber": "VAT Number",
+      "registrationNumber": "Registration Number",
+      "billingEmails": "Email addresses for invoices & payments",
+      "billingEmailsTip": "Enter comma-separated email addresses.",
+      "billingEmailsNotePre": "To send usage alerts to these addresses, enable \"Usage limit alerts\" and set a limit on the ",
+      "billingEmailsNoteLink": "Balance Info",
+      "billingEmailsNotePost": " page.",
+      "sendInvoicesToggle": "Send invoices and financial alerts to users with account settings permission",
+      "notifyAgentChangesToggle": "Receive email when an agent is added or removed",
+      "paymentMethods": "Payment Methods",
+      "addPaymentMethod": "Add Payment Method",
+      "noPaymentMethods": "No payment methods added yet.",
+      "validationRequired": "Please fill in required fields",
+      "invoicesTable": {
+        "title": "Invoices & Payments",
+        "description": "All invoices and their payment status.",
+        "number": "Invoice Number",
+        "issueDate": "Issue Date",
+        "dueDate": "Due Date",
+        "amount": "Amount",
+        "status": "Status",
+        "paidAt": "Paid At",
+        "actions": "Actions",
+        "download": "Download PDF",
+        "noPdf": "No file",
+        "empty": "No invoices found.",
+        "statuses": {
+          "paid": "Paid",
+          "unpaid": "Unpaid",
+          "overdue": "Overdue",
+          "refunded": "Refunded"
+        }
+      },
+      "statementTable": {
+        "from": "From:",
+        "to": "To:",
+        "download": "Download Statement",
+        "date": "DATE",
+        "activity": "ACTIVITY",
+        "invoices": "INVOICES",
+        "payments": "PAYMENTS",
+        "balance": "BALANCE",
+        "endOfPeriodBalance": "End of Period Balance:",
+        "paymentByCard": "Payment by credit card",
+        "invoiceLabel": "Invoice",
+        "empty": "No statement activity for this period.",
+        "comingSoon": "Statement download coming soon."
+      },
+      "balance": {
+        "title": "Balance Details",
+        "uninvoiced": "Uninvoiced Amount",
+        "uninvoicedTip": "Amount accrued but not yet invoiced.",
+        "available": "Available balance",
+        "lastUpdated": "Last updated at:",
+        "payNow": "Pay Now",
+        "rechargeTo": "Recharge to",
+        "rechargeToTip": "Top-up target amount.",
+        "threshold": "Automatic Recharge Threshold",
+        "thresholdTip": "Auto-recharge fires below this balance.",
+        "usageAlerts": "Usage limit alerts",
+        "usageAlertsTip": "Email when uninvoiced amount exceeds the limit.",
+        "uninvoicedLimit": "Uninvoiced amount limit",
+        "breakdown": "Unbilled amount breakdown",
+        "description": "Description",
+        "amountUsd": "Amount (USD)",
+        "agentSeats": "Agent Seats",
+        "didSubs": "DID Subscriptions",
+        "commitment": "Commitment Items",
+        "bot": "Bot Item",
+        "vat": "VAT",
+        "update": "Update",
+        "updated": "Balance settings updated",
+        "comingSoon": "Coming soon"
+      }
+    }
+  },
+  "tabs": {
+    "agents": "Agents",
+    "pipelines": "Voice Flow"
+  },
+  "actions": {
+    "new": "New",
+    "save": "Save",
+    "cancel": "Cancel",
+    "create": "Create",
+    "rename": "Rename",
+    "delete": "Delete",
+    "code": "Code",
+    "copy": "Copy",
+    "copied": "Copied",
+    "livePreview": "Live preview",
+    "session": "Session"
+  },
+  "agent": {
+    "newTitle": "New agent",
+    "namePlaceholder": "Agent name",
+    "emptyTitle": "No agents yet",
+    "emptyMessage": "Create your first agent to define a prompt, greeting, tools, and variables.",
+    "deleteConfirm": "Delete this agent?",
+    "lastUpdated": "Last updated",
+    "prompt": "System prompt",
+    "promptHint": "Instructions that shape the assistant's behavior.",
+    "greeting": "Greeting",
+    "greetingHint": "First message the assistant says to the user.",
+    "description": "Description",
+    "descriptionHint": "Optional internal description.",
+    "descriptionPlaceholder": "Short description of this agent…",
+    "tools": "Tools",
+    "toolsHint": "Function tools the agent can call.",
+    "toolsAdd": "Add tool",
+    "toolsEmpty": "No tools yet.",
+    "toolsPlaceholder": "tool_name",
+    "usedBy": "Used by",
+    "usedByEmpty": "Not used by any pipeline yet.",
+    "tabs": {
+      "prompt": "Prompt",
+      "tools": "Tools",
+      "variables": "Variables"
+    },
+    "variables": {
+      "title": "Variables",
+      "hint": "Key/value pairs available to the agent at runtime.",
+      "add": "Add variable",
+      "empty": "No variables yet.",
+      "keyPlaceholder": "key",
+      "valuePlaceholder": "value"
+    }
+  },
+  "pipeline": {
+    "newTitle": "New pipeline",
+    "namePlaceholder": "Pipeline name",
+    "extension": "Extension",
+    "extensionPlaceholder": "e.g. 234",
+    "active": "Active",
+    "emptyTitle": "No pipelines yet",
+    "emptyMessage": "Create your first pipeline to wire STT, LLM, TTS, and an agent together.",
+    "deleteConfirm": "Delete this pipeline?",
+    "audioIn": "Audio in",
+    "audioOut": "Audio out",
+    "canvasHint": "Click a node to configure its provider and parameters.",
+    "needsAgent": "Select an agent to power this pipeline.",
+    "extensionTakenUser": "Extension already assigned to a user",
+    "extensionTakenPipeline": "Extension already used by another pipeline",
+    "extensionRequired": "Extension is required",
+    "extensionChecking": "Checking...",
+    "editTitle": "Edit pipeline",
+    "edit": "Edit"
+  },
+  "node": {
+    "stt": "STT",
+    "llm": "LLM",
+    "tts": "TTS",
+    "vad": "VAD",
+    "turn": "Turn",
+    "noise": "Noise"
+  },
+  "config": {
+    "provider": "Provider",
+    "parameters": "Parameters",
+    "enabled": "Enabled",
+    "agent": "Agent",
+    "agentHint": "Pick the agent that this pipeline will run.",
+    "agentEmpty": "No agents available.",
+    "agentNone": "None selected",
+    "createAgent": "Create an agent"
+  },
+  "code": {
+    "title": "Generated code",
+    "live": "Live",
+    "livePreview": "Live preview",
+    "usingPlaceholder": "Using placeholder values for missing fields."
+  },
+  "session": {
+    "title": "Session",
+    "subtitle": "Test this pipeline in a live voice session.",
+    "info": "A new room will be created when you start the session."
+  },
+  "empty": {
+    "createFirst": "Create your first one"
+  },
+  "voiceAgent": {
+    "connecting": "Connecting to VoiceBot Studio…",
+    "authError": "Could not connect to VoiceBot Studio backend",
+    "anonHelp": {
+      "actionRequired": "Action required",
+      "title": "Enable Anonymous sign-ins in VoiceBot Studio",
+      "intro": "The Voice Agent feature signs users into the VoiceBot Studio backend anonymously so agents and pipelines can load. That provider is currently disabled in the Studio project, so the page can't connect.",
+      "stepsTitle": "How to fix it",
+      "step1": "Open the VoiceBot Studio Supabase dashboard using the button below.",
+      "step2Pre": "Go to ",
+      "step2Path": "Authentication → Providers",
+      "step2Post": ".",
+      "step3Pre": "Find ",
+      "step3Name": "Anonymous Sign-Ins",
+      "step3Mid": " and toggle it ",
+      "step3State": "On",
+      "step3Post": ".",
+      "step4Pre": "Click ",
+      "step4Name": "Save",
+      "step4Post": ".",
+      "step5": "Return here and click Retry.",
+      "openDashboard": "Open Studio Auth Providers",
+      "retry": "Retry",
+      "footnote": "Only a VoiceBot Studio project admin can change this setting."
+    }
+  },
+  "transcription": {
+    "back": "Back to call",
+    "header": {
+      "caller": "Caller",
+      "called": "Callee",
+      "direction": "Direction",
+      "dateTime": "Date/Time",
+      "duration": "Duration",
+      "sentiment": "Sentiment",
+      "agent": "Agent",
+      "callId": "Call ID"
+    },
+    "direction": {
+      "inbound": "Inbound",
+      "outbound": "Outbound"
+    },
+    "sentiment": {
+      "positive": "Positive",
+      "negative": "Negative",
+      "neutral": "Neutral"
+    },
+    "search": {
+      "placeholder": "Search in transcript..."
+    },
+    "download": "Download",
+    "generating": "Generating transcript...",
+    "empty": {
+      "noTranscript": "No transcript for this call",
+      "noResults": "No results"
+    },
+    "role": {
+      "agent": "Service rep"
+    },
+    "audio": {
+      "noRecording": "No recording"
+    },
+    "summary": {
+      "title": "Summary",
+      "empty": "No summary for this call",
+      "translating": "Translating...",
+      "copied": "Summary copied",
+      "copyFailed": "Copy failed",
+      "fbSaved": "Feedback recorded",
+      "fbFailed": "Could not save feedback",
+      "generateFailed": "Could not generate transcript",
+      "translateFailed": "Could not translate",
+      "noTextDownload": "No text to download",
+      "idCopied": "Copied"
+    },
+    "feedback": {
+      "helpful": "Helpful",
+      "notHelpful": "Not helpful"
+    },
+    "help": {
+      "center": "Help Center"
+    },
+    "lang": {
+      "ar": "العربية",
+      "en": "English"
+    }
+  },
+  "fancy": {
+    "brand": "الخوارزمي",
+    "tagline": "Conversational Intelligence",
+    "sections": {
+      "workspace": "WORKSPACE",
+      "organization": "ORGANIZATION",
+      "system": "SYSTEM"
+    },
+    "search": "Search calls, agents, tags…",
+    "cta": {
+      "phone": "Phone Center"
+    },
+    "live": "LIVE",
+    "crumb": "WORKSPACE · AI ANALYSIS",
+    "headline": "Sentiment,",
+    "headlineAccent": "understood.",
+    "subtitle": "Every conversation, every nuance — surfaced as a clear signal you can act on.",
+    "filters": {
+      "all": "All",
+      "calls": "Calls",
+      "agents": "Agents",
+      "topics": "Topics"
+    },
+    "dates": {
+      "today": "اليوم · Today",
+      "last7": "Last 7 days",
+      "last30": "Last 30 days"
+    },
+    "kpi": {
+      "avg": "AVG SENTIMENT",
+      "positive": "POSITIVE",
+      "negative": "NEGATIVE",
+      "analyzed": "ANALYZED",
+      "lastDays": "Last 7 days",
+      "vsPrev": "vs prev"
+    },
+    "trend": {
+      "title": "Sentiment Trend",
+      "weekly": "WEEKLY",
+      "monthly": "MONTHLY",
+      "ww": "W/W"
+    },
+    "distribution": {
+      "title": "Distribution",
+      "total": "TOTAL CALLS",
+      "label": "analyzed"
+    },
+    "topics": {
+      "title": "Top Topics",
+      "calls": "calls"
+    },
+    "leaderboard": {
+      "title": "Agent Leaderboard",
+      "live": "LIVE",
+      "score": "score"
+    }
+  },
+  "surveys": {
+    "title": "IVR Surveys",
+    "subtitle": "Build voice surveys that run inside your IVR flows.",
+    "createNew": "Create New Survey",
+    "searchPlaceholder": "Search surveys…",
+    "loadFailed": "Failed to load surveys.",
+    "notFound": "Survey not found.",
+    "backToSurveys": "Back to surveys",
+    "noDescription": "No description.",
+    "untitled": "Untitled Survey",
+    "newSurvey": "New Survey",
+    "filters": {
+      "allStatuses": "All Statuses",
+      "allLanguages": "All Languages",
+      "status": "Status",
+      "language": "Language"
+    },
+    "status": {
+      "draft": "Draft",
+      "published": "Published",
+      "archived": "Archived"
+    },
+    "language": {
+      "ar": "Arabic",
+      "en": "English",
+      "both": "Arabic + English"
+    },
+    "questionType": {
+      "rating": "Rating",
+      "yesNo": "Yes / No",
+      "multiple_choice": "Multiple Choice",
+      "numeric": "Numeric Input",
+      "voice": "Voice Recording",
+      "nps": "NPS (0–10)"
+    },
+    "columns": {
+      "name": "Name",
+      "description": "Description",
+      "questions": "Questions",
+      "language": "Language",
+      "status": "Status",
+      "lastModified": "Last Modified",
+      "usedIn": "Used In",
+      "caller": "Caller",
+      "date": "Date",
+      "answers": "Answers"
+    },
+    "empty": {
+      "title": "No surveys yet",
+      "desc": "Create your first voice survey to get started.",
+      "noQuestions": "No questions added yet.",
+      "noResponses": "No responses yet.",
+      "noFilterMatch": "No responses match your filters.",
+      "notUsed": "This survey is not currently referenced by any IVR flow."
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "preview": "Preview",
+      "previewSurvey": "Preview Survey",
+      "duplicate": "Duplicate",
+      "publish": "Publish",
+      "unpublish": "Unpublish",
+      "enable": "Enable",
+      "disable": "Disable",
+      "results": "Results",
+      "save": "Save",
+      "viewAllResults": "View all results",
+      "exportCsv": "Export CSV"
+    },
+    "toasts": {
+      "duplicated": "Survey duplicated",
+      "saved": "Survey saved",
+      "published": "Survey published",
+      "unpublished": "Survey unpublished",
+      "enabled": "Survey enabled",
+      "disabled": "Survey disabled",
+      "addQuestionFirst": "Add at least one question first",
+      "saveFailed": "Save failed",
+      "soundUploaded": "Sound uploaded",
+      "uploadFailed": "Upload failed",
+      "uploadFailedDesc": "Could not upload file"
+    },
+    "meta": {
+      "language": "Language",
+      "maxRetries": "Max Retries",
+      "inputTimeout": "Input Timeout",
+      "abandonment": "Abandonment",
+      "lastModified": "Last Modified",
+      "webhookUrl": "Webhook URL",
+      "savePartial": "Save partial",
+      "discard": "Discard"
+    },
+    "questions": {
+      "title": "Questions",
+      "count_one": "{{count}} question",
+      "count_other": "{{count}} questions",
+      "dragHint": "Drag to reorder.",
+      "addQuestion": "Add Question",
+      "emptyTitle": "No questions yet",
+      "emptyDesc": "Add your first question to get started.",
+      "required": "Required",
+      "id": "Question ID",
+      "text": "Question Text",
+      "textPlaceholder": "What the IVR will say…",
+      "noText": "(no text)",
+      "branchingCount_one": "{{count}} branching rule",
+      "branchingCount_other": "{{count}} branching rules",
+      "expand": "Expand",
+      "collapse": "Collapse",
+      "drag": "Drag to reorder"
+    },
+    "branching": {
+      "title": "Branching Logic",
+      "addRule": "Add rule",
+      "noRules": "No rules. Survey proceeds to next question.",
+      "ifAnswer": "If answer =",
+      "then": "then",
+      "valuePlaceholder": "value",
+      "endSurvey": "End survey",
+      "goTo": "Go to {{id}} — {{text}}",
+      "untitled": "(untitled)"
+    },
+    "fields": {
+      "min": "Min",
+      "max": "Max",
+      "scaleDescription": "Scale Description",
+      "scalePlaceholder": "1 = Poor, 5 = Excellent",
+      "yesKey": "Yes Key",
+      "noKey": "No Key",
+      "choices": "Choices",
+      "addChoice": "Add choice",
+      "label": "Label",
+      "minDigits": "Min Digits",
+      "maxDigits": "Max Digits",
+      "terminator": "Terminator",
+      "maxDuration": "Max Duration (seconds)",
+      "beepBefore": "Beep before recording",
+      "npsPlaceholder": "0 = Not at all likely, 10 = Extremely likely"
+    },
+    "settings": {
+      "title": "Survey Settings",
+      "subtitle": "Define how this survey behaves on calls.",
+      "surveyName": "Survey Name *",
+      "description": "Description",
+      "language": "Language",
+      "welcomeSound": "Welcome Sound",
+      "completionSound": "Completion Sound",
+      "abandonment": "Abandonment Handling",
+      "savePartial": "Save partial response",
+      "discard": "Discard",
+      "webhookUrl": "Webhook URL *",
+      "webhookUrlPh": "https://example.com/webhook",
+      "webhookSecret": "Webhook Secret",
+      "webhookSecretPh": "Optional security token",
+      "maxRetries": "Max Retries / Question",
+      "inputTimeout": "Input Timeout (s)",
+      "nameRequired": "Name is required",
+      "webhookRequired": "Webhook URL is required",
+      "webhookInvalid": "Must be a valid URL"
+    },
+    "sound": {
+      "label": "Question Sound",
+      "remove": "Remove",
+      "voiceLibrary": "Voice Library",
+      "uploadFile": "Upload File",
+      "loading": "Loading…",
+      "choose": "Choose a voice clip",
+      "emptyLibrary": "No clips in voice library"
+    },
+    "preview": {
+      "title": "Survey Preview — {{name}}",
+      "simulated": "Simulated call",
+      "noWelcome": "(no welcome sound)",
+      "noCompletion": "(no completion sound)",
+      "start": "Start Survey",
+      "restart": "Restart",
+      "questionN": "Question {{current}} of {{total}} · {{id}}",
+      "questionPlaceholder": "(question text)",
+      "yes": "Yes",
+      "no": "No",
+      "unnamed": "(unnamed)",
+      "submit": "Submit",
+      "numericPlaceholder": "Enter {{min}}-{{max}} digits, then {{terminator}}",
+      "simulateRecording": "Simulate recording",
+      "voiceLabel": "(voice recording 12s)",
+      "webhookPayload": "Webhook payload",
+      "webhookPost": "POST → {{url}}",
+      "noUrl": "(no URL configured)"
+    },
+    "results": {
+      "subtitle": "Survey results & responses",
+      "searchPlaceholder": "Search caller…",
+      "filterAll": "All Statuses",
+      "filterCompleted": "Completed",
+      "filterPartial": "Partial",
+      "total": "Total Responses",
+      "completed": "Completed",
+      "partial": "Partial",
+      "rate": "Completion Rate",
+      "last": "Last Response",
+      "recent": "Recent Responses",
+      "usedIn": "Used In",
+      "ivrFlow": "IVR Flow {{id}}"
+    },
+    "editor": {
+      "savedAt": "Saved {{time}}"
+    }
+  },
+  "campaigns": {
+    "title": "Campaigns",
+    "subtitle": "Manage outbound and inbound contact-center campaigns.",
+    "new": "New Campaign",
+    "searchPlaceholder": "Search campaigns…",
+    "statusPlaceholder": "Status",
+    "typePlaceholder": "Type",
+    "allStatuses": "All Statuses",
+    "allTypes": "All Types",
+    "from": "From",
+    "to": "To",
+    "inbound": "Inbound",
+    "outbound": "Outbound",
+    "cols": {
+      "name": "Name",
+      "type": "Type",
+      "status": "Status",
+      "start": "Start",
+      "end": "End",
+      "contacts": "Contacts",
+      "progress": "Progress"
+    },
+    "empty": {
+      "title": "No campaigns found",
+      "hint": "Try adjusting filters or create a new campaign."
+    },
+    "actions": {
+      "view": "View",
+      "edit": "Edit",
+      "pause": "Pause",
+      "resume": "Resume",
+      "launch": "Launch",
+      "delete": "Delete",
+      "exportResults": "Export Results"
+    },
+    "toasts": {
+      "paused": "Campaign paused",
+      "resumed": "Campaign resumed",
+      "launched": "Campaign launched",
+      "deleted": "Campaign deleted",
+      "updated": "Campaign updated",
+      "draftSaved": "Campaign saved as draft",
+      "exported": "Results exported",
+      "contactAdded": "Contact added",
+      "contactRemoved": "Contact removed",
+      "markedAs": "Marked as {{label}}",
+      "importedN": "Imported {{count}} contacts",
+      "addedFromDirectoryN": "Added {{count}} contacts from directory"
+    },
+    "deleteDialog": {
+      "title": "Delete campaign?",
+      "description": "This action cannot be undone. All contacts and activity for this campaign will be removed."
+    },
+    "status": {
+      "draft": "Draft",
+      "active": "Active",
+      "paused": "Paused",
+      "completed": "Completed",
+      "cancelled": "Cancelled"
+    },
+    "priority": {
+      "low": "Low",
+      "medium": "Medium",
+      "high": "High"
+    },
+    "dialingMode": {
+      "progressive": "Progressive",
+      "power": "Power",
+      "agentless": "Agentless",
+      "predictive": "Predictive",
+      "preview": "Preview",
+      "manual": "Manual"
+    },
+    "contactStatus": {
+      "pending": "Pending",
+      "called": "Called",
+      "successful": "Successful",
+      "failed": "Failed",
+      "callback": "Callback",
+      "markAs": "Mark as {{label}}"
+    },
+    "types": {
+      "outbound_sales": "Outbound Sales",
+      "collections": "Collections",
+      "survey": "Survey",
+      "appointment_reminder": "Appointment Reminder",
+      "win_back": "Win-Back",
+      "inbound_support": "Inbound Support"
+    },
+    "overflow": {
+      "voicemail": "Voicemail",
+      "transfer": "Transfer to Another Queue",
+      "busy": "Play Busy Message"
+    },
+    "received": {
+      "resolved": "Resolved",
+      "escalated": "Escalated",
+      "callback": "Callback",
+      "abandoned": "Abandoned"
+    },
+    "sources": {
+      "manual": "Manual",
+      "import": "Import",
+      "directory": "Directory"
+    },
+    "detail": {
+      "back": "Campaigns",
+      "notFound": "Campaign not found.",
+      "tiles": {
+        "totalCalls": "Total Calls Received",
+        "handled": "Handled",
+        "abandoned": "Abandoned",
+        "avgWait": "Avg. Wait Time",
+        "avgHandle": "Avg. Handle Time",
+        "fcr": "First Call Resolution",
+        "total": "Total",
+        "called": "Called",
+        "pending": "Pending",
+        "successful": "Successful",
+        "failed": "Failed",
+        "conversion": "Conversion"
+      },
+      "overallProgress": "Overall Progress",
+      "tabContacts": "Contacts ({{count}})",
+      "tabCalls": "Received Calls ({{count}})",
+      "tabActivity": "Activity Log ({{count}})",
+      "tabOverview": "Overview",
+      "contactsSearch": "Search by name or phone…",
+      "noContacts": "No contacts to show.",
+      "lastCall": "Last Call",
+      "notes": "Notes",
+      "noActivity": "No activity yet.",
+      "calls": {
+        "caller": "Caller Name",
+        "phone": "Phone Number",
+        "dateTime": "Date & Time",
+        "duration": "Duration",
+        "agent": "Agent",
+        "status": "Status",
+        "notes": "Notes",
+        "empty": "No calls received yet. Calls will appear here automatically once the campaign is active.",
+        "unknown": "Unknown"
+      }
+    },
+    "wizard": {
+      "editTitle": "Edit Campaign",
+      "newTitle": "New Campaign",
+      "steps": {
+        "info": "Campaign Info",
+        "agents": "Assigned Agents",
+        "targets": "Target List",
+        "inbound": "Inbound Settings",
+        "review": "Review & Launch"
+      },
+      "agents": {
+        "help": "{{count}} agent(s) assigned",
+        "modeAgents": "Assign Agents",
+        "modeQueue": "Select Queue",
+        "pickQueue": "Select a queue…",
+        "selectQueueTitle": "Active Queues",
+        "searchQueues": "Search queues…",
+        "noActiveQueues": "No active queues available"
+      },
+      "back": "Back",
+      "next": "Next",
+      "saveDraft": "Save as Draft",
+      "launch": "Launch Campaign",
+      "errors": {
+        "nameRequired": "Campaign name is required",
+        "queueRequired": "Queue name is required",
+        "contactsRequired": "Add at least one contact",
+        "phoneRequired": "Phone is required",
+        "mapPhone": "Map the Phone column first",
+        "unsupportedFile": "Unsupported file type",
+        "parseCsv": "Failed to parse CSV",
+        "readFile": "Failed to read file"
+      },
+      "info": {
+        "name": "Campaign Name *",
+        "namePlaceholder": "e.g. Q2 Outbound Sales",
+        "type": "Campaign Type",
+        "priority": "Priority",
+        "startDateTime": "Start Date & Time",
+        "endDateTime": "End Date & Time",
+        "pickDate": "Pick a date",
+        "agents": "Assigned Agents",
+        "selectAgents": "Select agents…",
+        "noAgents": "No agents available",
+        "description": "Description",
+        "descriptionPlaceholder": "Briefly describe the campaign goal…",
+        "script": "Call Script",
+        "scriptPlaceholder": "Hi {firstName}, this is {agent} from…",
+        "dialingMode": "Dialing Mode",
+        "powerRatio": "Power Ratio (lines per agent)"
+      },
+      "tabs": {
+        "manual": "Manual",
+        "file": "Import File",
+        "directory": "From Directory"
+      },
+      "contacts": {
+        "title": "Campaign Contacts",
+        "empty": "No contacts yet. Add some using one of the tabs above.",
+        "name": "Name",
+        "phone": "Phone",
+        "email": "Email",
+        "source": "Source"
+      },
+      "manual": {
+        "firstName": "First Name",
+        "lastName": "Last Name",
+        "phone": "Phone *",
+        "phonePlaceholder": "+966…",
+        "email": "Email",
+        "notes": "Notes",
+        "add": "Add Contact"
+      },
+      "import": {
+        "dropzone": "Drag & drop a CSV or XLSX file, or click to browse",
+        "field": {
+          "firstName": "First Name",
+          "lastName": "Last Name",
+          "phone": "Phone",
+          "email": "Email",
+          "notes": "Notes"
+        },
+        "total": "Total",
+        "valid": "Valid",
+        "invalid": "Invalid",
+        "importBtn": "Import {{count}} Contacts"
+      },
+      "directory": {
+        "open": "Open Directory",
+        "title": "Add from Directory",
+        "description": "Search and select contacts to add to this campaign.",
+        "search": "Search by name, phone, or company…",
+        "name": "Name",
+        "phone": "Phone",
+        "company": "Company",
+        "tags": "Tags",
+        "filterByTag": "Filter by tag",
+        "empty": "No contacts found",
+        "selected": "{{count}} selected",
+        "add": "Add Selected to Campaign",
+        "loading": "Loading…"
+      },
+      "inbound": {
+        "queue": "Dedicated Phone Line / Queue Name *",
+        "queuePlaceholder": "e.g. +966 11 000 0000 or support_main",
+        "volume": "Expected Call Volume (per day)",
+        "volumePlaceholder": "e.g. 150",
+        "hours": "Operating Hours",
+        "hoursTo": "to",
+        "ivr": "IVR Message",
+        "ivrPlaceholder": "Welcome to Alkhwarizmi Support. Please hold while we connect you to the next available agent…",
+        "overflow": "Overflow Action"
+      },
+      "review": {
+        "summary": "Campaign Summary",
+        "inboundTitle": "Inbound Settings",
+        "contactsTitle": "Contacts",
+        "name": "Name",
+        "type": "Type",
+        "priority": "Priority",
+        "dates": "Dates",
+        "agents": "Agents",
+        "description": "Description",
+        "script": "Script",
+        "queue": "Queue",
+        "volume": "Volume",
+        "volumePerDay": "{{count}}/day",
+        "hours": "Hours",
+        "overflow": "Overflow",
+        "ivr": "IVR Message",
+        "totalContacts": "Total contacts",
+        "targetsTitle": "Targets",
+        "targetsHint": "After launching, add targets from the campaign Targets tab."
+      }
+    },
+    "edit": {
+      "tabInfo": "Campaign Info",
+      "tabAgents": "Assigned Agents",
+      "tabTargets": "Targets",
+      "save": "Save Changes",
+      "savedToast": "Changes saved",
+      "targetsNotApplicable": "Targets are not applicable for inbound campaigns."
+    }
+  },
+  "usersMap": {
+    "title": "Users Map",
+    "subtitle": "Real-time tracking of every caller and their position in the IVR journey · auto-updating.",
+    "live": "LIVE",
+    "paused": "PAUSED",
+    "search": "Search by name or number…",
+    "view": {
+      "map": "Map",
+      "list": "List"
+    },
+    "tooltips": {
+      "togglePause": "Pause/resume live simulation",
+      "refresh": "Refresh"
+    },
+    "kpi": {
+      "activeNow": {
+        "label": "Active now",
+        "sub": "Callers currently in the system"
+      },
+      "inQueue": {
+        "label": "In queue",
+        "sub": "Waiting for an agent"
+      },
+      "longestWait": {
+        "label": "Longest wait",
+        "sub": "In the queue"
+      },
+      "avgHandle": {
+        "label": "Avg. handle time",
+        "sub": "With agents"
+      },
+      "abandoned": {
+        "label": "Abandoned today",
+        "sub": "Dropped while waiting"
+      },
+      "sla": {
+        "label": "Service level",
+        "sub": "Target {{pct}}%"
+      }
+    },
+    "rail": {
+      "title": "IVR journey · current distribution",
+      "sourceNote": "Nodes from IVR editor «{{flow}}»"
+    },
+    "state": {
+      "ivr": "In IVR",
+      "ai": "With AI agent",
+      "agent": "With agent",
+      "queue": "In queue",
+      "vm": "In voicemail",
+      "survey": "In survey"
+    },
+    "node": {
+      "start": "Call start",
+      "hours": "Business hours",
+      "menu_main": "Voice menu",
+      "queue_main": "Queue",
+      "transfer": "Transfer to agent",
+      "call_start": "Call start",
+      "working_hours": "Business hours",
+      "ivr_menu": "Voice menu",
+      "sound_file": "Play sound",
+      "user_input": "User input",
+      "messages": "Messages",
+      "rule_routing": "Rule routing",
+      "set_flags": "Set flags",
+      "webhook": "Webhook",
+      "call_forwarding": "Call forwarding",
+      "ai_agent": "AI agent",
+      "voicemail": "Voicemail",
+      "survey": "Survey",
+      "end_call": "End call"
+    },
+    "zone": {
+      "ivrSub": "Node: Main menu",
+      "aiSub": "Avg. confidence 92%",
+      "agentSub": "{{n}}/{{cap}} agents busy",
+      "queueSub": "Longest wait {{time}}",
+      "vmSub": "{{n}} new messages",
+      "surveySub": "Avg. completion 78%",
+      "empty": "No callers right now",
+      "viewAll": "+ {{n}} more · view all"
+    },
+    "chip": {
+      "queueRank": "Rank #{{n}}",
+      "intent": "Intent: {{value}}",
+      "surveyStep": "Q {{n}} of {{total}}",
+      "agentLine": "Agent: {{name}}",
+      "leavingMessage": "Leaving a message",
+      "mainMenu": "Main menu"
+    },
+    "forwardTarget": {
+      "phone": "Phone: {{value}}",
+      "sip": "SIP: {{value}}",
+      "agent": "Agent ext.: {{value}}",
+      "queue": "Queue: {{value}}"
+    },
+    "ivrChoice": {
+      "mainMenu": "Main menu",
+      "sales": "Pressed 1 · Sales",
+      "stores": "Pressed 2 · Stores",
+      "support": "Pressed 3 · Support",
+      "agent": "Pressed 0 · Agent"
+    },
+    "intent": {
+      "billing": "Billing",
+      "tech": "Tech support",
+      "inquiry": "Inquiry",
+      "sales": "Sales",
+      "complaints": "Complaints"
+    },
+    "table": {
+      "caller": "Caller",
+      "state": "State",
+      "location": "Location in journey",
+      "stateDuration": "Time in state",
+      "totalDuration": "Total call time",
+      "details": "Details",
+      "actions": "Actions",
+      "noResults": "No matching results",
+      "act": {
+        "listen": "Listen",
+        "transfer": "Transfer",
+        "hangup": "End"
+      }
+    },
+    "filter": {
+      "all": "All"
+    },
+    "drawer": {
+      "since": "since {{time}}",
+      "currentLocation": "Current location",
+      "totalTime": "Total call time",
+      "channel": "Channel",
+      "channelValue": "Voice · 966",
+      "ctx": {
+        "agent": "Assigned agent",
+        "queue": "Queue position",
+        "ai": "Detected intent",
+        "ivr": "Current choice",
+        "vm": "Status",
+        "survey": "Survey progress"
+      },
+      "journeyTitle": "Caller journey through IVR",
+      "now": "· now",
+      "actions": {
+        "listen": "Listen",
+        "whisper": "Whisper",
+        "barge": "Barge",
+        "transfer": "Transfer",
+        "hangup": "End call"
+      }
+    },
+    "tags": {
+      "vip": "VIP customer",
+      "lang": "Language: Arabic"
+    },
+    "toast": {
+      "listen": "Listening to call {{name}}",
+      "whisper": "Whispering to {{name}}",
+      "barge": "Barged into call {{name}}",
+      "transfer": "Transferred call {{name}}",
+      "hangup": "Ended call {{name}}",
+      "paused": "Live simulation paused",
+      "resumed": "Live simulation resumed",
+      "refreshed": "Data refreshed"
+    }
+  },
+  "queues": {
+    "list": {
+      "title": "Queues",
+      "subtitle": "Create and manage call queues, routing strategies, assigned skills, and eligible agents.",
+      "createButton": "Create Queue",
+      "stats": {
+        "total": "Total Queues",
+        "active": "Active Queues",
+        "assigned": "Assigned Agents",
+        "skillsBased": "Skills-Based Queues"
+      },
+      "filters": {
+        "searchPlaceholder": "Search by queue name, code, or description",
+        "allStatuses": "All Statuses",
+        "allRoutingTypes": "All Routing Types",
+        "allChannels": "All Channels",
+        "allGroups": "All Groups",
+        "reset": "Reset Filters"
+      },
+      "table": {
+        "name": "Queue Name",
+        "code": "Code",
+        "channel": "Channel",
+        "routing": "Routing",
+        "requiredSkills": "Required Skills",
+        "qualified": "Qualified",
+        "strategy": "Strategy",
+        "status": "Status",
+        "updated": "Last Updated"
+      },
+      "actions": {
+        "view": "View",
+        "edit": "Edit",
+        "duplicate": "Duplicate",
+        "enable": "Enable",
+        "disable": "Disable",
+        "previewQualified": "Preview Qualified Agents",
+        "delete": "Delete"
+      },
+      "skills": {
+        "moreSuffix": "+{{count}} more"
+      },
+      "empty": {
+        "title": "No queues created yet",
+        "body": "Create your first queue to define how customer interactions are distributed to qualified agents."
+      },
+      "deleteDialog": {
+        "title": "Delete Queue",
+        "body": "Are you sure you want to delete this queue? This action cannot be undone. Existing IVR flows that reference this queue may be affected.",
+        "confirm": "Delete Queue"
+      },
+      "previewSheet": {
+        "title": "Qualified Agents",
+        "qualifyCount": "{{count}} agents currently qualify.",
+        "extLine": "Ext {{ext}} · {{group}}"
+      },
+      "toasts": {
+        "deleted": "Queue deleted successfully.",
+        "duplicated": "Queue duplicated successfully.",
+        "enabled": "Queue enabled.",
+        "disabled": "Queue disabled."
+      }
+    },
+    "createDialog": {
+      "title": "Create Queue",
+      "description": "Set up the basics now. You can configure skills, agents, and routing in the next step.",
+      "name": "Queue Name",
+      "namePlaceholder": "Arabic Technical Support",
+      "description2": "Description",
+      "channel": "Channel",
+      "group": "Group",
+      "groupNone": "— None —",
+      "routingMode": "Routing Mode",
+      "routingDesc": {
+        "skills_based": "Match agents by skill rules.",
+        "static": "Manually selected members only.",
+        "hybrid": "Manual + skill qualification."
+      },
+      "tags": "Tags",
+      "tagsPlaceholder": "Type a tag and press Enter",
+      "removeTag": "Remove {{tag}}",
+      "saveDraft": "Save as Draft",
+      "createConfigure": "Create & Configure",
+      "errors": {
+        "nameRequired": "Queue name is required."
+      },
+      "toasts": {
+        "draft": "Queue saved as draft.",
+        "created": "Queue created successfully."
+      }
+    },
+    "editor": {
+      "headerEdit": "Edit Queue",
+      "headerCreate": "Create Queue",
+      "untitled": "Untitled",
+      "duplicate": "Duplicate",
+      "enable": "Enable",
+      "disable": "Disable",
+      "saveDraft": "Save as Draft",
+      "saveQueue": "Save Queue",
+      "draft": "Draft",
+      "save": "Save",
+      "tabs": {
+        "general": "General",
+        "skills": "Skills & Routing",
+        "agents": "Agents",
+        "settings": "Settings",
+        "overflow": "Overflow",
+        "review": "Review"
+      },
+      "discard": {
+        "title": "Discard unsaved changes?",
+        "body": "You have unsaved queue configuration changes. Leaving this page will discard them.",
+        "keep": "Continue Editing",
+        "discard": "Discard Changes"
+      },
+      "toasts": {
+        "validationErrors": "Please fix validation errors.",
+        "savedDraft": "Queue saved as draft.",
+        "updated": "Queue updated successfully.",
+        "created": "Queue created successfully.",
+        "duplicated": "Queue duplicated successfully.",
+        "toggled": "Queue updated.",
+        "allSkillsAdded": "All skills already added."
+      },
+      "general": {
+        "title": "General Information",
+        "name": "Queue Name",
+        "namePlaceholder": "Arabic Technical Support",
+        "code": "Queue Code",
+        "codePlaceholder": "TECH_AR",
+        "codeHelp": "Used internally when integrating the queue with telephony and routing systems.",
+        "description": "Description",
+        "descriptionPlaceholder": "Handles Arabic-speaking customers who require technical support.",
+        "channel": "Channel",
+        "group": "Group",
+        "groupHelp": "Administrative organization only. Does not determine queue membership.",
+        "groupNone": "— None —",
+        "status": "Status",
+        "tags": "Tags",
+        "tagsPlaceholder": "Type a tag and press Enter",
+        "removeTag": "Remove {{tag}}"
+      },
+      "skills": {
+        "modeTitle": "Routing Mode",
+        "modeDescription": "How agents are matched to interactions in this queue.",
+        "modeDesc": {
+          "skills_based": "Only agents matching the required skill rules are eligible.",
+          "static": "Only manually selected queue members are eligible.",
+          "hybrid": "Agents must be manually added AND satisfy required skill rules."
+        },
+        "staticAlertTitle": "Static Members mode",
+        "staticAlertBody": "This queue routes only to manually assigned agents. Skill requirements, qualification logic, and skill relaxation are not used. Manage assigned agents on the Agents tab.",
+        "rulesTitle": "Skills-Based Routing",
+        "rulesDescription": "Define the skills an agent must have to qualify for this queue. The system compares queue requirements with agent skill proficiency levels.",
+        "noRules": "No skill requirements yet.",
+        "skill": "Skill",
+        "minLevel": "Minimum Level — {{level}} ({{label}})",
+        "requirement": "Requirement",
+        "mandatory": "Mandatory",
+        "preferred": "Preferred",
+        "weight": "Weight: {{value}}%",
+        "remove": "Remove",
+        "addSkill": "Add Skill Requirement",
+        "weightCheckTitle": "Weight check",
+        "weightCheckBody": "Preferred skill weights currently total {{total}}%. They must total 100%.",
+        "logicTitle": "Qualification Logic",
+        "logicAll": "Match all mandatory skills",
+        "logicAllDesc": "The agent must meet every mandatory skill requirement.",
+        "logicAny": "Match any mandatory skill",
+        "logicAnyDesc": "The agent must meet at least one mandatory skill requirement.",
+        "logicAnyWarn": "Using \"Match any\" may route interactions to agents who do not have all required capabilities.",
+        "exampleTitle": "Skill Matching Example",
+        "exampleDesc": "Live preview against the current rules.",
+        "queueRequirements": "Queue Requirements",
+        "qualified": "Qualified",
+        "notQualified": "Not Qualified",
+        "strategyTitle": "Routing Strategy",
+        "tieBreaker": "Tie-Breaker",
+        "relaxTitle": "Skill Relaxation",
+        "relaxDescription": "Gradually reduce skill requirements when the customer waits.",
+        "relaxWarn": "Skill relaxation may route customers to less-qualified agents to reduce waiting time.",
+        "after": "After (seconds)",
+        "action": "Action",
+        "skillScope": "Skill Scope",
+        "reduction": "Reduction",
+        "scope": {
+          "all": "All",
+          "mandatory": "Mandatory",
+          "preferred": "Preferred"
+        },
+        "relaxAction": {
+          "reduce_minimum_level": "Reduce Minimum Skill Level",
+          "ignore_preferred": "Ignore Preferred Skills",
+          "allow_fallback": "Allow Fallback Agents",
+          "route_to_queue": "Route to Another Queue"
+        },
+        "addRelax": "Add Relaxation Rule"
+      },
+      "agents": {
+        "staticAlert": "Static Members mode: routing is based only on manually assigned agents below. Skill qualification is not used.",
+        "qualifiedTitle": "Qualified Agents",
+        "qualifiedDesc": "{{count}} agents currently qualify for this queue.",
+        "searchPlaceholder": "Search agents",
+        "allGroups": "All Groups",
+        "allAvailability": "All Availability",
+        "availability": {
+          "available": "Available",
+          "busy": "Busy",
+          "paused": "Paused",
+          "offline": "Offline"
+        },
+        "qualifiedOnly": "Qualified only",
+        "cols": {
+          "agent": "Agent",
+          "ext": "Ext",
+          "group": "Group",
+          "role": "Role",
+          "skills": "Skills",
+          "score": "Match Score",
+          "availability": "Availability",
+          "membership": "Membership"
+        },
+        "noMatch": "No agents match the current filters.",
+        "manuallyAssigned": "Manually Assigned",
+        "autoQualified": "Auto-Qualified",
+        "manualTitle": "Manually Assigned Agents",
+        "manualDesc": "Lower penalty values are selected before higher penalty values.",
+        "addAgents": "Add Agents",
+        "noManual": "No agents assigned manually yet.",
+        "manualCols": {
+          "priority": "Priority",
+          "penalty": "Penalty",
+          "maxConcurrent": "Max Concurrent",
+          "wrapUpOverride": "Wrap-Up Override",
+          "enabled": "Enabled",
+          "qualification": "Qualification"
+        },
+        "missingSkills": "Missing Skills",
+        "fallbackTitle": "Fallback Agents",
+        "fallbackDesc": "Receive the interaction after relaxation or overflow rules are reached.",
+        "addFallback": "Add Fallback",
+        "noFallback": "No fallback agents.",
+        "triggerAfter": "Trigger After (sec)",
+        "drawerTitle": "Agent Qualification Details",
+        "extension": "Extension",
+        "status": "Status",
+        "matchScore": "Match Score",
+        "requiredSkills": "Required Skills",
+        "required": "Required",
+        "agentLevel": "Agent",
+        "result": "Result",
+        "passed": "Passed",
+        "failed": "Failed",
+        "assignTitle": "Add Agents",
+        "assignDesc": "Select agents to assign to this queue.",
+        "addSelected": "Add {{count}} Selected"
+      },
+      "settings": {
+        "capacity": "Capacity",
+        "maxQueueLength": "Maximum Queue Length",
+        "maxWait": "Maximum Wait Time (sec)",
+        "maxConcurrent": "Max Concurrent Interactions",
+        "maxPerAgent": "Max Concurrent Per Agent",
+        "ringing": "Agent Ringing",
+        "ringTimeout": "Ring Timeout (sec)",
+        "retryDelay": "Retry Delay (sec)",
+        "wrapUp": "Wrap-Up Time (sec)",
+        "wrapUpEnabled": "Enable wrap-up",
+        "autoAnswer": "Auto Answer",
+        "allowReject": "Allow Agent to Reject",
+        "reOffer": "Re-offer Rejected",
+        "cx": "Customer Experience",
+        "moh": "Music on Hold",
+        "welcome": "Welcome Announcement",
+        "periodic": "Periodic Announcement",
+        "announcementInterval": "Announcement Interval (sec)",
+        "positionAnn": "Position Announcement",
+        "etaAnn": "Estimated Wait Time",
+        "callback": "Callback Offer",
+        "voicemail": "Voicemail Offer",
+        "sla": "SLA",
+        "slaTarget": "Target Time (sec)",
+        "slaPercent": "Target Percentage",
+        "slaWarn": "Warning Threshold (%)",
+        "slaCrit": "Critical Threshold (%)",
+        "slaPreviewLabel": "SLA Preview",
+        "slaPreview": "Target: Answer {{percent}}% of calls within {{seconds}} seconds",
+        "slaSummary": "SLA: {{percent}}/{{seconds}}"
+      },
+      "overflow": {
+        "title": "Overflow & Fallback Rules",
+        "desc": "What happens when the queue can't handle an interaction.",
+        "addRule": "Add Overflow Rule",
+        "noRules": "No overflow rules.",
+        "when": "When",
+        "action": "Action",
+        "destination": "Destination",
+        "selectPlaceholder": "Select...",
+        "delay": "Delay",
+        "priority": "Priority",
+        "remove": "Remove",
+        "circular": "This fallback destination creates a circular queue route.",
+        "defaultVoicemail": "Default Voicemail",
+        "hoursTitle": "Queue Working Hours",
+        "hoursMode": {
+          "always": "Always Open",
+          "existing": "Use Existing Schedule",
+          "custom": "Custom Schedule"
+        },
+        "schedule": "Schedule",
+        "selectSchedule": "Select schedule",
+        "timezone": "Timezone",
+        "outsideAction": "Outside Hours Action"
+      },
+      "review": {
+        "validationErrors": "Validation errors",
+        "fieldErrors": "Field errors",
+        "warnings": "Warnings",
+        "fewAgentsWarn": "Warning: Only {{count}} agent(s) currently meet all mandatory skill requirements.",
+        "edit": "Edit",
+        "general": "General Information",
+        "name": "Name",
+        "code": "Code",
+        "channel": "Channel",
+        "status": "Status",
+        "tags": "Tags",
+        "routingTitle": "Routing Mode & Strategy",
+        "mode": "Mode",
+        "strategy": "Strategy",
+        "tieBreaker": "Tie-Breaker",
+        "matchLogic": "Skill Match Logic",
+        "matchAll": "Match all",
+        "matchAny": "Match any",
+        "reqSkills": "Required Skills",
+        "noReqSkills": "No skill requirements.",
+        "agents": "Agents",
+        "qualifiedAgents": "Qualified Agents",
+        "manuallyAssigned": "Manually Assigned",
+        "fallbackAgents": "Fallback Agents",
+        "relax": "Skill Relaxation",
+        "relaxEnabled": "Enabled — {{count}} rule(s)",
+        "relaxDisabled": "Disabled",
+        "capSla": "Capacity & SLA",
+        "maxQueueLen": "Max Queue Length",
+        "maxWait": "Max Wait",
+        "sla": "SLA",
+        "overflowTitle": "Overflow Rules",
+        "noOverflow": "No overflow rules.",
+        "overflowConfigured": "{{count}} rule(s) configured.",
+        "hoursTitle": "Working Hours",
+        "hoursSummary": "Mode: {{mode}} · Timezone: {{tz}}"
+      }
+    },
+    "labels": {
+      "channel": {
+        "voice": "Voice",
+        "chat": "Live Chat",
+        "whatsapp": "WhatsApp",
+        "omnichannel": "Omnichannel"
+      },
+      "status": {
+        "active": "Active",
+        "inactive": "Inactive",
+        "draft": "Draft"
+      },
+      "routingMode": {
+        "skills_based": "Skills-Based",
+        "static": "Static Members",
+        "hybrid": "Hybrid"
+      },
+      "routingStrategy": {
+        "best_skill_match": "Best Skill Match",
+        "longest_idle": "Longest Idle Among Qualified",
+        "fewest_calls": "Fewest Calls Among Qualified",
+        "round_robin": "Round Robin Among Qualified",
+        "priority_penalty": "Priority & Penalty",
+        "ringall": "Ring All",
+        "leastrecent": "Least Recent",
+        "fewestcalls": "Fewest Calls",
+        "random": "Random",
+        "rrmemory": "Round Robin (Memory)",
+        "linear": "Linear",
+        "wrandom": "Weighted Random"
+      },
+      "strategyDesc": {
+        "best_skill_match": "Route the interaction to the available agent with the highest skill match score.",
+        "longest_idle": "Among qualified agents, select the agent who has been idle the longest.",
+        "fewest_calls": "Among qualified agents, select the agent with the fewest handled interactions.",
+        "round_robin": "Distribute interactions evenly between qualified agents.",
+        "priority_penalty": "Select agents based on queue-member priority or penalty.",
+        "ringall": "Ring all available members simultaneously until one answers (Asterisk: ringall).",
+        "leastrecent": "Ring the member that was least recently called (Asterisk: leastrecent).",
+        "fewestcalls": "Ring the member that has completed the fewest calls (Asterisk: fewestcalls).",
+        "random": "Ring a random available member (Asterisk: random).",
+        "rrmemory": "Round robin with memory of the last member rung (Asterisk: rrmemory).",
+        "linear": "Ring members in the exact order they are configured (Asterisk: linear).",
+        "wrandom": "Weighted random selection based on member penalty (Asterisk: wrandom)."
+      },
+      "tieBreaker": {
+        "longest_idle": "Longest Idle",
+        "fewest_calls": "Fewest Calls",
+        "highest_priority": "Highest Agent Priority",
+        "round_robin": "Round Robin",
+        "random": "Random"
+      },
+      "proficiency": {
+        "1": "Beginner",
+        "2": "Basic",
+        "3": "Intermediate",
+        "4": "Advanced",
+        "5": "Expert"
+      },
+      "overflowTrigger": {
+        "no_qualified_agents": "No Qualified Agents",
+        "no_available_agents": "No Available Agents",
+        "queue_full": "Queue Full",
+        "max_wait_reached": "Maximum Wait Time Reached",
+        "outside_hours": "Outside Working Hours",
+        "routing_failure": "Routing Failure"
+      },
+      "overflowAction": {
+        "route_to_queue": "Route to Another Queue",
+        "route_to_ivr": "Route to IVR Flow",
+        "route_to_voicemail": "Route to Voicemail",
+        "offer_callback": "Offer Callback",
+        "route_external": "Route to External Number",
+        "announce_hangup": "Play Announcement and Hang Up",
+        "route_to_supervisor": "Route to Supervisor Group"
+      },
+      "tier": {
+        "excellent": "Excellent Match",
+        "good": "Good Match",
+        "partial": "Partial Match",
+        "not_qualified": "Not Qualified"
+      }
+    }
+  },
+  "systemSettings": {
+    "subtitle": "Tenant-wide configuration: skills, wrap-up codes, and AI features.",
+    "tabs": {
+      "skills": "Skills Catalog",
+      "wrapUpCodes": "Wrap-up Codes",
+      "ai": "AI Settings"
+    },
+    "skills": {
+      "title": "Skills catalog manager",
+      "categoryCount_one": "{{count}} category",
+      "categoryCount_other": "{{count}} categories",
+      "optionCount_one": "{{count}} option",
+      "optionCount_other": "{{count}} options",
+      "newCategory": "New category",
+      "selectCategory": "Select a category",
+      "loading": "Loading catalog…",
+      "empty": "No categories yet. Create one to get started.",
+      "footerHint": "Changes here update the skill-name lists shown in the user editor.",
+      "unsaved": "Unsaved changes",
+      "cancel": "Cancel",
+      "save": "Save catalog",
+      "toast": {
+        "saved": "Catalog saved",
+        "saveFailed": "Could not save catalog"
+      }
+    },
+    "wrapup": {
+      "title": "Wrap-up codes",
+      "subtitle": "Manage call disposition codes available to agents.",
+      "codeCount_one": "{{count}} code",
+      "codeCount_other": "{{count}} codes",
+      "newCode": "New code",
+      "loading": "Loading…",
+      "empty": "No wrap-up codes yet. Create the first one.",
+      "table": {
+        "label": "Label",
+        "category": "Category",
+        "arabic": "Arabic",
+        "active": "Active",
+        "actions": "Actions"
+      },
+      "dialog": {
+        "editTitle": "Edit wrap-up code",
+        "newTitle": "New wrap-up code",
+        "labelField": "Label *",
+        "arabicLabel": "Arabic label",
+        "category": "Category",
+        "color": "Color",
+        "sortOrder": "Sort order",
+        "active": "Active",
+        "placeholder": "Resolved",
+        "cancel": "Cancel",
+        "save": "Save"
+      },
+      "confirmDelete": "Delete \"{{label}}\"?",
+      "toast": {
+        "labelRequired": "Label is required",
+        "created": "Wrap-up code created",
+        "updated": "Wrap-up code updated",
+        "deleted": "Deleted",
+        "saveFailed": "Save failed",
+        "updateFailed": "Update failed",
+        "deleteFailed": "Delete failed"
+      }
+    }
+  },
+  "aiSettings": {
+    "tabs": {
+      "autoTags": "Auto Tags",
+      "keywordAlerts": "Keyword Alerts"
+    }
+  }
+}

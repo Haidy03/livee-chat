@@ -1,15 +1,90 @@
-// @lovable.dev/vite-tanstack-config already includes the following — do NOT add them manually
-// or the app will break with duplicate plugins:
-//   - tanstackStart, viteReact, tailwindcss, tsConfigPaths, nitro (build-only using cloudflare as a default target),
-//     componentTagger (dev-only), VITE_* env injection, @ path alias, React/TanStack dedupe,
-//     error logger plugins, and sandbox detection (port/host/strictPort).
-// You can pass additional config via defineConfig({ vite: { ... }, etc... }) if needed.
-import { defineConfig } from "@lovable.dev/vite-tanstack-config";
+import { defineConfig, type Plugin } from "vite";
+import react from "@vitejs/plugin-react-swc";
+import path from "path";
+import fs from "fs";
+import { createRequire } from "module";
+import { componentTagger } from "lovable-tagger";
 
-export default defineConfig({
-  tanstackStart: {
-    // Redirect TanStack Start's bundled server entry to src/server.ts (our SSR error wrapper).
-    // nitro/vite builds from this
-    server: { entry: "server" },
+// Intercept @copilotkit v2 CSS so Tailwind/PostCSS doesn't try to process it
+// (their CSS uses `@layer base` without a matching `@tailwind base`).
+function copilotkitCssBypass(): Plugin {
+  const PREFIX = "\0copilotkit-css:";
+  const SUFFIX = ".js";
+  return {
+    name: "copilotkit-css-bypass",
+    enforce: "pre" as const,
+    async resolveId(source, importer) {
+      if (!source.endsWith(".css")) return null;
+      const fromCopilot = importer && importer.includes("@copilotkit");
+      const toCopilot = source.includes("@copilotkit");
+      if (!fromCopilot && !toCopilot) return null;
+      const resolved = await this.resolve(source, importer, { skipSelf: true });
+      if (!resolved || !resolved.id.includes("@copilotkit")) return null;
+      return PREFIX + resolved.id + SUFFIX;
+    },
+    load(id) {
+      if (!id.startsWith(PREFIX)) return null;
+      const filePath = id.slice(PREFIX.length, id.length - SUFFIX.length);
+      // Recursively inline @import statements so the browser doesn't try to
+      // fetch them as separate URLs (which 404 in production builds).
+      const inlineImports = (file: string, seen = new Set<string>()): string => {
+        if (seen.has(file)) return "";
+        seen.add(file);
+        let css = fs.readFileSync(file, "utf-8");
+        css = css.replace(
+          /@import\s+(?:url\()?["']([^"')]+)["']\)?\s*;?/g,
+          (_m, spec: string) => {
+            try {
+              let target: string;
+              if (spec.startsWith(".") || spec.startsWith("/")) {
+                target = path.resolve(path.dirname(file), spec);
+              } else {
+                const req = createRequire(file);
+                target = req.resolve(spec);
+              }
+              return inlineImports(target, seen);
+            } catch {
+              return "";
+            }
+          },
+        );
+        return css;
+      };
+      const css = inlineImports(filePath);
+      return `const css = ${JSON.stringify(css)};
+if (typeof document !== "undefined") {
+  const sid = "copilotkit-css-" + ${JSON.stringify(filePath.replace(/[^a-z0-9]/gi, "_"))};
+  if (!document.getElementById(sid)) {
+    const s = document.createElement("style");
+    s.id = sid;
+    s.textContent = css;
+    document.head.appendChild(s);
+  }
+}
+export default css;
+`;
+    },
+  };
+}
+
+// https://vitejs.dev/config/
+export default defineConfig(({ mode }) => ({
+  server: {
+    host: "::",
+    port: 8080,
+    hmr: {
+      overlay: false,
+    },
   },
-});
+  plugins: [
+    copilotkitCssBypass(),
+    react(),
+    mode === "development" && componentTagger(),
+  ].filter(Boolean),
+  resolve: {
+    alias: {
+      "@": path.resolve(__dirname, "./src"),
+    },
+    dedupe: ["react", "react-dom", "react/jsx-runtime", "react/jsx-dev-runtime", "@tanstack/react-query", "@tanstack/query-core"],
+  },
+}));

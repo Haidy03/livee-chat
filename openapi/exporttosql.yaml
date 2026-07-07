@@ -1,0 +1,145 @@
+openapi: 3.0.3
+info:
+  title: VoiceFlow Asterisk Export API
+  version: 2.0.0
+  description: |
+    Endpoint used by the Lovable VoiceFlow editor to push a raw MySQL SQL
+    script (PJSIP endpoint definitions, ARA dialplan, or queues) to the
+    backend, which executes it against the Asterisk Realtime Architecture
+    (ARA) MySQL store.
+servers:
+  - url: https://contact-center.alkhwarizmi.pro/api/v1
+    description: Production
+paths:
+  /exporttosql:
+    post:
+      summary: Execute a raw SQL script against the backend database
+      operationId: exportToSql
+      tags: [Asterisk]
+      security:
+        - bearerAuth: []
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/ExportToSqlRequest'
+            examples:
+              pjsip:
+                value:
+                  script: |
+                    DELETE FROM ps_endpoints WHERE id LIKE 'ivr_%';
+                    INSERT INTO ps_aors (id, max_contacts) VALUES ('ivr_abc', 1);
+                    INSERT INTO ps_endpoints (id, transport, aors) VALUES ('ivr_abc', 'transport-udp', 'ivr_abc');
+                  useTransaction: true
+              ara:
+                value:
+                  script: |
+                    DELETE FROM extensions WHERE context LIKE 'ivr-%';
+                    INSERT INTO extensions (context, exten, priority, app, appdata)
+                    VALUES ('ivr-main', 's', 1, 'Answer', '');
+                  useTransaction: true
+                  commandTimeoutSeconds: 30
+              withTokens:
+                value:
+                  script: "UPDATE ps_endpoints SET context = '<CHANGE_ME>' WHERE id = 'ivr_abc';"
+                  useTransaction: false
+                  continueOnError: true
+                  tokens:
+                    "<CHANGE_ME>": "ivr-main"
+      responses:
+        '200':
+          description: SQL applied successfully
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ExportSqlEnvelope'
+        '400':
+          description: Invalid payload or SQL execution error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+        '401':
+          description: Missing or invalid bearer token
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+        '500':
+          description: Unexpected server error
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/ErrorEnvelope'
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    ExportToSqlRequest:
+      type: object
+      required: [script]
+      properties:
+        script:
+          type: string
+          minLength: 1
+          description: Raw SQL script — one or more delimiter-separated statements.
+        useTransaction:
+          type: boolean
+          default: true
+          description: Run the whole script in a single transaction.
+        continueOnError:
+          type: boolean
+          default: false
+          description: Keep going after a failing statement. Requires `useTransaction = false`.
+        commandTimeoutSeconds:
+          type: integer
+          minimum: 1
+          maximum: 3600
+          nullable: true
+          description: Optional per-statement command timeout, in seconds.
+        tokens:
+          type: object
+          additionalProperties:
+            type: string
+          nullable: true
+          description: |
+            Optional literal text substitutions applied to the script before it
+            runs (e.g. filling a `<CHANGE_ME>` placeholder). Each key is a
+            plain global text replace.
+    ExportSqlResult:
+      type: object
+      properties:
+        rowsApplied:
+          type: integer
+          description: Total rows inserted/updated by the script.
+    ExportSqlEnvelope:
+      type: object
+      required: [success]
+      properties:
+        success:
+          type: boolean
+          example: true
+        data:
+          $ref: '#/components/schemas/ExportSqlResult'
+        message:
+          type: string
+          nullable: true
+    ErrorEnvelope:
+      type: object
+      required: [success]
+      properties:
+        success:
+          type: boolean
+          example: false
+        message:
+          type: string
+          nullable: true
+        errors:
+          type: array
+          items:
+            type: string
+          nullable: true

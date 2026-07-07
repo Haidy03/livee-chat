@@ -1,0 +1,16 @@
+services:
+  outbound:
+    image: cr.alkhwarizmi.online/outbound-backend:${IMAGE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: MicroServicesCore/contact-center.web/backend/csharp/Outbound/Dockerfile
+    container_name: outbound-backend
+    restart: unless-stopped
+    environment:
+      DOTNET_ENVIRONMENT: Production
+      MongoDB__ConnectionString: ${MONGO_URI:-mongodb://host.docker.internal:27017/}
+      RabbitMq__HostName: ${RABBITMQ_HOST:-host.docker.internal}
+      RabbitMq__Port: ${RABBITMQ_PORT:-5672}
+      RabbitMq__UserName: ${RABBITMQ_USER:-guest}
+      RabbitMq__Password: ${RABBITMQ_PASSWORD:-guest}
+      RabbitMq__VirtualHost: ${RABBITMQ_VHOST:-/}

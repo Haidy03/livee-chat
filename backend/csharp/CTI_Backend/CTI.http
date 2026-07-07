@@ -1,0 +1,6 @@
+@CTI_HostAddress = http://localhost:5290
+
+GET {{CTI_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

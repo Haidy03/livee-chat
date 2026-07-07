@@ -1,0 +1,3464 @@
+{
+  "common": {
+    "loading": "جارٍ التحميل...",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "delete": "حذف",
+    "edit": "تعديل",
+    "add": "إضافة",
+    "create": "إنشاء",
+    "ok": "حسناً",
+    "close": "إغلاق",
+    "search": "بحث",
+    "apply": "تطبيق",
+    "reset": "مسح",
+    "settings": "إعدادات",
+    "remove": "إزالة",
+    "previous": "السابق",
+    "next": "التالي",
+    "all": "الكل",
+    "none": "لا شيء",
+    "yes": "نعم",
+    "no": "لا",
+    "saved": "تم الحفظ",
+    "copied": "تم النسخ",
+    "copyFailed": "تعذّر النسخ",
+    "exportCsv": "تصدير CSV",
+    "exportExcel": "تصدير Excel",
+    "exportPdf": "تصدير PDF",
+    "soon": "قريباً",
+    "demo": "تجريبي",
+    "download": "تحميل",
+    "export": "تصدير",
+    "exported": "تم التصدير",
+    "min": "دقيقة",
+    "hr": "ساعة",
+    "second": "ثانية",
+    "seconds": "ثوانٍ",
+    "rowsPerPage": "صفوف في الصفحة",
+    "pageOf": "الصفحة {{page}} من {{total}}",
+    "showingRange": "عرض {{from}}–{{to}} من {{total}}"
+  },
+  "nav": {
+    "dashboard": "لوحة البيانات",
+    "aiAnalysis": "تحليل الذكاء الاصطناعي",
+    "live": "البيانات المباشرة",
+    "usersMap": "خريطة المستخدمين",
+    "calls": "المكالمات",
+    "visitors": "الزوار",
+    "missedCalls": "المكالمات الفائتة",
+    "users": "المستخدمون والأدوار",
+    "groups": "المجموعات",
+    "queues": "قوائم الانتظار",
+    "groupsAndQueues": "المجموعات وقوائم الانتظار",
+    "reports": "التقارير",
+    "directory": "الدليل وأنظمة CRM",
+    "ivr": "الرد الآلي",
+    "digitalWorkspace": "مساحة العمل الرقمية",
+    "softphone": "السوفت فون",
+    "softphoneNew": "السوفت فون الجديد",
+    "voiceAgent": "وكيل الصوت",
+    "aiSettings": "إعدادات الذكاء الاصطناعي",
+    "campaigns": "الحملات",
+    "ivrSurveys": "استبيانات IVR",
+    "accountSettings": "إعدادات الحساب",
+    "logs": "سجل التدقيق",
+    "systemSettings": "إعدادات النظام"
+  },
+  "layout": {
+    "title": "التخطيط",
+    "classic": "كلاسيكي",
+    "classicDesc": "شريط جانبي وشريط علوي. تباعد مريح.",
+    "rail": "شريط مدمج",
+    "railDesc": "شريط جانبي بأيقونات فقط.",
+    "topnav": "تنقل علوي",
+    "topnavDesc": "تنقل أفقي بدون شريط جانبي.",
+    "modern": "حديث",
+    "modernDesc": "شريط جانبي عائم مع لمسات متدرجة.",
+    "bento": "حديث",
+    "bentoDesc": "لوحات عائمة على خلفية ملوّنة.",
+    "split": "مقسوم",
+    "splitDesc": "شريط جانبي مع لوحة سياق ثانوية.",
+    "brutalist": "نيو-بروتالي",
+    "brutalistDesc": "حدود سميكة وظلال حادة وتباين جريء.",
+    "fancy": "فاخر",
+    "fancyDesc": "لوحة افتتاحية بأحرف Serif ولمسة زمردية."
+  },
+  "focusMode": {
+    "enter": "وضع التركيز",
+    "exit": "إنهاء وضع التركيز",
+    "unavailable": "وضع التركيز غير متاح هنا"
+  },
+  "studio": {
+    "title": "استوديو السمات",
+    "sections": {
+      "theme": "السمة",
+      "layout": "التخطيط",
+      "style": "النمط",
+      "palette": "لوحة الألوان",
+      "sidebar": "الشريط الجانبي"
+    },
+    "sidebar": {
+      "bgColor": "لون الخلفية"
+    },
+    "theme": {
+      "lite": "فاتح",
+      "dark": "داكن",
+      "dim": "خافت",
+      "neon": "نيون",
+      "brut": "بروت"
+    },
+    "layout": {
+      "classic": "كلاسيكي",
+      "rail": "مدمج",
+      "topnav": "علوي",
+      "bento": "حديث",
+      "split": "مقسوم",
+      "brutalist": "بروت",
+      "fancy": "فاخر"
+    },
+    "style": {
+      "flat": "مسطح",
+      "gradient": "متدرج",
+      "glass": "زجاجي",
+      "soft": "ناعم",
+      "sharp": "حاد",
+      "fancy": "فاخر"
+    },
+    "palette": {
+      "emerald": "زمردي",
+      "indigo": "نيلي",
+      "violet": "بنفسجي",
+      "rose": "وردي",
+      "amber": "كهرماني",
+      "sky": "سماوي",
+      "teal": "أزرق مخضر",
+      "slate": "رمادي"
+    }
+  },
+  "style": {
+    "flat": "مسطح",
+    "flatDesc": "أسطح صلبة وظلال خفيفة.",
+    "gradient": "متدرج",
+    "gradientDesc": "مزج لوني سلس على اللمسات.",
+    "glass": "زجاجي",
+    "glassDesc": "واجهة شفافة ضبابية.",
+    "soft": "ناعم",
+    "softDesc": "زوايا دائرية وظلال لطيفة.",
+    "sharp": "حاد",
+    "sharpDesc": "بدون انحناءات، حواف حادة.",
+    "fancy": "فاخر",
+    "fancyDesc": "لمسات Serif افتتاحية، توهج زمردي، خلفية حبيبية."
+  },
+  "theme": {
+    "switchToDark": "التبديل إلى الوضع الداكن",
+    "switchToLight": "التبديل إلى الوضع الفاتح"
+  },
+  "softphone": {
+    "label": "الهاتف",
+    "title": "السوفت فون",
+    "call": "اتصال",
+    "endCall": "إنهاء المكالمة",
+    "callBack": "إعادة الاتصال",
+    "addContact": "إضافة جهة اتصال",
+    "placeholder": "+966 5X XXX XXXX",
+    "searchContacts": "ابحث عن جهة اتصال أو أدخل رقمًا",
+    "searchCalls": "ابحث في المكالمات",
+    "noCallsFilter": "لا توجد مكالمات مطابقة للفلتر.",
+    "paste": "لصق",
+    "pasteFailed": "تعذر قراءة الحافظة",
+    "selectContact": "اختر جهة اتصال لعرض التفاصيل",
+    "selectCall": "اختر مكالمة لعرض التفاصيل",
+    "recentCalls": "المكالمات الأخيرة",
+    "noRecent": "لا يوجد نشاط حديث مع جهة الاتصال هذه.",
+    "notes": "ملاحظات",
+    "notesPlaceholder": "أضف ملاحظة خاصة حول جهة الاتصال…",
+    "type": "النوع",
+    "duration": "المدة",
+    "when": "الوقت",
+    "number": "الرقم",
+    "you": "أنت",
+    "unknown": "غير معروف",
+    "activeCall": "مكالمة جارية",
+    "incomingCall": "مكالمة واردة",
+    "accept": "قبول",
+    "decline": "رفض",
+    "couldNotConnect": "تعذّر الاتصال — يرجى المحاولة مرة أخرى",
+    "openSoftphone": "فتح السوفت فون",
+    "popup": "نافذة منبثقة",
+    "openInPopup": "فتح في نافذة منبثقة",
+    "toggleTheme": "تبديل السمة",
+    "connectedSip": "متصل · SIP",
+    "offline": "غير متصل",
+    "workspaceTitle": "السوفت فون · مساحة العمل",
+    "extension": "تحويلة",
+    "enterNumber": "أدخل رقمًا",
+    "dialerHint": "اكتب، استخدم لوحة الأرقام، أو اختر جهة اتصال",
+    "videoCall": "مكالمة فيديو",
+    "videoSoon": "مكالمات الفيديو قريبًا",
+    "calling": "جارٍ الاتصال بـ {{name}}…",
+    "notRegistered": "يرجى إعداد وتسجيل حساب SIP أولاً.",
+    "dialing": "جارٍ الطلب…",
+    "ringing": "يرن…",
+    "ended": "انتهت المكالمة",
+    "failed": "فشلت المكالمة",
+    "onHold": "قيد الانتظار",
+    "muted": "مكتوم",
+    "callOnHold": "تم تعليق المكالمة",
+    "callResumed": "تم استئناف المكالمة",
+    "connecting": "جارٍ الاتصال…",
+    "slowConnect": "تم الاتصال ولكن الواجهة تستغرق لحظة…",
+    "sendToVoicemail": "بريد صوتي",
+    "transfer": "تحويل",
+    "transferCall": "تحويل المكالمة",
+    "transferTo": "تحويل إلى",
+    "transferTarget": "رقم أو تحويلة أو عنوان SIP",
+    "transferred": "تم تحويل المكالمة",
+    "back": "رجوع",
+    "backspace": "مسح",
+    "nothingHere": "لا يوجد شيء هنا بعد.",
+    "hasRecording": "يوجد تسجيل",
+    "copied": "تم النسخ",
+    "copyFailed": "فشل النسخ",
+    "couldNotDelete": "تعذر حذف المكالمة",
+    "previousCallEnded": "انتهت المكالمة السابقة مع {{number}} عند إعادة تحميل الصفحة.",
+    "outboundNumber": "رقم الاتصال الصادر",
+    "tenantNumbers": "أرقام الحساب",
+    "callThisNumber": "اتصل بهذا الرقم",
+    "tags": {
+      "title": "الوسوم",
+      "add": "إضافة",
+      "tag": "وسم",
+      "newPlaceholder": "وسم جديد…",
+      "noneYet": "لا توجد وسوم بعد.",
+      "noneOnCall": "لا توجد وسوم على هذه المكالمة بعد.",
+      "remove": "إزالة {{tag}}",
+      "color": "لون {{value}}",
+      "added": "تمت إضافة الوسم",
+      "typeAndEnter": "اكتب وسمًا واضغط Enter"
+    },
+    "nav": {
+      "dialer": "لوحة الاتصال",
+      "contacts": "جهات الاتصال",
+      "recents": "الأخيرة",
+      "voicemail": "البريد الصوتي",
+      "messages": "الرسائل",
+      "settings": "الإعدادات"
+    },
+    "status": {
+      "available": "متاح",
+      "busy": "مشغول",
+      "away": "بعيد",
+      "offline": "غير متصل"
+    },
+    "callType": {
+      "in": "واردة",
+      "out": "صادرة",
+      "missed": "فائتة"
+    },
+    "controls": {
+      "mute": "كتم",
+      "unmute": "إلغاء الكتم",
+      "keypad": "لوحة الأرقام",
+      "speaker": "السماعة",
+      "hold": "تعليق",
+      "resume": "استئناف",
+      "transfer": "تحويل",
+      "record": "تسجيل",
+      "add": "إضافة"
+    },
+    "tabs": {
+      "users": "المستخدمون",
+      "contacts": "جهات الاتصال",
+      "recents": "الأخيرة"
+    },
+    "search": {
+      "namesNumbers": "ابحث بالاسم أو الرقم أو الوسم…"
+    },
+    "empty": {
+      "recents": "لا توجد مكالمات بعد. ستظهر هنا عند إجراء أو استقبال مكالمات.",
+      "contacts": "لا توجد جهات اتصال",
+      "voicemailTitle": "لا توجد رسائل صوتية",
+      "voicemailDesc": "ستظهر الرسائل الصوتية هنا عند استلامها.",
+      "messagesTitle": "لا توجد رسائل",
+      "messagesDesc": "ستظهر محادثاتك هنا عند بدء المراسلة."
+    },
+    "rel": {
+      "justNow": "الآن",
+      "minutes": "منذ {{count}} د",
+      "hours": "منذ {{count}} س",
+      "days": "منذ {{count}} ي"
+    },
+    "recents": {
+      "tabs": {
+        "all": "الكل",
+        "in": "واردة",
+        "out": "صادرة",
+        "missed": "فائتة"
+      },
+      "buckets": {
+        "today": "اليوم",
+        "yesterday": "أمس",
+        "week": "هذا الأسبوع",
+        "older": "أقدم"
+      }
+    },
+    "callDetail": {
+      "status": "الحالة",
+      "duration": "المدة",
+      "started": "بدأت",
+      "answered": "تم الرد",
+      "ended": "انتهت",
+      "hangupCause": "سبب الإنهاء",
+      "recording": "التسجيل",
+      "technical": "تفاصيل تقنية",
+      "callId": "معرّف المكالمة",
+      "from": "من",
+      "to": "إلى",
+      "copy": "نسخ",
+      "copyLabel": "نسخ {{label}}"
+    },
+    "permissions": {
+      "title": "التحقق من أذونات السوفت فون",
+      "description": "نحتاج إلى التأكد من بعض الإمكانيات قبل إجراء أو استقبال المكالمات.",
+      "required": "مطلوب",
+      "recheck": "إعادة الفحص",
+      "requestAll": "طلب الكل",
+      "continue": "متابعة",
+      "rows": {
+        "secure": {
+          "label": "اتصال آمن (HTTPS)",
+          "desc": "مطلوب للميكروفون وWebRTC."
+        },
+        "webrtc": {
+          "label": "دعم WebRTC",
+          "desc": "يجب أن يدعم المتصفح الصوت في الوقت الحقيقي."
+        },
+        "mic": {
+          "label": "إذن الميكروفون",
+          "desc": "ضروري للتحدث أثناء المكالمات."
+        },
+        "audioIn": {
+          "label": "جهاز الميكروفون",
+          "desc": "يجب توفر جهاز إدخال."
+        },
+        "audioOut": {
+          "label": "جهاز السماعة",
+          "desc": "يجب توفر جهاز إخراج."
+        },
+        "audioCtx": {
+          "label": "تشغيل الصوت",
+          "desc": "مطلوب لنغمة الرنين والصوت البعيد."
+        },
+        "notifications": {
+          "label": "إشعارات المتصفح",
+          "desc": "تنبيهات للمكالمات الواردة عند إخفاء التبويب."
+        },
+        "sipAccount": {
+          "label": "حساب SIP",
+          "desc": "بيانات الاعتماد للتسجيل في الخادم."
+        }
+      }
+    },
+    "settings": {
+      "status": "الحالة",
+      "appearance": "المظهر",
+      "darkMode": "الوضع الداكن",
+      "demo": "تجربة",
+      "simulate": "محاكاة مكالمة واردة",
+      "window": "النافذة",
+      "openInPopup": "فتح السوفت فون في نافذة منبثقة",
+      "openInPopupHint": "افتح نافذة اتصال مدمجة بدلًا من التنقل داخل التطبيق.",
+      "tabs": {
+        "account": "الحساب",
+        "audio": "الصوت",
+        "appearance": "المظهر",
+        "debug": "التشخيص"
+      },
+      "regStatus": {
+        "unregistered": "غير مسجَّل",
+        "connecting": "جارٍ الاتصال…",
+        "registered": "مسجَّل",
+        "failed": "فشل"
+      },
+      "testRegister": "اختبار التسجيل",
+      "reRegister": "إعادة التسجيل",
+      "unregister": "إلغاء التسجيل",
+      "lastError": "آخر خطأ",
+      "hint": "تلميح",
+      "wireTrace": "تتبع SIP",
+      "waitingRegister": "بانتظار REGISTER…",
+      "noWireMessages": "لم يتم التقاط أي رسائل SIP بعد. اضغط اختبار التسجيل لإرسال REGISTER ومراقبة الحركة هنا.",
+      "outboundOnly": "صادر فقط — الخادم لا يستجيب.",
+      "autoRegister": "اتصال تلقائي عند التحميل",
+      "autoRegisterHelp": "سجّل تلقائيًا عند فتح التطبيق باستخدام بيانات الاعتماد المحفوظة.",
+      "demoMode": "وضع التجربة",
+      "demoModeHelp": "محاكاة التسجيل والمكالمات بدون خادم SIP حقيقي.",
+      "simulateRegister": "محاكاة التسجيل",
+      "simulateInbound": "محاكاة مكالمة واردة",
+      "credentials": "بيانات اعتماد SIP",
+      "active": "مفعّل",
+      "displayName": "اسم العرض",
+      "authId": "معرّف المصادقة",
+      "password": "كلمة المرور",
+      "togglePassword": "إظهار/إخفاء كلمة المرور",
+      "microphone": "الميكروفون",
+      "speaker": "السماعة",
+      "ringtone": "نغمة الرنين",
+      "systemDefault": "افتراضي النظام",
+      "micLevel": "مستوى الإدخال",
+      "echoCancellation": "إلغاء الصدى",
+      "noiseSuppression": "تقليل الضوضاء",
+      "autoGain": "كسب تلقائي",
+      "sinkUnsupported": "اختيار جهاز الإخراج مدعوم فقط في متصفحات Chromium.",
+      "refreshDevices": "تحديث الأجهزة",
+      "dialTimeline": "الجدول الزمني للطلب → INVITE",
+      "dialTimelineHelp": "الزمن من النقر على الطلب حتى إرسال SIP INVITE فعليًا، مع خطوات جمع ICE.",
+      "noDialYet": "لم يتم تسجيل أي طلب بعد. أجرِ مكالمة لرؤية الجدول الزمني.",
+      "sipTargets": "أهداف SIP (INVITE / REFER)",
+      "sipTargetsHelp": "العنوان الدقيق الذي يولّده التطبيق قبل إرسال كل طلب.",
+      "noTargetsYet": "لا توجد INVITE/REFER صادرة بعد. أجرِ مكالمة لرؤية الهدف هنا.",
+      "copyTarget": "نسخ الهدف",
+      "copiedTarget": "تم نسخ هدف SIP",
+      "debug": "سجل التشخيص",
+      "debugEmpty": "لا توجد أحداث بعد."
+    }
+  },
+  "user": {
+    "account": "الحساب",
+    "profile": "الملف الشخصي",
+    "settings": "الإعدادات",
+    "signOut": "تسجيل الخروج",
+    "fallback": "مستخدم",
+    "signedOut": "تم تسجيل الخروج",
+    "hidePassword": "إخفاء كلمة المرور",
+    "showPassword": "عرض كلمة المرور"
+  },
+  "language": {
+    "switchTo": "English",
+    "current": "العربية"
+  },
+  "auth": {
+    "signIn": "تسجيل الدخول",
+    "signUp": "إنشاء حساب",
+    "email": "البريد الإلكتروني",
+    "password": "كلمة المرور",
+    "name": "الاسم",
+    "loginButton": "دخول",
+    "signupButton": "إنشاء الحساب",
+    "loginSuccess": "تم تسجيل الدخول",
+    "signupSuccess": "تم إنشاء الحساب — تحقق من بريدك لتأكيد الحساب",
+    "notLoggedIn": "غير مسجّل",
+    "organization": "المؤسسة",
+    "missingFields": "يرجى إدخال اسم المؤسسة والبريد الإلكتروني وكلمة المرور.",
+    "forgotPassword": "نسيت كلمة المرور؟",
+    "forgotPasswordTitle": "نسيت كلمة المرور؟",
+    "forgotPasswordHint": "أدخل بريدك الإلكتروني وسنرسل لك رابط إعادة التعيين.",
+    "sendResetLink": "إرسال رابط إعادة التعيين",
+    "resetEmailSent": "إذا كان هذا البريد مسجلاً لدينا، فقد تم إرسال رابط إعادة التعيين.",
+    "backToSignIn": "العودة لتسجيل الدخول",
+    "resetPasswordTitle": "اختر كلمة مرور جديدة",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "resetPasswordButton": "إعادة تعيين كلمة المرور",
+    "passwordMismatch": "كلمتا المرور غير متطابقتين.",
+    "resetSuccess": "تمت إعادة تعيين كلمة المرور بنجاح. يمكنك تسجيل الدخول الآن.",
+    "invalidResetLink": "رابط إعادة التعيين غير صالح أو غير مكتمل. اطلب رابطًا جديدًا من صفحة تسجيل الدخول."
+  },
+  "aiAnalysis": {
+    "title": "تحليل الذكاء الاصطناعي",
+    "subtitle": "رؤى ذكية حول مشاعر العملاء وسلوك المكالمات",
+    "noData": "لا توجد بيانات",
+    "callsCount": "{{count}} مكالمة",
+    "kpi": {
+      "avgScore": "متوسط مؤشر المشاعر",
+      "positivePct": "مكالمات إيجابية",
+      "negativePct": "مكالمات سلبية",
+      "analyzed": "مكالمات تم تحليلها"
+    },
+    "sentiment": {
+      "positive": "إيجابي",
+      "neutral": "محايد",
+      "negative": "سلبي"
+    },
+    "charts": {
+      "trend": "تطور المشاعر",
+      "distribution": "توزيع المشاعر",
+      "topTopics": "أهم المواضيع",
+      "agentLeaderboard": "ترتيب الموظفين حسب المشاعر"
+    },
+    "insights": {
+      "title": "رؤى الذكاء الاصطناعي",
+      "noData": "لا توجد مكالمات محللة في هذه الفترة بعد.",
+      "highNegative": "نسبة المشاعر السلبية مرتفعة ({{pct}}%). راجع المكالمات الأخيرة لتحديد المشكلات المتكررة.",
+      "highPositive": "العملاء راضون — {{pct}}% من المكالمات إيجابية في هذه الفترة.",
+      "topTopic": "الموضوع الأبرز: «{{topic}}» ذُكر في {{count}} مكالمة.",
+      "topAgent": "أفضل موظف أداءً: {{name}} (متوسط المؤشر {{score}})."
+    }
+  },
+  "dashboard": {
+    "title": "لوحة البيانات",
+    "subtitle": "نظرة عامة على أداء مركز الاتصال اليوم",
+    "tabs": {
+      "overview": "ملخص"
+    },
+    "totalCallsToday": "إجمالي المكالمات اليوم",
+    "missedCalls": "المكالمات الفائتة",
+    "avgWaitTime": "متوسط وقت الانتظار",
+    "activeAgents": "الموظفين النشطين",
+    "callsToday": "مكالمات اليوم",
+    "topAgents": "أفضل الموظفين",
+    "callStatusDistribution": "توزيع حالات المكالمات",
+    "recentActivity": "آخر النشاطات",
+    "answered": "مُجابة",
+    "missed": "فائتة",
+    "agent": "موظف",
+    "agentAnswered": "{{name}} رد على مكالمة من",
+    "missedFrom": "مكالمة فائتة من",
+    "callFrom": "مكالمة من"
+  },
+  "live": {
+    "title": "البيانات المباشرة",
+    "subtitle": "حالة المركز في الوقت الفعلي",
+    "activeCalls": "المكالمات النشطة",
+    "queue": "قائمة الانتظار",
+    "callsInQueue": "المكالمات في الانتظار",
+    "longestWait": "أطول انتظار",
+    "agentsStatus": "حالة الموظفين",
+    "ongoing": "جارية",
+    "noActiveCalls": "لا توجد مكالمات نشطة",
+    "noAgents": "لا يوجد موظفون",
+    "agentStatus": {
+      "available": "متاح",
+      "busy": "مشغول",
+      "break": "استراحة",
+      "offline": "غير متصل"
+    },
+    "actions": {
+      "listen": "استماع",
+      "whisper": "همس",
+      "barge": "اقتحام",
+      "listenStarted": "جارٍ الاستماع للمكالمة",
+      "whisperStarted": "جارٍ التحدث للموظف",
+      "bargeStarted": "تم الانضمام للمكالمة",
+      "failed": "فشل تنفيذ العملية"
+    },
+    "tabs": {
+      "overview": "نظرة عامة",
+      "usersMap": "خريطة المستخدمين",
+      "queueMonitor": "قائمة الانتظار المباشرة"
+    },
+    "overview": {
+      "groups": {
+        "agents": "الموظفون",
+        "usersMap": "رحلة المستخدمين",
+        "queue": "قائمة الانتظار"
+      },
+      "agents": {
+        "total": "إجمالي الموظفين",
+        "available": "متاح",
+        "busy": "في مكالمة",
+        "break": "في استراحة",
+        "offline": "غير متصل"
+      },
+      "usersMap": {
+        "activeNow": "المتصلون الآن",
+        "inIvr": "في القائمة الصوتية",
+        "avgHandle": "متوسط المعالجة",
+        "sla": "نسبة SLA"
+      },
+      "queue": {
+        "waiting": "مكالمات منتظرة",
+        "longestWait": "أطول انتظار",
+        "activeCalls": "المكالمات النشطة",
+        "abandoned": "متروكة اليوم"
+      }
+    },
+    "queueMonitor": {
+      "live": "مباشر",
+      "paused": "متوقف",
+      "pause": "إيقاف مؤقت",
+      "resume": "استئناف",
+      "allQueues": "كل القوائم",
+      "sla": "مستوى الخدمة",
+      "waiting": "بالانتظار",
+      "longestWait": "أطول انتظار",
+      "oldestInQueue": "الأقدم في الانتظار",
+      "ewt": "الانتظار المتوقع",
+      "abandons": "المتروكة",
+      "serviceLevel": "مستوى الخدمة",
+      "agentsOverall": "الموظفون حسب الحالة",
+      "activeCalls": "المكالمات النشطة",
+      "noActiveCalls": "لا توجد مكالمات نشطة الآن",
+      "onCallNow": "في مكالمة الآن",
+      "inWrapUp": "في الإنهاء",
+      "none": "لا يوجد",
+      "state": {
+        "available": "متاح",
+        "onCall": "في مكالمة",
+        "wrapup": "إنهاء",
+        "notReady": "غير جاهز",
+        "offline": "غير متصل"
+      },
+      "callStatus": {
+        "talking": "يتحدث",
+        "hold": "في الانتظار"
+      },
+      "col": {
+        "agent": "الموظف",
+        "customer": "العميل",
+        "queue": "القائمة",
+        "status": "الحالة",
+        "duration": "المدة"
+      },
+      "kpi": {
+        "waiting": "مكالمات بالانتظار",
+        "longestWait": "أطول انتظار",
+        "serviceLevel": "مستوى الخدمة",
+        "abandons": "المتروكة",
+        "agentsAvailable": "الموظفون المتاحون",
+        "activeCalls": "المكالمات النشطة"
+      }
+    }
+  },
+  "calls": {
+    "title": "المكالمات",
+    "tabs": {
+      "all": "الكل",
+      "incoming": "واردة",
+      "outgoing": "صادرة",
+      "missed": "فائتة",
+      "internal": "داخلية"
+    },
+    "loadFailed": "تعذّر تحميل المكالمات.",
+    "empty": "لا توجد مكالمات.",
+    "noResults": "لا توجد نتائج",
+    "showing": "عرض {{start}} - {{end}} من {{total}} نتيجة",
+    "showingShort": "عرض {{start}} - {{end}} من {{total}}",
+    "rowsPerPage": "عدد الصفوف:",
+    "expandCollapse": "طي أو توسيع",
+    "collapseAll": "طي الكل",
+    "expandAll": "توسيع الكل",
+    "filter": "فلترة",
+    "context": {
+      "callBack": "إعادة الاتصال",
+      "sendSms": "إرسال SMS",
+      "details": "عرض التفاصيل",
+      "copyId": "نسخ رمز المكالمة",
+      "idCopied": "تم نسخ رمز المكالمة",
+      "callBackDemo": "إعادة الاتصال — تجريبي",
+      "sendSmsDemo": "إرسال SMS — تجريبي"
+    },
+    "columns": {
+      "id": "الرمز",
+      "tags": "وسوم",
+      "autoTags": "الوسوم التلقائية",
+      "agent": "ممثلي الخدمة",
+      "startedAt": "بدأ المكالمة",
+      "status": "الحالة",
+      "ring": "رنين",
+      "hold": "في الانتظار",
+      "active": "جارية",
+      "totalSeconds": "المدة الزمنية",
+      "totalHold": "مدة التعليق",
+      "caller": "المتصل",
+      "called": "المتصل به",
+      "callerName": "اسم المتصل",
+      "callerExtension": "تحويلة المتصل",
+      "calledName": "اسم المتصل به",
+      "calledExtension": "تحويلة المتصل به",
+      "sentiment": "العاطفة",
+      "inputs": "المدخلات",
+      "recording": "التسجيلات"
+    },
+    "columnsTitle": "الأعمدة",
+    "columnsHeader": "إظهار / إخفاء الأعمدة",
+    "filters": {
+      "date": "التاريخ",
+      "dateRange": "نطاق التاريخ",
+      "from": "من",
+      "to": "إلى",
+      "today": "اليوم",
+      "yesterday": "أمس",
+      "last7": "آخر 7 أيام",
+      "last30": "آخر 30 يوم",
+      "all": "الكل",
+      "status": "الحالة",
+      "allStatuses": "كل الحالات",
+      "agent": "الموظفون",
+      "allAgents": "كل الموظفين",
+      "caller": "المتصل",
+      "callee": "المستقبل",
+      "callerSearch": "بحث برقم الهاتف",
+      "tags": "الوسوم",
+      "allTags": "كل الوسوم",
+      "group": "المجموعات",
+      "allGroups": "كل المجموعات",
+      "selected": "{{count}} محدد",
+      "clear": "مسح الفلاتر",
+      "callId": "المعرّف",
+      "referenceId": "المعرّف المرجعي",
+      "keyword": "بحث بكلمة",
+      "type": {
+        "title": "النوع",
+        "incoming": "وارد",
+        "outgoing": "صادر",
+        "internal": "داخلي",
+        "self": "ذاتي"
+      },
+      "states": {
+        "inbound": "حالات الوارد",
+        "outbound": "حالات الصادر",
+        "campaign": "حالات الحملة",
+        "internal": "الحالات الداخلية",
+        "waiting": "بالانتظار",
+        "voicemail": "بريد صوتي",
+        "blocked": "محظور",
+        "callback": "إعادة اتصال",
+        "retry": "إعادة محاولة",
+        "transfer": "تم تحويلها",
+        "forward": "تم توجيهها"
+      },
+      "properties": {
+        "title": "الخصائص",
+        "recording": "تسجيل",
+        "voicemail": "بريد صوتي",
+        "transfer": "تحويل",
+        "hold": "تعليق"
+      },
+      "hangUp": {
+        "title": "أنهى المكالمة",
+        "agent": "الموظف"
+      },
+      "sentiment": {
+        "title": "المشاعر"
+      },
+      "abandonment": {
+        "title": "سبب الترك",
+        "callerHangup": "أغلق المتصل",
+        "error": "خطأ",
+        "timeout": "انتهاء المهلة",
+        "unknown": "غير معروف",
+        "queueFull": "الطابور ممتلئ",
+        "noAgents": "لا يوجد موظفون"
+      },
+      "handledBy": {
+        "title": "تمت معالجتها بواسطة",
+        "any": "أي",
+        "agent": "موظف",
+        "ai": "ذكاء اصطناعي",
+        "ivr": "نظام صوتي"
+      },
+      "searchOperator": {
+        "title": "أداة البحث",
+        "and": "AND",
+        "or": "OR",
+        "phrase": "عبارة"
+      },
+      "duration": {
+        "total": "المدة",
+        "handling": "مدة المعالجة",
+        "waiting": "مدة الانتظار",
+        "holding": "مدة التعليق"
+      },
+      "chip": {
+        "status": "الحالة: {{label}}",
+        "agent": "موظف: {{label}}",
+        "tag": "وسم: {{label}}",
+        "group": "مجموعة: {{label}}",
+        "caller": "رقم: {{value}}",
+        "date": "التاريخ: {{value}}"
+      }
+    },
+    "status": {
+      "answered": "مُجابة",
+      "missed": "فائتة",
+      "noAnswer": "لا رد",
+      "busy": "مشغول",
+      "rejected": "مرفوضة"
+    },
+    "sentiment": {
+      "positive": "إيجابي",
+      "negative": "سلبي",
+      "neutral": "محايد"
+    },
+    "tagsCell": {
+      "userTags": "وسوم",
+      "autoTags": "وسوم تلقائية",
+      "addNew": "+ إضافة وسم جديد"
+    },
+    "recording": {
+      "play": "تشغيل التسجيل",
+      "title": "تسجيل المكالمة"
+    },
+    "rowDetail": {
+      "timeline": "جدول زمني للمكالمة",
+      "ring": "رنين",
+      "hold": "انتظار",
+      "active": "جارية",
+      "total": "الإجمالي",
+      "agent": "الموظف",
+      "group": "المجموعة",
+      "notes": "ملاحظات الموظف",
+      "notePlaceholder": "اكتب ملاحظة...",
+      "noteSaved": "تم حفظ الملاحظات",
+      "tags": "الوسوم",
+      "callBack": "إعادة الاتصال",
+      "sendSms": "إرسال SMS"
+    },
+    "csvExported": "تم تصدير CSV",
+    "detail": {
+      "summaryTitle": "ملخص المحادثة",
+      "noSummary": "لا يوجد ملخص لهذه المكالمة",
+      "noRecording": "لا يوجد تسجيل لهذه المكالمة",
+      "recordingError": "تعذر تحميل التسجيل",
+      "viewTranscript": "عرض النص الكامل للمكالمة",
+      "copy": "نسخ",
+      "copied": "تم نسخ الملخص",
+      "translate": "ترجمة",
+      "translating": "جاري الترجمة...",
+      "showOriginal": "عرض الأصلي",
+      "translateError": "تعذر الترجمة",
+      "accuratePrompt": "هل كان دقيقاً؟",
+      "feedbackSaved": "تم تسجيل تقييمك",
+      "feedbackError": "تعذر حفظ التقييم",
+      "helpful": "مفيد",
+      "notHelpful": "غير مفيد",
+      "tagsTitle": "وسوم",
+      "noTagsHintBefore": "يبدو أنه لم يتم إنشاء أي وسم للمكالمات في حسابك بعد. للبدء، يرجى الانتقال إلى ",
+      "noTagsHintLink": "إعدادات الحساب",
+      "noTagsHintAfter": " الخاص بك وإنشاء وسم. إذا كنت بحاجة إلى أي مساعدة، فلا تتردد في الاتصال بفريق الدعم الخاص بنا.",
+      "addTag": "+ إضافة وسم",
+      "manageTags": "إدارة الوسوم",
+      "transcriptTitle": "النص الكامل للمكالمة",
+      "transcriptCopied": "تم نسخ النص",
+      "copyTranscript": "نسخ النص",
+      "loading": "جاري التحميل...",
+      "noTranscript": "لا يوجد نص لهذه المكالمة",
+      "dialogTitle": "تفاصيل المكالمة",
+      "tabs": {
+        "general": "عام",
+        "transcript": "النص الكامل",
+        "wrapup": "إنهاء المكالمة"
+      }
+    },
+    "wrapup": {
+      "empty": "لا يوجد سجل إنهاء لهذه المكالمة.",
+      "disposition": "التصنيف",
+      "status": "الحالة",
+      "agent": "الموظف",
+      "acw": "وقت ما بعد المكالمة",
+      "callbackScheduled": "معاودة اتصال مجدولة",
+      "completedAt": "تاريخ الإنهاء",
+      "notes": "ملاحظات",
+      "yes": "نعم",
+      "no": "لا"
+    }
+  },
+  "tagsSettings": {
+    "title": "إدارة وسوم المكالمات",
+    "subtitle": "أنشئ وسوماً لتصنيف المكالمات في حسابك.",
+    "addNew": "إضافة وسم جديد",
+    "tagName": "اسم الوسم",
+    "add": "إضافة",
+    "added": "تمت إضافة الوسم",
+    "current": "الوسوم الحالية ({{count}})",
+    "empty": "لا توجد وسوم بعد.",
+    "confirmDelete": "حذف الوسم \"{{name}}\"؟",
+    "deleted": "تم حذف الوسم",
+    "saved": "تم الحفظ"
+  },
+  "missedCalls": {
+    "title": "المكالمات الفائتة",
+    "subtitle": "جميع المكالمات التي لم يتم الرد عليها أو رُفضت",
+    "empty": "لا توجد مكالمات فائتة."
+  },
+  "users": {
+    "title": "المستخدمين",
+    "subtitle": "إدارة الموظفين والصلاحيات",
+    "tabs": {
+      "users": "المستخدمون",
+      "roles": "الأدوار والصلاحيات"
+    },
+    "addUser": "إضافة مستخدم",
+    "newUser": "مستخدم جديد",
+    "editUser": "تعديل المستخدم",
+    "empty": "لا يوجد مستخدمون.",
+    "loadFailed": "تعذّر تحميل المستخدمين",
+    "saved": "تم حفظ المستخدم",
+    "saveFailed": "تعذّر حفظ المستخدم",
+    "name": "الاسم",
+    "firstName": "الاسم الأول",
+    "lastName": "اسم العائلة",
+    "email": "البريد الإلكتروني",
+    "timezone": "المنطقة الزمنية",
+    "language": "اللغة",
+    "browserNotifications": "إشعارات المتصفح",
+    "role": "الدور",
+    "groups": "المجموعات",
+    "extensionNumber": "رقم التحويلة",
+    "extensionHint": "رقمي — متعلق بالـ IVR (يتطلب الدعم الفني للتعديل)",
+    "outboundCid": "رقم المعرف الصادر",
+    "outboundCidNone": "بدون",
+    "outboundCidEmpty": "لا توجد أرقام هاتف معدّة في إعدادات الحساب",
+    "recording": {
+      "title": "خيارات التسجيل",
+      "subtitle": "تحكّم في أنواع المكالمات التي يتم تسجيلها لهذا المستخدم.",
+      "inboundExternal": "واردة خارجية",
+      "inboundExternalDesc": "تسجيل المكالمات الواردة من خارج الشركة.",
+      "inboundInternal": "واردة داخلية",
+      "inboundInternalDesc": "تسجيل المكالمات الواردة من تحويلات أخرى.",
+      "outboundExternal": "صادرة خارجية",
+      "outboundExternalDesc": "تسجيل المكالمات الصادرة إلى أرقام خارجية.",
+      "outboundInternal": "صادرة داخلية",
+      "outboundInternalDesc": "تسجيل المكالمات الصادرة إلى تحويلات أخرى.",
+      "onDemand": "التسجيل عند الطلب",
+      "onDemandDesc": "السماح للمستخدم ببدء/إيقاف التسجيل أثناء المكالمة."
+    },
+    "extensionTakenUser": "هذا الرقم الداخلي مستخدم من قبل مستخدم آخر.",
+    "extensionTakenPipeline": "هذا الرقم الداخلي مستخدم من قبل مسار صوتي.",
+    "extensionChecking": "جارٍ التحقق من الرقم الداخلي...",
+    "createdAt": "تاريخ الإنشاء",
+    "status": "حالة ممثل الخدمة",
+    "statusDuration": "مدة الحالة",
+    "search": "بحث بالاسم أو البريد",
+    "selectGroups": "اختر المجموعات",
+    "noGroups": "لا توجد مجموعات",
+    "required": "مطلوب",
+    "invalidEmail": "البريد الإلكتروني غير صالح",
+    "actions": "الإجراءات",
+    "edit": "تعديل",
+    "disable": "تعطيل",
+    "enable": "تفعيل",
+    "disabled": "معطّل",
+    "userDisabled": "تم تعطيل المستخدم",
+    "userEnabled": "تم تفعيل المستخدم",
+    "viewCalls": "عرض المكالمات",
+    "view": "عرض",
+    "export": "تصدير",
+    "userDetails": "تفاصيل المستخدم",
+    "permissions": "أذونات ممثلي الخدمة",
+    "permissionsValue": "واردة, صادرة",
+    "filter": "فلترة",
+    "apply": "تطبيق",
+    "clearFilters": "مسح الفلاتر",
+    "allRoles": "كل الأدوار",
+    "allStatuses": "كل الحالات",
+    "allLanguages": "كل اللغات",
+    "allGroups": "كل المجموعات",
+    "accountState": "حالة الحساب",
+    "allAccounts": "كل الحسابات",
+    "enabledOnly": "المفعّلة فقط",
+    "disabledOnly": "المعطّلة فقط",
+    "selectedCount": "{{count}} محدد",
+    "filterRole": "الدور",
+    "filterStatus": "الحالة",
+    "filterLanguage": "اللغة",
+    "filterGroup": "المجموعة",
+    "roles": {
+      "owner": "مالك الحساب",
+      "agent": "ممثل خدمة",
+      "admin": "مسؤول الحساب"
+    },
+    "statuses": {
+      "available": "متاح",
+      "offline": "غير متصل",
+      "away": "غائب",
+      "inactive": "غير فعّال"
+    },
+    "manageRoles": "إدارة الأدوار",
+    "manageRolesDesc": "تغيير أدوار المستخدمين بسرعة."
+  },
+  "groups": {
+    "title": "المجموعات",
+    "subtitle": "إدارة مجموعات الرنين والاستراتيجيات",
+    "strategyLabel": "استراتيجية: {{strategy}} · مهلة {{timeout}}ث",
+    "members": "{{count}} عضو",
+    "activeCalls": "مكالمات نشطة",
+    "settings": "إعدادات المجموعة",
+    "groupName": "اسم المجموعة",
+    "ringStrategy": "استراتيجية الرنين",
+    "ringTimeout": "مهلة الرنين (ثوانٍ)",
+    "savedSettings": "تم حفظ الإعدادات",
+    "newGroup": "مجموعة جديدة",
+    "createGroup": "إنشاء مجموعة",
+    "selectMembers": "اختر الأعضاء",
+    "created": "تم إنشاء المجموعة",
+    "strategy": {
+      "simultaneous": "متزامن",
+      "round-robin": "دائري",
+      "least-calls": "أقل مكالمات",
+      "random": "عشوائي"
+    },
+    "usedInPublishedFlows_one": "مستخدمة في {{count}} تدفق منشور — أعد النشر لتطبيق التغييرات",
+    "usedInPublishedFlows_other": "مستخدمة في {{count}} تدفقات منشورة — أعد النشر لتطبيق التغييرات",
+    "republishWarningTitle": "إعادة النشر مطلوبة",
+    "republishWarningBody": "{{count}} من التدفقات المنشورة تشير إلى هذه المجموعة. لن تُطبَّق تغييراتك حتى يُعاد نشر تلك التدفقات.",
+    "openInEditor": "فتح في المحرر"
+  },
+  "reports": {
+    "title": "التقارير",
+    "subtitle": "تقارير الأداء والإحصاءات",
+    "tabs": {
+      "calls": "تقرير المكالمات",
+      "agents": "تقرير الموظفين",
+      "tags": "تقرير الوسوم"
+    },
+    "date": "التاريخ",
+    "total": "الإجمالي",
+    "answered": "مُجابة",
+    "missed": "فائتة",
+    "avgDuration": "متوسط المدة",
+    "agent": "الموظف",
+    "callsCount": "المكالمات",
+    "tag": "الوسم",
+    "tagCallsCount": "عدد المكالمات"
+  },
+  "directory": {
+    "title": "دليل الهاتف",
+    "tabs": {
+      "contacts": "جهات الاتصال",
+      "integrations": "التكاملات"
+    },
+    "subtitle": "جهات الاتصال",
+    "searchPlaceholder": "بحث بالاسم، الهاتف، أو الشركة",
+    "name": "الاسم",
+    "phone": "الهاتف",
+    "email": "البريد",
+    "company": "الشركة",
+    "notes": "ملاحظات",
+    "lastCall": "آخر مكالمة",
+    "calls": "المكالمات",
+    "actions": "إجراءات",
+    "callDemo": "اتصال — تجريبي",
+    "smsDemo": "SMS — تجريبي",
+    "addContact": "إضافة جهة اتصال",
+    "editContact": "تعديل جهة الاتصال",
+    "newContact": "جهة اتصال جديدة",
+    "namePlaceholder": "الاسم الكامل",
+    "phonePlaceholder": "+966 5x xxx xxxx",
+    "emailPlaceholder": "name@company.com",
+    "companyPlaceholder": "اسم الشركة",
+    "notesPlaceholder": "ملاحظات اختيارية",
+    "deleteTitle": "حذف جهة الاتصال؟",
+    "deleteDesc": "سيتم حذف جهة الاتصال نهائياً.",
+    "empty": "لا توجد جهات اتصال بعد. اضغط \"إضافة\" لإنشاء أول جهة اتصال.",
+    "noResults": "لا توجد نتائج مطابقة.",
+    "loadError": "فشل تحميل جهات الاتصال",
+    "saved": "تم الحفظ",
+    "deleted": "تم الحذف",
+    "nameRequired": "الاسم مطلوب",
+    "tags": "الوسوم",
+    "tagsColumn": "الوسوم",
+    "manageTags": "إدارة الوسوم",
+    "filterByTags": "تصفية بالوسوم",
+    "allTags": "كل الوسوم",
+    "clearFilter": "مسح التصفية",
+    "newTag": "وسم جديد",
+    "editTag": "تعديل الوسم",
+    "tagLabel": "الاسم",
+    "tagLabelPlaceholder": "مثل: VIP، عميل محتمل",
+    "tagColor": "اللون",
+    "tagSaved": "تم حفظ الوسم",
+    "tagDeleted": "تم حذف الوسم",
+    "tagDeleteTitle": "حذف الوسم؟",
+    "tagDeleteDesc": "سيتم حذف الوسم ولن يظهر على جهات الاتصال.",
+    "tagLabelRequired": "اسم الوسم مطلوب",
+    "noTags": "لا توجد وسوم بعد",
+    "addTag": "إضافة وسم",
+    "selectTags": "اختر الوسوم",
+    "importCsv": "استيراد CSV",
+    "exportCsv": "تصدير CSV",
+    "exportEmpty": "لا توجد جهات اتصال للتصدير",
+    "exported": "تم تصدير {{count}} جهة اتصال",
+    "importTitle": "استيراد جهات الاتصال من CSV",
+    "importPreview": "معاينة",
+    "importConfirm": "استيراد {{count}} جهة اتصال",
+    "importSummary": "تم استيراد {{imported}}، وتم تخطي {{skipped}}",
+    "importErrorNoName": "السطر {{row}}: الاسم مطلوب",
+    "importNoRows": "لا توجد صفوف صالحة في الملف",
+    "importInvalidFile": "تعذّر قراءة ملف CSV",
+    "importing": "جارٍ الاستيراد…",
+    "csvHeaderHint": "الأعمدة المتوقعة: name (مطلوب)، phone، email، company، notes، tags",
+    "importStats": "{{valid}} صالحة · {{skipped}} متخطاة من {{total}} صفوف",
+    "importErrors": "أخطاء"
+  },
+  "ivrList": {
+    "title": "تدفقات IVR",
+    "subtitle": "تصميم وإدارة تدفقات توجيه المكالمات",
+    "createNew": "إنشاء تدفق جديد",
+    "newFlow": "تدفق IVR جديد",
+    "newFlowDesc": "أدخل تفاصيل التدفق ثم انتقل إلى المحرر لتصميمه.",
+    "flowName": "اسم التدفق",
+    "flowNamePlaceholder": "مثال: تدفق المبيعات",
+    "description": "الوصف",
+    "descriptionPlaceholder": "وصف مختصر لهذا التدفق",
+    "status": "الحالة",
+    "draft": "مسودة",
+    "published": "منشور",
+    "createCta": "إنشاء",
+    "loadFailed": "تعذّر تحميل التدفقات",
+    "empty": "لا توجد تدفقات. ابدأ بإنشاء تدفق جديد.",
+    "nameRequired": "الاسم مطلوب",
+    "nameRequiredDesc": "يرجى إدخال اسم للتدفق.",
+    "created": "تم إنشاء التدفق",
+    "createFailed": "فشل الإنشاء",
+    "deleted": "تم حذف التدفق",
+    "deleteFailed": "فشل الحذف",
+    "deleteTitle": "حذف التدفق؟",
+    "deleteDesc": "سيتم حذف \"{{name}}\" نهائياً. لا يمكن التراجع عن هذا الإجراء.",
+    "deleteAria": "حذف {{name}}",
+    "duplicate": "تكرار",
+    "duplicateSuffix": "(نسخة)",
+    "duplicateAria": "تكرار {{name}}",
+    "duplicated": "تم تكرار التدفق",
+    "duplicateFailed": "فشل تكرار التدفق",
+    "noDescription": "بدون وصف",
+    "lastEdited": "آخر تعديل {{when}}",
+    "tabs": {
+      "flows": "التدفقات",
+      "voiceLibrary": "مكتبة الأصوات"
+    }
+  },
+  "voiceLibrary": {
+    "addVoice": "إضافة صوت",
+    "newVoice": "صوت جديد",
+    "newVoiceDesc": "أضف ملفًا صوتيًا لإعادة استخدامه في تدفقات الرد الآلي.",
+    "name": "الاسم",
+    "source": "المصدر",
+    "tts": "تحويل النص إلى صوت",
+    "upload": "رفع ملف صوتي",
+    "url": "رابط",
+    "text": "النص",
+    "file": "ملف صوتي",
+    "link": "الرابط",
+    "language": "اللغة",
+    "voice": "الصوت",
+    "voiceFemale": "أنثى",
+    "voiceMale": "ذكر",
+    "interruptible": "قابل للمقاطعة",
+    "addCta": "إضافة",
+    "editVoice": "تعديل الصوت",
+    "editVoiceDesc": "حدّث بيانات الصوت ومصدر الملف الصوتي.",
+    "editAria": "تعديل {{name}}",
+    "currentFile": "الملف الحالي",
+    "updated": "تم تحديث الصوت",
+    "updateFailed": "فشل تحديث الصوت",
+    "added": "تمت إضافة الصوت",
+    "addFailed": "فشل إضافة الصوت",
+    "deleted": "تم حذف الصوت",
+    "deleteFailed": "فشل حذف الصوت",
+    "deleteTitle": "حذف الصوت؟",
+    "deleteDesc": "سيتم حذف \"{{name}}\" نهائيًا. لا يمكن التراجع عن ذلك.",
+    "loadFailed": "فشل تحميل مكتبة الأصوات",
+    "empty": "لا توجد أصوات بعد. أضف صوتًا للبدء.",
+    "searchPlaceholder": "ابحث عن صوت...",
+    "nameRequired": "الاسم مطلوب",
+    "fileRequired": "الرجاء اختيار ملف صوتي",
+    "play": "تشغيل",
+    "pause": "إيقاف",
+    "playFailed": "فشل التشغيل",
+    "previewUnavailable": "المعاينة غير متاحة لتحويل النص إلى صوت",
+    "columns": {
+      "name": "الاسم",
+      "source": "المصدر",
+      "content": "المحتوى",
+      "language": "اللغة",
+      "voice": "الصوت",
+      "interruptible": "قابل للمقاطعة",
+      "actions": "إجراءات"
+    }
+  },
+  "ivrEditor": {
+    "loading": "جارٍ تحميل التدفق...",
+    "notFound": "التدفق غير موجود",
+    "loadFailed": "فشل تحميل التدفق",
+    "noId": "لا يمكن الحفظ: معرّف التدفق غير متاح",
+    "saved": "تم حفظ التدفق",
+    "saveFailed": "فشل الحفظ",
+    "deployed": "تم نشر التدفق",
+    "deployFailed": "فشل النشر",
+    "exported": "تم تصدير التدفق",
+    "imported": "تم استيراد التدفق",
+    "importFailed": "فشل الاستيراد",
+    "deleteConfirm": "هل تريد حذف التدفق وبدء واحد جديد؟",
+    "topbar": {
+      "more": "المزيد",
+      "rename": "إعادة تسمية",
+      "exportJson": "تصدير JSON",
+      "importJson": "استيراد JSON",
+      "resetAll": "حذف وإعادة التهيئة",
+      "saveBtn": "حفظ",
+      "deployBtn": "نشر",
+      "exportDialplan": "تصدير dialplan",
+      "exportAra": "تصدير ARA SQL (MySQL)",
+      "exportPjsip": "تصدير pjsip.conf",
+      "dialplanBtn": "dialplan",
+      "exportAsterisk": "تصدير Asterisk",
+      "exportFreeswitch": "تصدير FreeSWITCH",
+      "assignNumber": "ربط برقم",
+      "assignedNumber": "الرقم: {{n}}",
+      "validateBtn": "تحقق"
+    },
+    "validate": {
+      "title": "التحقق من التدفق",
+      "allGood": "لا توجد مشاكل",
+      "errorsCount": "{{count}} خطأ",
+      "warningsCount": "{{count}} تحذير",
+      "noStart": "لا توجد عقدة بداية المكالمة",
+      "multipleStarts": "يوجد أكثر من عقدة بداية مكالمة",
+      "unreachable": "غير قابل للوصول من بداية المكالمة",
+      "disconnectedInput": "مدخل العقدة غير موصول",
+      "disconnectedOutput": "المخرج \"{{handle}}\" غير موصول",
+      "invalidExtension": "الامتداد المعيّن غير صالح",
+      "fixToDeploy": "يجب حل الأخطاء قبل النشر"
+    },
+    "status": {
+      "published": "منشور",
+      "draft": "مسودة"
+    },
+    "palette": {
+      "title": "الخطوات",
+      "show": "إظهار",
+      "hide": "إخفاء",
+      "new": "جديد",
+      "basic": "خطوات أساسية",
+      "advanced": "خطوات متقدمة"
+    },
+    "canvas": {
+      "zoomIn": "تكبير",
+      "zoomOut": "تصغير",
+      "fitView": "ملء العرض",
+      "lock": "قفل",
+      "minimap": "خريطة",
+      "undo": "تراجع",
+      "redo": "إعادة",
+      "duplicateBlocked": "هذا النوع لا يمكن إضافته أكثر من مرة",
+      "fullscreen": "ملء الشاشة",
+      "fullscreenExit": "إنهاء ملء الشاشة",
+      "fullscreenUnavailable": "وضع ملء الشاشة غير متاح",
+      "alreadyConnected": "هذا الخيار موصل بالفعل"
+    },
+    "node": {
+      "settings": "إعدادات",
+      "duplicate": "تكرار",
+      "delete": "حذف",
+      "new": "جديد",
+      "connectedSuffix": "(موصل)"
+    },
+    "dialplan": {
+      "title": "الـ Dialplan المُولَّد",
+      "copy": "نسخ",
+      "copied": "تم نسخ الـ Dialplan",
+      "copyFailed": "فشل النسخ",
+      "empty": "(لا يوجد ناتج)",
+      "invalid": "تعذّر توليد الـ Dialplan — يرجى تصحيح الآتي:"
+    },
+    "edge": {
+      "delete": "حذف"
+    },
+    "config": {
+      "close": "إغلاق",
+      "saved": "تم الحفظ",
+      "viewDialplan": "عرض الـ Dialplan",
+      "viewFsDialplan": "مخطط الاتصال FreeSWITCH"
+    },
+    "serialization": {
+      "noFile": "لم يتم اختيار ملف",
+      "invalidJson": "ملف JSON غير صالح",
+      "readFailed": "فشل قراءة الملف"
+    },
+    "store": {
+      "newFlow": "تدفق جديد",
+      "importedFlow": "تدفق مستورد"
+    },
+    "dialplanFailed": "تعذر التصدير: {{details}}",
+    "dialplanSuccess": "تم تصدير ملف extensions.conf",
+    "araFailed": "تعذر تصدير ARA SQL: {{details}}",
+    "araSuccess": "تم تصدير ملف ARA SQL",
+    "araPreview": {
+      "title": "معاينة ARA SQL",
+      "description": "راجع تعليمات CREATE TABLE وعمليات الإدراج قبل التنزيل.",
+      "lines": "{{n}} سطر",
+      "size": "{{n}} بايت",
+      "copy": "نسخ SQL",
+      "download": "تنزيل .sql"
+    },
+    "pjsipFailed": "تعذر تصدير pjsip.conf: {{details}}",
+    "pjsipSuccess": "تم تصدير ملف pjsip.conf",
+    "tenantMissingTitle": "تعذّر التصدير: لا يوجد مُعرّف مستأجر",
+    "tenantMissingDesc": "جلستك الحالية لا تحتوي على مُعرّف مستأجر. سجّل الخروج ثم الدخول مرة أخرى وأعد المحاولة.",
+    "tenantInvalidTitle": "تعذّر التصدير: مُعرّف المستأجر غير صالح",
+    "tenantInvalidDesc": "مُعرّف المستأجر في جلستك قصير جدًا أو يحتوي على رموز غير مسموح بها، ولا يمكن توليد أسماء الأقسام بصيغة [name-<tenantId>]. سجّل الخروج والدخول مجددًا أو تواصل مع الدعم.",
+    "pjsipPreview": {
+      "title": "معاينة pjsip.conf",
+      "description": "راجع وسائل النقل وأقسام الـ endpoint قبل التنزيل. استبدل <CHANGE_ME> بكلمة مرور حقيقية.",
+      "lines": "{{n}} سطر",
+      "size": "{{n}} بايت",
+      "copy": "نسخ الإعداد",
+      "download": "تنزيل .conf"
+    },
+    "exportPreview": {
+      "title": "تصدير إعدادات Asterisk",
+      "description": "راجع pjsip.conf و pjsip MySQL و extensions.conf و ARA SQL و queues.conf و queues MySQL قبل التنزيل. تُستخدم سياقات pjsip.conf كسياقات دخول في extensions.conf، ويحتوي queues.conf و queues MySQL على تعريفات مجموعات الاتصال المستخدمة في خطة الاتصال.",
+      "tabs": {
+        "pjsip": "pjsip.conf",
+        "pjsipSql": "pjsip MySQL",
+        "extensions": "extensions.conf",
+        "ara": "ARA SQL",
+        "extensionsAra": "extensions.conf.ara",
+        "queues": "queues.conf",
+        "queuesSql": "queues MySQL"
+      },
+      "lines": "{{n}} سطر",
+      "size": "{{n}} بايت",
+      "copy": "نسخ",
+      "download": "تنزيل",
+      "pushToBackend": "إرسال إلى الخادم",
+      "pushed": "تم الإرسال إلى الخادم",
+      "pushFailed": "فشل الإرسال: {{details}}",
+      "pjsip": {
+        "authPasswordLabel": "كلمة مرور SIP",
+        "authPasswordPlaceholder": "اتركه فارغًا للإبقاء على <CHANGE_ME>",
+        "identifyMatchLabel": "عنوان الـ Trunk (IP / مضيف)",
+        "identifyMatchPlaceholder": "اتركه فارغًا للإبقاء على <CHANGE_ME_TRUNK_IP>"
+      }
+    },
+    "fsExportPreview": {
+      "title": "تصدير إعدادات FreeSWITCH",
+      "description": "راجع dialplan XML ومستندات dialplan لقاعدة MongoDB وملف Sofia وطوابير mod_callcenter وسكربتات SQL قبل التنزيل.",
+      "tabs": {
+        "dialplan": "dialplan.xml",
+        "dialplanDocs": "مستندات خطة الاتصال",
+        "sofiaUsers": "مستخدمو Sofia",
+        "sofiaGateways": "بوابات Sofia",
+        "callcenter": "callcenter.xml",
+        "callcenterSql": "callcenter SQL"
+      }
+    },
+    "fsDialplanSuccess": "تم تنزيل dialplan FreeSWITCH",
+    "fsDialplanFailed": "فشل تصدير dialplan FreeSWITCH: {{details}}",
+    "fsSofiaSuccess": "تم تنزيل ملف Sofia",
+    "fsSofiaFailed": "فشل تصدير Sofia: {{details}}",
+    "fsCallcenterSuccess": "تم تنزيل طوابير mod_callcenter",
+    "fsCallcenterFailed": "فشل تصدير mod_callcenter: {{details}}",
+    "assignNumber": {
+      "title": "ربط التدفق برقم داخلي",
+      "description": "هذا الرقم سيُستخدم كـ extension في ملف extensions.conf الخاص بـ Asterisk.",
+      "label": "رقم الداخلي / الامتداد",
+      "loading": "جارٍ تحميل الأرقام...",
+      "empty": "لا توجد أرقام مسجلة. يرجى إضافتها من إعدادات الحساب > الأرقام.",
+      "placeholder": "اختر رقمًا مسجّلًا",
+      "notRegistered": "الرقم الحالي ({{n}}) غير مسجل. اختر رقمًا من القائمة.",
+      "removeBinding": "إزالة الربط",
+      "bindingRemoved": "تم إلغاء الربط",
+      "bindingSaved": "تم ربط التدفق بالرقم {{n}}"
+    }
+  },
+  "nodes": {
+    "call_start": {
+      "label": "بداية المكالمة",
+      "subtitle": "نقطة البداية",
+      "description": "نقطة الدخول لكل مكالمة واردة"
+    },
+    "working_hours": {
+      "label": "ساعات العمل",
+      "subtitle": "تحقق من الجدول",
+      "description": "توجيه المكالمة حسب ساعات العمل",
+      "defaultName": "ساعات العمل",
+      "during": "خلال ساعات العمل",
+      "outside": "خارج ساعات العمل"
+    },
+    "ivr_menu": {
+      "label": "خيارات",
+      "subtitle": "خيارات صوتية تفاعلية",
+      "description": "اعرض خيارات للمتصل ليختار رقماً",
+      "noInput": "بدون إدخال",
+      "invalidInput": "إدخال خاطئ",
+      "option": "خيار",
+      "errors": {
+        "libraryRequired": "اختيار الصوت من المكتبة مطلوب",
+        "audioRequired": "ملف صوتي مطلوب",
+        "voiceRequired": "الصوت مطلوب",
+        "optionsRequired": "أضف خياراً واحداً على الأقل"
+      }
+    },
+    "sound_file": {
+      "label": "ملف صوتي",
+      "subtitle": "تشغيل صوت",
+      "description": "شغّل ملف صوتي أو نصاً محولاً للصوت",
+      "errors": {
+        "loopCountRange": "عدد التكرارات يجب أن يكون رقماً صحيحاً بين 1 و 100"
+      }
+    },
+    "call_forwarding": {
+      "label": "تحويل المكالمات",
+      "subtitle": "حوّل لجهة أخرى",
+      "description": "حوّل المكالمة إلى رقم أو موظف أو مجموعة",
+      "answered": "تم الرد",
+      "noAnswer": "لا رد"
+    },
+    "ai_agent": {
+      "label": "الوكيل الذكي",
+      "subtitle": "محادثة بالذكاء الاصطناعي",
+      "description": "وكيل صوتي ذكي يتحدث مع المتصل",
+      "defaultName": "الوكيل الذكي",
+      "answered": "تم الرد",
+      "noAnswer": "بدون رد"
+    },
+    "messages": {
+      "label": "الرسائل",
+      "subtitle": "SMS / WhatsApp",
+      "description": "أرسل رسالة نصية أو واتساب للمتصل"
+    },
+    "rule_routing": {
+      "label": "توجيه بناءً على قواعد",
+      "subtitle": "قواعد شرطية",
+      "description": "وجّه المكالمة بناءً على شروط محددة",
+      "rule": "قاعدة {{n}}",
+      "default": "افتراضي"
+    },
+    "set_flags": {
+      "label": "وضع العلامات",
+      "subtitle": "تعيين متغيرات",
+      "description": "خزّن قيماً لاستخدامها لاحقاً في التدفق"
+    },
+    "voicemail": {
+      "label": "البريد الصوتي",
+      "subtitle": "تسجيل رسالة",
+      "description": "اطلب من المتصل ترك رسالة صوتية",
+      "defaultText": "يرجى ترك رسالتك بعد النغمة"
+    },
+    "webhook": {
+      "label": "Webhooks API",
+      "subtitle": "استدعاء خارجي",
+      "description": "أرسل طلب HTTP لخدمة خارجية",
+      "success": "نجاح",
+      "failure": "فشل"
+    },
+    "survey": {
+      "label": "استبيان",
+      "subtitle": "تشغيل استبيان",
+      "description": "تشغيل استبيان معرف مسبقاً وإرسال النتائج إلى webhook",
+      "completed": "مكتمل",
+      "abandoned": "تم التخلي",
+      "failed": "فشل",
+      "noSurveySelected": "لم يتم اختيار استبيان",
+      "questionsCount": "{{count}} أسئلة",
+      "deletedShort": "محذوف",
+      "staleShort": "محدث",
+      "errors": {
+        "required": "اختر استبياناً قبل النشر",
+        "notPublished": "الاستبيان المحدد ليس منشوراً",
+        "deleted": "الاستبيان المحدد تم حذفه",
+        "invalidOverrideUrl": "رابط webhook البديل غير صالح",
+        "missingFlowVariable": "متغير مُمرر غير متوفر من عقدة سابقة"
+      }
+    },
+    "user_input": {
+      "label": "إدخال المستخدم",
+      "subtitle": "جمع إدخال من المتصل",
+      "description": "اطلب من المتصل إدخالاً وخزّنه في متغير (DTMF أو صوت)",
+      "collected": "تم الإدخال",
+      "noInput": "بدون إدخال",
+      "invalidInput": "إدخال غير صالح",
+      "errors": {
+        "invalidVariable": "اسم المتغير يجب أن يبدأ بحرف أو شرطة سفلية ويحتوي حروفاً وأرقاماً فقط",
+        "voiceRequired": "النص الصوتي مطلوب",
+        "invalidPattern": "نمط التحقق ليس تعبيراً نمطياً صالحاً"
+      }
+    },
+    "end_call": {
+      "label": "نهاية المكالمة",
+      "subtitle": "إنهاء وإغلاق",
+      "description": "أنهِ المكالمة (نقطة نهاية)"
+    }
+  },
+  "forms": {
+    "sections": {
+      "configuration": "الإعدادات",
+      "schedule": "الجدول الزمني",
+      "soundFiles": "الملفات الصوتية",
+      "options": "خيارات القائمة",
+      "playback": "التشغيل",
+      "advanced": "إعدادات متقدمة",
+      "target": "وجهة التحويل",
+      "ringQueue": "الرنين والطابور",
+      "callerId": "هوية المتصل",
+      "pipeline": "خط الأنابيب",
+      "behavior": "السلوك",
+      "recipient": "المستلم",
+      "messageBody": "نص الرسالة",
+      "rules": "القواعد",
+      "tags": "الأعلام",
+      "delivery": "التسليم والإشعارات",
+      "request": "الطلب",
+      "headersBody": "الترويسات والمحتوى",
+      "response": "الاستجابة"
+    },
+    "common": {
+      "name": "الاسم",
+      "key": "المفتاح",
+      "value": "القيمة",
+      "addRow": "إضافة",
+      "addOption": "إضافة خيار",
+      "addRule": "إضافة قاعدة",
+      "addHoliday": "إضافة عطلة",
+      "addHeader": "إضافة ترويسة",
+      "label": "التسمية",
+      "language": "اللغة",
+      "voice": "الصوت",
+      "tagPlaceholder": "اكتب واضغط Enter",
+      "digit": "رقم",
+      "menuOption": "مثلاً: المبيعات",
+      "static": "ثابت",
+      "dynamic": "متغير",
+      "ruleN": "قاعدة {{n}}",
+      "outputLabel": "تسمية المخرج",
+      "valuePlaceholder": "القيمة"
+    },
+    "days": {
+      "Sun": "الأحد",
+      "Mon": "الإثنين",
+      "Tue": "الثلاثاء",
+      "Wed": "الأربعاء",
+      "Thu": "الخميس",
+      "Fri": "الجمعة",
+      "Sat": "السبت"
+    },
+    "fields": {
+      "caller_number": "رقم المتصل",
+      "caller_name": "اسم المتصل",
+      "country_code": "رمز الدولة",
+      "call_count": "عدد المكالمات",
+      "time_of_day": "الوقت",
+      "day_of_week": "اليوم",
+      "ivr_selection": "اختيار الخيارات",
+      "custom_field": "حقل مخصص"
+    },
+    "ops": {
+      "equals": "يساوي",
+      "not_equals": "لا يساوي",
+      "starts_with": "يبدأ بـ",
+      "ends_with": "ينتهي بـ",
+      "contains": "يحتوي",
+      "gt": "أكبر من",
+      "lt": "أقل من",
+      "empty": "فارغ",
+      "not_empty": "غير فارغ"
+    },
+    "callStart": {
+      "welcome": "رسالة ترحيب",
+      "welcomePh": "مرحباً بك...",
+      "record": "تسجيل المكالمة",
+      "maxDuration": "أقصى مدة (دقيقة)"
+    },
+    "workingHours": {
+      "scheduleName": "اسم الجدول",
+      "timezone": "المنطقة الزمنية",
+      "weeklySchedule": "الجدول الأسبوعي",
+      "holidays": "أيام العطلات",
+      "offHoursMessage": "رسالة خارج الدوام",
+      "holidayLabel": "التسمية"
+    },
+    "ivrMenu": {
+      "menuName": "اسم الخيارات",
+      "promptType": "نوع الرسالة",
+      "library": "من مكتبة الأصوات",
+      "audio": "ملف صوتي",
+      "selectVoice": "اختر صوتاً",
+      "noVoices": "لا توجد أصوات. أضف صوتاً من مكتبة الأصوات.",
+      "audioFile": "الملف الصوتي",
+      "voiceFemale": "أنثى",
+      "voiceMale": "ذكر",
+      "options": "الخيارات",
+      "timeout": "مهلة الانتظار (ثانية)",
+      "maxRetries": "أقصى محاولات",
+      "onInvalid": "عند إدخال خاطئ",
+      "repeat": "إعادة الخيارات",
+      "hangup": "إنهاء المكالمة"
+    },
+    "userInput": {
+      "variableName": "اسم المتغير",
+      "variableHint": "المعرّف الذي تُخزَّن فيه القيمة الملتقطة",
+      "inputSection": "الإدخال",
+      "inputType": "نوع الإدخال",
+      "dtmf": "أزرار (DTMF)",
+      "speech": "صوت",
+      "both": "كلاهما",
+      "minDigits": "أقل عدد أرقام",
+      "maxDigits": "أكثر عدد أرقام",
+      "terminator": "زر الإنهاء",
+      "none": "لا شيء",
+      "interDigitTimeout": "مهلة بين الأرقام (ث)",
+      "speechMaxDuration": "أقصى مدة كلام (ث)",
+      "validationSection": "التحقق",
+      "pattern": "نمط Regex",
+      "patternHint": "اختياري. يجب أن تطابق القيمة هذا النمط",
+      "errorMessage": "رسالة الخطأ",
+      "continue": "المتابعة للعقدة التالية"
+    },
+    "soundFile": {
+      "source": "مصدر الصوت",
+      "upload": "رفع ملف",
+      "tts": "نص محول",
+      "url": "رابط خارجي",
+      "library": "مكتبة الأصوات",
+      "librarySelect": "اختر صوتاً",
+      "libraryEmpty": "لا توجد أصوات في المكتبة",
+      "file": "الملف",
+      "text": "النص",
+      "link": "الرابط",
+      "interruptible": "قابل للتخطي",
+      "loop": "تكرار",
+      "loopCount": "عدد التكرار"
+    },
+    "callForwarding": {
+      "forwardTo": "التحويل إلى",
+      "phone": "رقم هاتف",
+      "sip": "عنوان SIP",
+      "agentT": "موظف",
+      "groupT": "مجموعة",
+      "queueT": "قائمة انتظار",
+      "queue": "قائمة انتظار",
+      "number": "الرقم",
+      "sipAddr": "عنوان SIP",
+      "agentSelect": "اختر موظفاً",
+      "noAgents": "لا يوجد موظفون",
+      "noExtension": "بدون امتداد",
+      "groupSelect": "اختر مجموعة",
+      "queueSelect": "اختر قائمة انتظار",
+      "noQueues": "لا توجد قوائم انتظار",
+      "queueManagedHint": "استراتيجية الرنين والمهلة والموسيقى تُضبط داخل قائمة الانتظار المختارة.",
+      "ringStrategy": "استراتيجية الرنين",
+      "simultaneous": "متزامن",
+      "round_robin": "دائري",
+      "random": "عشوائي",
+      "ringall": "الاتصال بالجميع",
+      "leastrecent": "الأقل استلامًا مؤخرًا",
+      "fewestcalls": "الأقل عددًا للمكالمات",
+      "rrmemory": "دوري بالذاكرة",
+      "rrordered": "دوري بالترتيب",
+      "linear": "تسلسلي",
+      "wrandom": "عشوائي مرجَّح",
+      "ringTimeout": "مهلة الرنين (ثانية)",
+      "dialTimeout": "مهلة الاتصال (ثانية)",
+      "strategyManagedInGroup": "تُدار من قائمة الانتظار",
+      "callerId": "رقم المتصل المعروض",
+      "original": "المتصل الأصلي",
+      "company": "رقم الشركة",
+      "custom": "مخصص",
+      "customNumber": "رقم مخصص",
+      "whisper": "رسالة همس (اختياري)",
+      "record": "تسجيل المكالمة",
+      "waitingMusic": "موسيقى الانتظار",
+      "ringTone": "نغمة رنين مخصصة",
+      "audioSourceLibrary": "مكتبة الأصوات",
+      "audioSourceUpload": "رفع ملف",
+      "audioLibrarySelect": "اختر صوتاً",
+      "audioNone": "بدون",
+      "groups": {
+        "sales": "المبيعات",
+        "support": "الدعم الفني"
+      },
+      "sharedGroupQueueHint": "تستخدم قائمة الانتظار المشتركة للمجموعة. جميع التدفقات المنشورة التي تشير إلى هذه المجموعة تشترك في كتلة قائمة انتظار واحدة.",
+      "clonedGroupQueueHint": "عند النشر، سيتم إنشاء قائمة انتظار جديدة من هذه المجموعة بالإستراتيجية المحددة أدناه. لن تتأثر قائمة الانتظار المشتركة للمجموعة.",
+      "adhocQueueHint": "عند النشر، سيتم إنشاء قائمة انتظار مخصصة لهذه العقدة."
+    },
+    "aiAgent": {
+      "general": "عام",
+      "advanced": "متقدم",
+      "agentName": "اسم الوكيل",
+      "pipelineLabel": "خط الأنابيب النشط",
+      "pipelinePlaceholder": "اختر خط أنابيب",
+      "pipelineEmpty": "لا توجد خطوط أنابيب نشطة",
+      "pipelineLoading": "جارٍ التحميل...",
+      "voiceDefault": "افتراضي",
+      "warmFemale": "أنثى دافئة",
+      "formalMale": "ذكر رسمي",
+      "maxDuration": "أقصى مدة محادثة (دقيقة)",
+      "handoffKeywords": "كلمات التحويل",
+      "fallback": "السلوك الاحتياطي",
+      "fallbackHandoff": "تحويل لموظف",
+      "fallbackVoicemail": "بريد صوتي",
+      "fallbackEnd": "إنهاء",
+      "logConversations": "حفظ المحادثات"
+    },
+    "messages": {
+      "channel": "القناة",
+      "template": "القالب",
+      "templateSelect": "اختر قالباً",
+      "tplWelcome": "ترحيب",
+      "tplConfirmation": "تأكيد",
+      "tplReminder": "تذكير",
+      "body": "نص الرسالة",
+      "bodyHint": "المتغيرات المتاحة: {{caller_number}}, {{caller_name}}, {{date}}, {{time}}",
+      "chars": "{{n}} حرف",
+      "recipient": "المستلم",
+      "caller": "المتصل",
+      "customNumber": "رقم مخصص",
+      "timing": "توقيت الإرسال",
+      "immediate": "فوري",
+      "after": "بعد المكالمة",
+      "delayed": "مؤجل",
+      "delayDuration": "مدة التأجيل",
+      "attachment": "مرفق"
+    },
+    "ruleRouting": {
+      "rules": "القواعد",
+      "rulesHint": "ترتيب القواعد مهم — يتم تطبيقها من الأعلى للأسفل، وأول قاعدة مطابقة هي المتبعة."
+    },
+    "setFlags": {
+      "flags": "العلامات",
+      "overwrite": "الكتابة فوق القيم الموجودة"
+    },
+    "voicemail": {
+      "greetingType": "نوع التحية",
+      "upload": "رفع ملف",
+      "tts": "نص محول",
+      "file": "الملف",
+      "text": "النص",
+      "maxDuration": "أقصى مدة تسجيل (ثانية)",
+      "beep": "نغمة قبل التسجيل",
+      "transcription": "تحويل لنص",
+      "emailNotify": "إشعار بالبريد",
+      "smsNotify": "إشعار SMS",
+      "webhookNotify": "إشعار Webhook",
+      "storage": "مدة الاحتفاظ",
+      "days30": "30 يوم",
+      "days60": "60 يوم",
+      "days90": "90 يوم",
+      "year": "سنة",
+      "forever": "دائم",
+      "library": "مكتبة الأصوات",
+      "librarySelect": "اختر صوتاً",
+      "libraryEmpty": "لا توجد أصوات في المكتبة",
+      "greeting": "التحية (من مكتبة الأصوات)",
+      "owner": "إسناد إلى قائمة انتظار",
+      "queueSelect": "اختر قائمة الانتظار",
+      "noQueues": "لا توجد قوائم انتظار",
+      "queueHint": "الرسائل الصوتية المتروكة هنا تظهر في صناديق وكلاء قائمة الانتظار هذه. اتركه فارغاً ليرث قائمة الانتظار التي حوّلت إلى هذه العقدة، وإلا فسيعود إلى التدفق (بدون جمهور من الوكلاء)."
+    },
+    "webhook": {
+      "request": "الطلب",
+      "response": "الاستجابة",
+      "method": "الطريقة",
+      "url": "الرابط",
+      "headers": "الترويسات",
+      "body": "جسم الطلب",
+      "bodyHint": "أدخل JSON — يمكنك استخدام المتغيرات مثل {{caller_number}}",
+      "timeout": "المهلة (ثانية)",
+      "retry": "إعادة المحاولة",
+      "retryCount": "عدد المحاولات",
+      "saveVar": "حفظ الاستجابة في متغير",
+      "successCondition": "شرط النجاح",
+      "successHint": "مثال: 200-299",
+      "test": "إرسال طلب تجريبي",
+      "testing": "جارٍ الإرسال...",
+      "testError": "خطأ: {{msg}}",
+      "connectFailed": "تعذّر الاتصال"
+    },
+    "endCall": {
+      "endMessage": "رسالة الإنهاء",
+      "none": "لا شيء",
+      "tts": "نص محول",
+      "audio": "ملف صوتي",
+      "text": "النص",
+      "file": "الملف",
+      "hangupDelay": "تأخير الإغلاق (ثانية)",
+      "smsAfter": "إرسال SMS بعد المكالمة",
+      "smsBodyPh": "نص الرسالة...",
+      "webhookEnable": "تفعيل Webhook"
+    }
+  },
+  "account": {
+    "title": "الحساب",
+    "subtitle": "إدارة ملفك الشخصي والتفضيلات والأمان.",
+    "saved": "تم الحفظ",
+    "tabs": {
+      "profile": "الملف الشخصي",
+      "preferences": "التفضيلات",
+      "security": "الأمان",
+      "status": "الحالة"
+    },
+    "profile": {
+      "title": "الملف الشخصي",
+      "desc": "تحديث معلوماتك الشخصية.",
+      "firstName": "الاسم الأول",
+      "lastName": "الاسم الأخير",
+      "displayName": "الاسم المعروض",
+      "email": "البريد الإلكتروني",
+      "emailHint": "تواصل مع المسؤول لتغيير البريد الإلكتروني.",
+      "extension": "التحويلة"
+    },
+    "preferences": {
+      "title": "التفضيلات",
+      "desc": "خصص تجربتك.",
+      "language": "اللغة",
+      "timezone": "المنطقة الزمنية",
+      "notifications": "إشعارات المتصفح",
+      "notificationsDesc": "تلقَّ إشعارات بالمكالمات والرسائل الواردة.",
+      "darkMode": "الوضع الداكن",
+      "darkModeDesc": "التبديل بين السمات الفاتحة والداكنة."
+    },
+    "security": {
+      "title": "تغيير كلمة المرور",
+      "desc": "استخدم كلمة مرور قوية وفريدة.",
+      "newPassword": "كلمة المرور الجديدة",
+      "confirmPassword": "تأكيد كلمة المرور",
+      "update": "تحديث كلمة المرور",
+      "tooShort": "يجب ألا تقل كلمة المرور عن 8 أحرف",
+      "mismatch": "كلمات المرور غير متطابقة",
+      "passwordUpdated": "تم تحديث كلمة المرور",
+      "session": "الجلسة"
+    },
+    "status": {
+      "title": "الحالة",
+      "desc": "حدّد توفرك.",
+      "available": "متاح",
+      "away": "بعيد",
+      "offline": "غير متصل"
+    }
+  },
+  "accountSettings": {
+    "menu": "إعدادات الحساب",
+    "sub": {
+      "general": "عام",
+      "billing": "الفوترة",
+      "integrations": "التكاملات",
+      "numbers": "الأرقام",
+      "alerts": "تنبيهات الكلمات المفتاحية",
+      "autotags": "الوسوم التلقائية"
+    },
+    "comingSoon": "هذا القسم قادم قريباً.",
+    "autoTagsSection": {
+      "title": "الوسوم التلقائية",
+      "description": "قم بإنشاء وإدارة الوسوم التلقائية لتصنيف المكالمات المدعوم بالذكاء الاصطناعي. تساعد الوسوم التلقائية في تصنيف المكالمات تلقائياً بناءً على محتواها.",
+      "learnMore": "اعرف المزيد",
+      "create": "إنشاء وسم تلقائي",
+      "showInactive": "إظهار غير النشطة",
+      "hideInactive": "إخفاء غير النشطة",
+      "edit": "تعديل",
+      "empty": "لا توجد وسوم تلقائية بعد.",
+      "limitReached": "تم بلوغ الحد الأقصى للوسوم النشطة (50).",
+      "titleRequired": "العنوان مطلوب.",
+      "createTitle": "إنشاء وسم تلقائي",
+      "editTitle": "تعديل الوسم التلقائي",
+      "fieldTitle": "العنوان",
+      "fieldDescription": "الوصف",
+      "fieldPrompt": "تعليمات الذكاء الاصطناعي",
+      "promptPlaceholder": "صف متى يجب تطبيق هذا الوسم على المكالمة...",
+      "fieldColor": "اللون",
+      "fieldLinkedTag": "الوسم المرتبط",
+      "noLinkedTag": "بدون ربط",
+      "fieldActive": "نشط",
+      "activeHelp": "عند التفعيل سيتم تطبيق هذا الوسم تلقائياً على المكالمات المطابقة.",
+      "col": {
+        "title": "العنوان",
+        "description": "الوصف",
+        "status": "الحالة"
+      }
+    },
+    "integrations": {
+      "title": "استكشف التكاملات",
+      "subtitle": "استفد بأقصى قدر ممكن من خلال ربط مقسم مع أفضل التطبيقات.",
+      "connect": "اتصل",
+      "comingSoon": "قريباً",
+      "items": {
+        "hubspot": {
+          "desc": "تكامل HubSpot مع مقسم لتزامن و تسجيل معلومات المكالمات بسلاسة، مما يتيح لفريقك العمل بكفاءة والوصول لتفاصيل العملاء فوراً."
+        },
+        "zendesk": {
+          "desc": "يمكنك تكامل Zendesk مع مقسم من تسجيل و مزامنة جميع تفاصيل المكالمات، مما يساعد فريقك على العمل بكفاءة والوصول لتفاصيل العملاء بسهولة."
+        },
+        "zoho": {
+          "desc": "يقوم تكامل Zoho CRM مع مقسم بتوثيق المكالمات كأنشطة، ومزامنة التسجيلات، وتمكين الاتصال السلس عبر ميزة النقر للاتصال المباشر."
+        },
+        "salesloft": {
+          "desc": "يقوم تكامل Salesloft مع مقسم بتوثيق تفاصيل المكالمة، وإضافة التسجيلات، وإنشاء الأنشطة، وتمكين النقر للاتصال لتجربة تواصل سلسة مع العملاء."
+        },
+        "pipedrive": {
+          "desc": "تكامل Pipedrive مع مقسم يمكنك من تسجيل تفاصيل مكالماتك مع قاعدة بيانات Pipedrive، مما يساعدك على تتبع مسار المبيعات وإغلاق الصفقات بفعالية."
+        },
+        "intercom": {
+          "desc": "اربط مقسم مع Intercom لتبسيط تواصل العملاء، وتوثيق المكالمات، وإدارة المحادثات بسهولة."
+        },
+        "salesforce": {
+          "desc": "يقوم تكامل Salesforce مع مقسم بتوثيق تفاصيل المكالمة، وإضافة التسجيلات، وإنشاء الأنشطة، وتمكين الاتصال الفوري عبر النقر للاتصال المباشر."
+        },
+        "freshdesk": {
+          "desc": "يتكامل مقسم بسلاسة مع Freshdesk، وينشئ تذكرة تلقائياً لكل مكالمة مع إضافة جميع تفاصيل المكالمة مع العميل."
+        }
+      }
+    },
+    "orgName": "اسم المنظمة",
+    "orgNameHelp": "استخدم فقط أحرف صغيرة أو أرقاماً أو شرطات. يجب ألا يقل عن 5 أحرف.",
+    "orgNameNote": "بمجرد الحفظ، لا يمكن تغيير اسم المنظمة.",
+    "serviceLevel": "زمن انتظار مستوى الخدمة",
+    "dialerUrl": "رابط منبثق المتصل",
+    "urlPlaceholder": "https://example.com/popup",
+    "paramName": "اسم المعامل",
+    "numberFormat": "تنسيق الرقم",
+    "fmtIntlNoPrefix": "دولي بدون بادئة (مثال: 9665XXXXXXXXX)",
+    "fmtIntlPrefix": "دولي مع بادئة (مثال: +9665XXXXXXXXX)",
+    "fmtLocal": "محلي (مثال: 05XXXXXXXX)",
+    "awayStatuses": "حالات عدم التوفر المخصصة",
+    "domainList": "قائمة النطاقات",
+    "domainTooltip": "قائمة بالنطاقات المسموح بها مفصولة بفواصل.",
+    "callTags": "وسوم المكالمات",
+    "callTagsDesc": "يمكنك إضافة الوسوم واحداً تلو الآخر أو رفعها دفعة واحدة عبر ملف csv.",
+    "addTagPh": "أضف وسماً...",
+    "uploadTags": "رفع وسوم",
+    "manageInactive": "إدارة الوسوم غير النشطة",
+    "autoTagging": "تفعيل الوسم التلقائي",
+    "outboundCountries": "دول المكالمات الصادرة",
+    "configureCountries": "إعداد الدول",
+    "defaultCountry": "الدولة الافتراضية في المتصل",
+    "otherSettings": "إعدادات أخرى",
+    "showInbound": "إظهار حقل المكالمات الواردة في المتصل",
+    "allowTransferAway": "السماح بتحويل المكالمات إلى الوكلاء غير المتاحين",
+    "allowReject": "السماح للوكلاء برفض المكالمات",
+    "autoAssign": "تعيين المحادثات تلقائياً",
+    "timeoutSettings": "إعدادات المهلة",
+    "acwIn": "مهلة بعد المكالمة الواردة",
+    "acwOut": "مهلة بعد المكالمة الصادرة",
+    "autoAnswer": "الرد التلقائي على المكالمات",
+    "seconds": "ثانية",
+    "internalTimeout": "مهلة المكالمات الداخلية (ثوانٍ)",
+    "outboundRingLimit": "تحديد مهلة رنين المكالمات الصادرة",
+    "limitIvr": "تحديد الوقت المستغرق في الرد الآلي",
+    "ivrTimeoutTitle": "مهلة الرد الآلي بعد (دقائق)",
+    "apologyAudio": "رسالة اعتذار صوتية",
+    "holdAudio": "رسالة الانتظار الصوتية",
+    "noFile": "لم يتم اختيار ملف",
+    "update": "تحديث",
+    "updated": "تم تحديث الإعدادات",
+    "numbersTable": {
+      "title": "الأرقام المسجلة",
+      "description": "جميع أرقام الهواتف المسجلة لمؤسستك.",
+      "number": "الرقم",
+      "policy": "السياسة",
+      "empty": "لا توجد أرقام مسجلة."
+    },
+    "userSettingsGroup": "إعدادات المستخدم",
+    "accountSettingsGroup": "إعدادات الحساب",
+    "userSub": {
+      "general": "عام",
+      "changePassword": "تغيير كلمة السر"
+    },
+    "sub2": {
+      "userRoles": "أدوار المستخدم"
+    },
+    "billing": {
+      "title": "عام",
+      "subnav": {
+        "general": "عام",
+        "balance": "معلومات الرصيد",
+        "invoices": "الفواتير و الدفعات",
+        "statement": "كشف الحساب"
+      },
+      "invoiceName": "الاسم على الفاتورة",
+      "invoiceNameTip": "اسم المنظمة كما سيظهر على الفواتير.",
+      "billingAddress": "عنوان الفوترة",
+      "country": "الدولة",
+      "contactBanner": "في حال رغبت بتعديل أي من هذه البيانات، يرجى التواصل مع فريقنا على ",
+      "vatNumber": "رقم ضريبة القيمة المضافة",
+      "registrationNumber": "رقم التسجيل",
+      "billingEmails": "عناوين البريد الإلكتروني لإرسال الفواتير و المدفوعات",
+      "billingEmailsTip": "أدخل عناوين بريد إلكتروني مفصولة بفواصل.",
+      "billingEmailsNotePre": "لإرسال تنبيهات حد الاستخدام على هذه العناوين، قم بتفعيل خيار \"تنبيهات حد الاستخدام\" وتحديد حد الاستخدام من صفحة ",
+      "billingEmailsNoteLink": "معلومات الرصيد",
+      "billingEmailsNotePost": ".",
+      "sendInvoicesToggle": "إرسال الفواتير و التنبيهات المالية إلى المستخدمين الذين يملكون صلاحية إعدادات الحساب",
+      "notifyAgentChangesToggle": "استلام بريد الكتروني عند اضافة او ازالة ممثل خدمة",
+      "paymentMethods": "طرق الدفع",
+      "addPaymentMethod": "إضافة طريقة دفع",
+      "noPaymentMethods": "لم يتم إضافة طرق دفع بعد.",
+      "validationRequired": "يرجى تعبئة الحقول المطلوبة",
+      "invoicesTable": {
+        "title": "الفواتير و الدفعات",
+        "description": "قائمة بجميع الفواتير وحالة الدفع لها.",
+        "number": "رقم الفاتورة",
+        "issueDate": "تاريخ الإصدار",
+        "dueDate": "تاريخ الاستحقاق",
+        "amount": "المبلغ",
+        "status": "الحالة",
+        "paidAt": "تاريخ الدفع",
+        "actions": "إجراءات",
+        "download": "تحميل PDF",
+        "noPdf": "لا يوجد ملف",
+        "empty": "لا توجد فواتير.",
+        "statuses": {
+          "paid": "مدفوعة",
+          "unpaid": "غير مدفوعة",
+          "overdue": "متأخرة",
+          "refunded": "مستردة"
+        }
+      },
+      "statementTable": {
+        "from": "من:",
+        "to": "إلى:",
+        "download": "تحميل كشف الحساب",
+        "date": "التاريخ",
+        "activity": "النشاط",
+        "invoices": "الفواتير",
+        "payments": "المدفوعات",
+        "balance": "الرصيد",
+        "endOfPeriodBalance": "رصيد نهاية الفترة:",
+        "paymentByCard": "دفع بالبطاقة الائتمانية",
+        "invoiceLabel": "فاتورة",
+        "empty": "لا يوجد نشاط في كشف الحساب لهذه الفترة.",
+        "comingSoon": "تحميل كشف الحساب قريبًا."
+      },
+      "balance": {
+        "title": "تفاصيل الرصيد",
+        "uninvoiced": "المبلغ غير المفوتر",
+        "uninvoicedTip": "المبلغ المستحق الذي لم تتم فوترته بعد.",
+        "available": "الرصيد المتاح",
+        "lastUpdated": "آخر تحديث:",
+        "payNow": "ادفع الآن",
+        "rechargeTo": "إعادة الشحن إلى",
+        "rechargeToTip": "المبلغ المستهدف لإعادة الشحن.",
+        "threshold": "حد إعادة الشحن التلقائي",
+        "thresholdTip": "تتم إعادة الشحن تلقائيًا تحت هذا الرصيد.",
+        "usageAlerts": "تنبيهات حد الاستخدام",
+        "usageAlertsTip": "إرسال بريد إلكتروني عند تجاوز المبلغ غير المفوتر للحد.",
+        "uninvoicedLimit": "حد المبلغ غير المفوتر",
+        "breakdown": "تفصيل المبلغ غير المفوتر",
+        "description": "الوصف",
+        "amountUsd": "المبلغ (دولار)",
+        "agentSeats": "مقاعد الوكلاء",
+        "didSubs": "اشتراكات الأرقام",
+        "commitment": "بنود الالتزام",
+        "bot": "بند البوت",
+        "vat": "ضريبة القيمة المضافة",
+        "update": "تحديث",
+        "updated": "تم تحديث إعدادات الرصيد",
+        "comingSoon": "قريبًا"
+      }
+    }
+  },
+  "tabs": {
+    "agents": "الوكلاء",
+    "pipelines": "تدفق صوتي"
+  },
+  "actions": {
+    "new": "جديد",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "create": "إنشاء",
+    "rename": "إعادة تسمية",
+    "delete": "حذف",
+    "code": "الكود",
+    "copy": "نسخ",
+    "copied": "تم النسخ",
+    "livePreview": "معاينة مباشرة",
+    "session": "جلسة"
+  },
+  "agent": {
+    "newTitle": "وكيل جديد",
+    "namePlaceholder": "اسم الوكيل",
+    "emptyTitle": "لا يوجد وكلاء بعد",
+    "emptyMessage": "أنشئ أول وكيل لتحديد التعليمات والتحية والأدوات والمتغيرات.",
+    "deleteConfirm": "هل تريد حذف هذا الوكيل؟",
+    "lastUpdated": "آخر تحديث",
+    "prompt": "تعليمات النظام",
+    "promptHint": "تعليمات تحدد سلوك المساعد.",
+    "greeting": "التحية",
+    "greetingHint": "أول رسالة يقولها المساعد للمستخدم.",
+    "description": "الوصف",
+    "descriptionHint": "وصف داخلي اختياري.",
+    "descriptionPlaceholder": "وصف مختصر لهذا الوكيل…",
+    "tools": "الأدوات",
+    "toolsHint": "الأدوات التي يمكن للوكيل استدعاؤها.",
+    "toolsAdd": "إضافة أداة",
+    "toolsEmpty": "لا توجد أدوات بعد.",
+    "toolsPlaceholder": "اسم_الأداة",
+    "usedBy": "مستخدم في",
+    "usedByEmpty": "غير مستخدم في أي مسار بعد.",
+    "tabs": {
+      "prompt": "التعليمات",
+      "tools": "الأدوات",
+      "variables": "المتغيرات"
+    },
+    "variables": {
+      "title": "المتغيرات",
+      "hint": "أزواج مفتاح/قيمة متاحة للوكيل أثناء التشغيل.",
+      "add": "إضافة متغير",
+      "empty": "لا توجد متغيرات بعد.",
+      "keyPlaceholder": "المفتاح",
+      "valuePlaceholder": "القيمة"
+    }
+  },
+  "pipeline": {
+    "newTitle": "مسار جديد",
+    "namePlaceholder": "اسم المسار",
+    "extension": "التحويلة",
+    "extensionPlaceholder": "مثال: 234",
+    "active": "مفعّل",
+    "emptyTitle": "لا توجد مسارات بعد",
+    "emptyMessage": "أنشئ أول مسار لربط STT و LLM و TTS مع وكيل.",
+    "deleteConfirm": "هل تريد حذف هذا المسار؟",
+    "audioIn": "إدخال صوتي",
+    "audioOut": "إخراج صوتي",
+    "canvasHint": "انقر على عقدة لضبط مزودها ومعاملاتها.",
+    "needsAgent": "اختر وكيلاً لتشغيل هذا المسار.",
+    "extensionTakenUser": "التحويلة مستخدمة بالفعل لأحد المستخدمين",
+    "extensionTakenPipeline": "التحويلة مستخدمة بالفعل في مسار آخر",
+    "extensionRequired": "التحويلة مطلوبة",
+    "extensionChecking": "جارٍ التحقق...",
+    "editTitle": "تعديل المسار",
+    "edit": "تعديل"
+  },
+  "node": {
+    "stt": "STT",
+    "llm": "LLM",
+    "tts": "TTS",
+    "vad": "VAD",
+    "turn": "الدور",
+    "noise": "ضوضاء"
+  },
+  "config": {
+    "provider": "المزود",
+    "parameters": "المعاملات",
+    "enabled": "مفعّل",
+    "agent": "الوكيل",
+    "agentHint": "اختر الوكيل الذي سيشغّله هذا المسار.",
+    "agentEmpty": "لا يوجد وكلاء متاحون.",
+    "agentNone": "لم يتم اختيار أي وكيل",
+    "createAgent": "أنشئ وكيلاً"
+  },
+  "code": {
+    "title": "الكود المُولَّد",
+    "live": "مباشر",
+    "livePreview": "معاينة مباشرة",
+    "usingPlaceholder": "يتم استخدام قيم افتراضية للحقول الفارغة."
+  },
+  "session": {
+    "title": "الجلسة",
+    "subtitle": "جرّب هذا المسار في جلسة صوتية مباشرة.",
+    "info": "سيتم إنشاء غرفة جديدة عند بدء الجلسة."
+  },
+  "empty": {
+    "createFirst": "أنشئ أول واحد"
+  },
+  "voiceAgent": {
+    "connecting": "جارٍ الاتصال بـ VoiceBot Studio…",
+    "authError": "تعذّر الاتصال بخادم VoiceBot Studio",
+    "anonHelp": {
+      "actionRequired": "إجراء مطلوب",
+      "title": "فعّل تسجيل الدخول المجهول في VoiceBot Studio",
+      "intro": "تقوم ميزة وكيل الصوت بتسجيل دخول المستخدمين إلى خادم VoiceBot Studio بشكل مجهول لتتمكن من تحميل الوكلاء والمسارات. هذا المزوّد معطّل حالياً في مشروع Studio، لذا لا يمكن للصفحة الاتصال.",
+      "stepsTitle": "خطوات الإصلاح",
+      "step1": "افتح لوحة Supabase الخاصة بـ VoiceBot Studio عبر الزر أدناه.",
+      "step2Pre": "اذهب إلى ",
+      "step2Path": "Authentication → Providers",
+      "step2Post": ".",
+      "step3Pre": "ابحث عن ",
+      "step3Name": "Anonymous Sign-Ins",
+      "step3Mid": " وقم بتشغيله ",
+      "step3State": "On",
+      "step3Post": ".",
+      "step4Pre": "اضغط ",
+      "step4Name": "Save",
+      "step4Post": ".",
+      "step5": "ارجع هنا واضغط إعادة المحاولة.",
+      "openDashboard": "افتح إعدادات مزوّدي الدخول",
+      "retry": "إعادة المحاولة",
+      "footnote": "يمكن لمسؤول مشروع VoiceBot Studio فقط تغيير هذا الإعداد."
+    }
+  },
+  "transcription": {
+    "back": "الرجوع إلى المكالمة",
+    "header": {
+      "caller": "المُتصل",
+      "called": "المُتصل بِه",
+      "direction": "الاتجاه",
+      "dateTime": "التاريخ/الوقت",
+      "duration": "المدة",
+      "sentiment": "العاطفة",
+      "agent": "الموظف",
+      "callId": "رقم المكالمة"
+    },
+    "direction": {
+      "inbound": "واردة",
+      "outbound": "صادرة"
+    },
+    "sentiment": {
+      "positive": "إيجابي",
+      "negative": "سلبي",
+      "neutral": "محايد"
+    },
+    "search": {
+      "placeholder": "ابحث في النص..."
+    },
+    "download": "تحميل",
+    "generating": "جاري توليد المحادثة...",
+    "empty": {
+      "noTranscript": "لا يوجد نص لهذه المكالمة",
+      "noResults": "لا توجد نتائج"
+    },
+    "role": {
+      "agent": "ممثل خدمة"
+    },
+    "audio": {
+      "noRecording": "لا يوجد تسجيل"
+    },
+    "summary": {
+      "title": "الملخص",
+      "empty": "لا يوجد ملخص لهذه المكالمة",
+      "translating": "جاري الترجمة...",
+      "copied": "تم نسخ الملخص",
+      "copyFailed": "تعذر النسخ",
+      "fbSaved": "تم تسجيل تقييمك",
+      "fbFailed": "تعذر حفظ التقييم",
+      "generateFailed": "تعذر توليد المحادثة",
+      "translateFailed": "تعذر الترجمة",
+      "noTextDownload": "لا يوجد نص للتحميل",
+      "idCopied": "تم النسخ"
+    },
+    "feedback": {
+      "helpful": "مفيد",
+      "notHelpful": "غير مفيد"
+    },
+    "help": {
+      "center": "مركز المساعدة"
+    },
+    "lang": {
+      "ar": "العربية",
+      "en": "English"
+    }
+  },
+  "fancy": {
+    "brand": "الخوارزمي",
+    "tagline": "Conversational Intelligence",
+    "sections": {
+      "workspace": "WORKSPACE",
+      "organization": "ORGANIZATION",
+      "system": "SYSTEM"
+    },
+    "search": "ابحث في المكالمات والوكلاء والوسوم…",
+    "cta": {
+      "phone": "مركز الهاتف"
+    },
+    "live": "مباشر",
+    "crumb": "مساحة العمل · تحليل الذكاء الاصطناعي",
+    "headline": "المشاعر،",
+    "headlineAccent": "مفهومة.",
+    "subtitle": "كل محادثة وكل تفصيل — تتحول إلى إشارة واضحة يمكن التصرف بناءً عليها.",
+    "filters": {
+      "all": "الكل",
+      "calls": "المكالمات",
+      "agents": "الوكلاء",
+      "topics": "المواضيع"
+    },
+    "dates": {
+      "today": "اليوم",
+      "last7": "آخر ٧ أيام",
+      "last30": "آخر ٣٠ يوماً"
+    },
+    "kpi": {
+      "avg": "متوسط المشاعر",
+      "positive": "إيجابي",
+      "negative": "سلبي",
+      "analyzed": "تم تحليلها",
+      "lastDays": "آخر ٧ أيام",
+      "vsPrev": "مقابل السابق"
+    },
+    "trend": {
+      "title": "اتجاه المشاعر",
+      "weekly": "أسبوعي",
+      "monthly": "شهري",
+      "ww": "أسبوع/أسبوع"
+    },
+    "distribution": {
+      "title": "التوزيع",
+      "total": "إجمالي المكالمات",
+      "label": "محللة"
+    },
+    "topics": {
+      "title": "أهم المواضيع",
+      "calls": "مكالمات"
+    },
+    "leaderboard": {
+      "title": "لوحة الوكلاء",
+      "live": "مباشر",
+      "score": "النتيجة"
+    }
+  },
+  "surveys": {
+    "title": "استبيانات الرد الصوتي",
+    "subtitle": "أنشئ استبيانات صوتية تعمل ضمن تدفقات الرد الصوتي.",
+    "createNew": "إنشاء استبيان جديد",
+    "searchPlaceholder": "ابحث في الاستبيانات…",
+    "loadFailed": "تعذر تحميل الاستبيانات.",
+    "notFound": "الاستبيان غير موجود.",
+    "backToSurveys": "العودة إلى الاستبيانات",
+    "noDescription": "لا يوجد وصف.",
+    "untitled": "استبيان بدون عنوان",
+    "newSurvey": "استبيان جديد",
+    "filters": {
+      "allStatuses": "كل الحالات",
+      "allLanguages": "كل اللغات",
+      "status": "الحالة",
+      "language": "اللغة"
+    },
+    "status": {
+      "draft": "مسودة",
+      "published": "منشور",
+      "archived": "مؤرشف"
+    },
+    "language": {
+      "ar": "العربية",
+      "en": "الإنجليزية",
+      "both": "العربية + الإنجليزية"
+    },
+    "questionType": {
+      "rating": "تقييم",
+      "yesNo": "نعم / لا",
+      "multiple_choice": "اختيار متعدد",
+      "numeric": "إدخال رقمي",
+      "voice": "تسجيل صوتي",
+      "nps": "NPS (٠–١٠)"
+    },
+    "columns": {
+      "name": "الاسم",
+      "description": "الوصف",
+      "questions": "الأسئلة",
+      "language": "اللغة",
+      "status": "الحالة",
+      "lastModified": "آخر تعديل",
+      "usedIn": "مستخدم في",
+      "caller": "المتصل",
+      "date": "التاريخ",
+      "answers": "الإجابات"
+    },
+    "empty": {
+      "title": "لا توجد استبيانات بعد",
+      "desc": "أنشئ أول استبيان صوتي للبدء.",
+      "noQuestions": "لم تتم إضافة أي أسئلة بعد.",
+      "noResponses": "لا توجد ردود بعد.",
+      "noFilterMatch": "لا توجد ردود مطابقة للتصفية.",
+      "notUsed": "هذا الاستبيان غير مستخدم في أي تدفق حالياً."
+    },
+    "actions": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "preview": "معاينة",
+      "previewSurvey": "معاينة الاستبيان",
+      "duplicate": "تكرار",
+      "publish": "نشر",
+      "unpublish": "إلغاء النشر",
+      "enable": "تفعيل",
+      "disable": "تعطيل",
+      "results": "النتائج",
+      "save": "حفظ",
+      "viewAllResults": "عرض كل النتائج",
+      "exportCsv": "تصدير CSV"
+    },
+    "toasts": {
+      "duplicated": "تم تكرار الاستبيان",
+      "saved": "تم حفظ الاستبيان",
+      "published": "تم نشر الاستبيان",
+      "unpublished": "تم إلغاء نشر الاستبيان",
+      "enabled": "تم تفعيل الاستبيان",
+      "disabled": "تم تعطيل الاستبيان",
+      "addQuestionFirst": "أضف سؤالاً واحداً على الأقل أولاً",
+      "saveFailed": "فشل الحفظ",
+      "soundUploaded": "تم رفع الصوت",
+      "uploadFailed": "فشل الرفع",
+      "uploadFailedDesc": "تعذر رفع الملف"
+    },
+    "meta": {
+      "language": "اللغة",
+      "maxRetries": "أقصى عدد للمحاولات",
+      "inputTimeout": "مهلة الإدخال",
+      "abandonment": "التعامل مع التخلي",
+      "lastModified": "آخر تعديل",
+      "webhookUrl": "رابط الـ Webhook",
+      "savePartial": "حفظ جزئي",
+      "discard": "تجاهل"
+    },
+    "questions": {
+      "title": "الأسئلة",
+      "count_one": "سؤال {{count}}",
+      "count_other": "{{count}} أسئلة",
+      "dragHint": "اسحب لإعادة الترتيب.",
+      "addQuestion": "إضافة سؤال",
+      "emptyTitle": "لا توجد أسئلة بعد",
+      "emptyDesc": "أضف سؤالك الأول للبدء.",
+      "required": "إلزامي",
+      "id": "معرّف السؤال",
+      "text": "نص السؤال",
+      "textPlaceholder": "ما الذي سيقوله الرد الصوتي…",
+      "noText": "(لا يوجد نص)",
+      "branchingCount_one": "قاعدة تفرع واحدة",
+      "branchingCount_other": "{{count}} قواعد تفرع",
+      "expand": "توسيع",
+      "collapse": "طي",
+      "drag": "اسحب لإعادة الترتيب"
+    },
+    "branching": {
+      "title": "منطق التفرع",
+      "addRule": "إضافة قاعدة",
+      "noRules": "لا توجد قواعد. ينتقل الاستبيان إلى السؤال التالي.",
+      "ifAnswer": "إذا كانت الإجابة =",
+      "then": "إذًا",
+      "valuePlaceholder": "قيمة",
+      "endSurvey": "إنهاء الاستبيان",
+      "goTo": "اذهب إلى {{id}} — {{text}}",
+      "untitled": "(بدون عنوان)"
+    },
+    "fields": {
+      "min": "الأدنى",
+      "max": "الأقصى",
+      "scaleDescription": "وصف المقياس",
+      "scalePlaceholder": "١ = ضعيف، ٥ = ممتاز",
+      "yesKey": "مفتاح نعم",
+      "noKey": "مفتاح لا",
+      "choices": "الخيارات",
+      "addChoice": "إضافة خيار",
+      "label": "التسمية",
+      "minDigits": "أقل عدد للأرقام",
+      "maxDigits": "أقصى عدد للأرقام",
+      "terminator": "رمز الإنهاء",
+      "maxDuration": "المدة القصوى (ثوانٍ)",
+      "beepBefore": "نغمة قبل التسجيل",
+      "npsPlaceholder": "٠ = غير محتمل إطلاقاً، ١٠ = محتمل جداً"
+    },
+    "settings": {
+      "title": "إعدادات الاستبيان",
+      "subtitle": "حدد سلوك هذا الاستبيان أثناء المكالمات.",
+      "surveyName": "اسم الاستبيان *",
+      "description": "الوصف",
+      "language": "اللغة",
+      "welcomeSound": "صوت الترحيب",
+      "completionSound": "صوت الإكمال",
+      "abandonment": "التعامل مع التخلي",
+      "savePartial": "حفظ الرد الجزئي",
+      "discard": "تجاهل",
+      "webhookUrl": "رابط الـ Webhook *",
+      "webhookUrlPh": "https://example.com/webhook",
+      "webhookSecret": "سر الـ Webhook",
+      "webhookSecretPh": "رمز أمان اختياري",
+      "maxRetries": "أقصى عدد محاولات / سؤال",
+      "inputTimeout": "مهلة الإدخال (ث)",
+      "nameRequired": "الاسم مطلوب",
+      "webhookRequired": "رابط الـ Webhook مطلوب",
+      "webhookInvalid": "يجب أن يكون رابطاً صالحاً"
+    },
+    "sound": {
+      "label": "صوت السؤال",
+      "remove": "إزالة",
+      "voiceLibrary": "مكتبة الأصوات",
+      "uploadFile": "رفع ملف",
+      "loading": "جارٍ التحميل…",
+      "choose": "اختر مقطعاً صوتياً",
+      "emptyLibrary": "لا توجد مقاطع في مكتبة الأصوات"
+    },
+    "preview": {
+      "title": "معاينة الاستبيان — {{name}}",
+      "simulated": "مكالمة محاكاة",
+      "noWelcome": "(لا يوجد صوت ترحيب)",
+      "noCompletion": "(لا يوجد صوت إكمال)",
+      "start": "بدء الاستبيان",
+      "restart": "إعادة التشغيل",
+      "questionN": "السؤال {{current}} من {{total}} · {{id}}",
+      "questionPlaceholder": "(نص السؤال)",
+      "yes": "نعم",
+      "no": "لا",
+      "unnamed": "(بدون اسم)",
+      "submit": "إرسال",
+      "numericPlaceholder": "أدخل {{min}}-{{max}} أرقام ثم {{terminator}}",
+      "simulateRecording": "محاكاة التسجيل",
+      "voiceLabel": "(تسجيل صوتي ١٢ث)",
+      "webhookPayload": "حمولة الـ Webhook",
+      "webhookPost": "POST ← {{url}}",
+      "noUrl": "(لم يتم تكوين رابط)"
+    },
+    "results": {
+      "subtitle": "نتائج وردود الاستبيان",
+      "searchPlaceholder": "ابحث عن متصل…",
+      "filterAll": "كل الحالات",
+      "filterCompleted": "مكتمل",
+      "filterPartial": "جزئي",
+      "total": "إجمالي الردود",
+      "completed": "مكتملة",
+      "partial": "جزئية",
+      "rate": "معدل الإكمال",
+      "last": "آخر رد",
+      "recent": "الردود الأخيرة",
+      "usedIn": "مستخدم في",
+      "ivrFlow": "تدفق IVR {{id}}"
+    },
+    "editor": {
+      "savedAt": "تم الحفظ في {{time}}"
+    }
+  },
+  "campaigns": {
+    "title": "الحملات",
+    "subtitle": "إدارة حملات مركز الاتصال الصادرة والواردة.",
+    "new": "حملة جديدة",
+    "searchPlaceholder": "ابحث في الحملات…",
+    "statusPlaceholder": "الحالة",
+    "typePlaceholder": "النوع",
+    "allStatuses": "كل الحالات",
+    "allTypes": "كل الأنواع",
+    "from": "من",
+    "to": "إلى",
+    "inbound": "وارد",
+    "outbound": "صادر",
+    "cols": {
+      "name": "الاسم",
+      "type": "النوع",
+      "status": "الحالة",
+      "start": "البداية",
+      "end": "النهاية",
+      "contacts": "جهات الاتصال",
+      "progress": "التقدم"
+    },
+    "empty": {
+      "title": "لا توجد حملات",
+      "hint": "جرّب تعديل عوامل التصفية أو أنشئ حملة جديدة."
+    },
+    "actions": {
+      "view": "عرض",
+      "edit": "تعديل",
+      "pause": "إيقاف مؤقت",
+      "resume": "استئناف",
+      "launch": "إطلاق",
+      "delete": "حذف",
+      "exportResults": "تصدير النتائج"
+    },
+    "toasts": {
+      "paused": "تم إيقاف الحملة مؤقتاً",
+      "resumed": "تم استئناف الحملة",
+      "launched": "تم إطلاق الحملة",
+      "deleted": "تم حذف الحملة",
+      "updated": "تم تحديث الحملة",
+      "draftSaved": "تم حفظ الحملة كمسودة",
+      "exported": "تم تصدير النتائج",
+      "contactAdded": "تمت إضافة جهة الاتصال",
+      "contactRemoved": "تم حذف جهة الاتصال",
+      "markedAs": "تم وضع علامة كـ {{label}}",
+      "importedN": "تم استيراد {{count}} جهة اتصال",
+      "addedFromDirectoryN": "تمت إضافة {{count}} جهة من الدليل"
+    },
+    "deleteDialog": {
+      "title": "حذف الحملة؟",
+      "description": "لا يمكن التراجع عن هذا الإجراء. سيتم حذف جميع جهات الاتصال والأنشطة لهذه الحملة."
+    },
+    "status": {
+      "draft": "مسودة",
+      "active": "نشطة",
+      "paused": "متوقفة مؤقتاً",
+      "completed": "مكتملة",
+      "cancelled": "ملغاة"
+    },
+    "priority": {
+      "low": "منخفضة",
+      "medium": "متوسطة",
+      "high": "عالية"
+    },
+    "dialingMode": {
+      "progressive": "تدريجي",
+      "power": "قوي",
+      "agentless": "بدون موظف",
+      "predictive": "تنبؤي",
+      "preview": "معاينة",
+      "manual": "يدوي"
+    },
+    "contactStatus": {
+      "pending": "قيد الانتظار",
+      "called": "تم الاتصال",
+      "successful": "ناجح",
+      "failed": "فشل",
+      "callback": "معاودة الاتصال",
+      "markAs": "وضع علامة كـ {{label}}"
+    },
+    "types": {
+      "outbound_sales": "مبيعات صادرة",
+      "collections": "تحصيل",
+      "survey": "استبيان",
+      "appointment_reminder": "تذكير بموعد",
+      "win_back": "استعادة العملاء",
+      "inbound_support": "دعم وارد"
+    },
+    "overflow": {
+      "voicemail": "البريد الصوتي",
+      "transfer": "تحويل إلى طابور آخر",
+      "busy": "تشغيل رسالة مشغول"
+    },
+    "received": {
+      "resolved": "تم الحل",
+      "escalated": "تم التصعيد",
+      "callback": "معاودة الاتصال",
+      "abandoned": "متروكة"
+    },
+    "sources": {
+      "manual": "يدوي",
+      "import": "استيراد",
+      "directory": "الدليل"
+    },
+    "detail": {
+      "back": "الحملات",
+      "notFound": "الحملة غير موجودة.",
+      "tiles": {
+        "totalCalls": "إجمالي المكالمات المستلمة",
+        "handled": "تم التعامل معها",
+        "abandoned": "متروكة",
+        "avgWait": "متوسط وقت الانتظار",
+        "avgHandle": "متوسط وقت المعالجة",
+        "fcr": "الحل من أول مكالمة",
+        "total": "الإجمالي",
+        "called": "تم الاتصال",
+        "pending": "قيد الانتظار",
+        "successful": "ناجح",
+        "failed": "فشل",
+        "conversion": "التحويل"
+      },
+      "overallProgress": "التقدم الإجمالي",
+      "tabContacts": "جهات الاتصال ({{count}})",
+      "tabCalls": "المكالمات المستلمة ({{count}})",
+      "tabActivity": "سجل النشاط ({{count}})",
+      "tabOverview": "نظرة عامة",
+      "contactsSearch": "ابحث بالاسم أو الهاتف…",
+      "noContacts": "لا توجد جهات اتصال للعرض.",
+      "lastCall": "آخر مكالمة",
+      "notes": "ملاحظات",
+      "noActivity": "لا يوجد نشاط بعد.",
+      "calls": {
+        "caller": "اسم المتصل",
+        "phone": "رقم الهاتف",
+        "dateTime": "التاريخ والوقت",
+        "duration": "المدة",
+        "agent": "الموظف",
+        "status": "الحالة",
+        "notes": "ملاحظات",
+        "empty": "لم يتم استلام أي مكالمات بعد. ستظهر المكالمات هنا تلقائياً بعد تفعيل الحملة.",
+        "unknown": "غير معروف"
+      }
+    },
+    "wizard": {
+      "editTitle": "تعديل الحملة",
+      "newTitle": "حملة جديدة",
+      "steps": {
+        "info": "معلومات الحملة",
+        "agents": "الوكلاء المعيّنون",
+        "targets": "قائمة المستهدفين",
+        "inbound": "إعدادات الوارد",
+        "review": "المراجعة والإطلاق"
+      },
+      "agents": {
+        "help": "{{count}} وكيل/وكلاء معيّنون",
+        "modeAgents": "تعيين وكلاء",
+        "modeQueue": "اختيار قائمة انتظار",
+        "pickQueue": "اختر قائمة انتظار…",
+        "selectQueueTitle": "قوائم الانتظار النشطة",
+        "searchQueues": "ابحث في قوائم الانتظار…",
+        "noActiveQueues": "لا توجد قوائم انتظار نشطة"
+      },
+      "back": "رجوع",
+      "next": "التالي",
+      "saveDraft": "حفظ كمسودة",
+      "launch": "إطلاق الحملة",
+      "errors": {
+        "nameRequired": "اسم الحملة مطلوب",
+        "queueRequired": "اسم الطابور مطلوب",
+        "contactsRequired": "أضف جهة اتصال واحدة على الأقل",
+        "phoneRequired": "رقم الهاتف مطلوب",
+        "mapPhone": "حدّد عمود الهاتف أولاً",
+        "unsupportedFile": "نوع الملف غير مدعوم",
+        "parseCsv": "فشل تحليل ملف CSV",
+        "readFile": "فشل قراءة الملف"
+      },
+      "info": {
+        "name": "اسم الحملة *",
+        "namePlaceholder": "مثال: مبيعات صادرة Q2",
+        "type": "نوع الحملة",
+        "priority": "الأولوية",
+        "startDateTime": "تاريخ ووقت البداية",
+        "endDateTime": "تاريخ ووقت النهاية",
+        "pickDate": "اختر تاريخاً",
+        "agents": "الموظفون المُعيَّنون",
+        "selectAgents": "اختر الموظفين…",
+        "noAgents": "لا يوجد موظفون متاحون",
+        "description": "الوصف",
+        "descriptionPlaceholder": "صف هدف الحملة باختصار…",
+        "script": "نص المكالمة",
+        "scriptPlaceholder": "مرحباً {firstName}، أنا {agent} من…",
+        "dialingMode": "وضع الاتصال",
+        "powerRatio": "نسبة الطاقة (خطوط لكل موظف)"
+      },
+      "tabs": {
+        "manual": "يدوي",
+        "file": "استيراد ملف",
+        "directory": "من الدليل"
+      },
+      "contacts": {
+        "title": "جهات اتصال الحملة",
+        "empty": "لا توجد جهات اتصال بعد. أضف بعضها من التبويبات أعلاه.",
+        "name": "الاسم",
+        "phone": "الهاتف",
+        "email": "البريد الإلكتروني",
+        "source": "المصدر"
+      },
+      "manual": {
+        "firstName": "الاسم الأول",
+        "lastName": "اسم العائلة",
+        "phone": "الهاتف *",
+        "phonePlaceholder": "+966…",
+        "email": "البريد الإلكتروني",
+        "notes": "ملاحظات",
+        "add": "إضافة جهة اتصال"
+      },
+      "import": {
+        "dropzone": "اسحب وأفلت ملف CSV أو XLSX، أو انقر للتصفح",
+        "field": {
+          "firstName": "الاسم الأول",
+          "lastName": "اسم العائلة",
+          "phone": "الهاتف",
+          "email": "البريد الإلكتروني",
+          "notes": "ملاحظات"
+        },
+        "total": "الإجمالي",
+        "valid": "صحيح",
+        "invalid": "غير صحيح",
+        "importBtn": "استيراد {{count}} جهة اتصال"
+      },
+      "directory": {
+        "open": "فتح الدليل",
+        "title": "إضافة من الدليل",
+        "description": "ابحث واختر جهات الاتصال لإضافتها إلى هذه الحملة.",
+        "search": "ابحث بالاسم أو الهاتف أو الشركة…",
+        "name": "الاسم",
+        "phone": "الهاتف",
+        "company": "الشركة",
+        "tags": "الوسوم",
+        "filterByTag": "تصفية حسب الوسم",
+        "empty": "لا توجد جهات اتصال",
+        "selected": "{{count}} محدد",
+        "add": "إضافة المحدد إلى الحملة",
+        "loading": "جارٍ التحميل…"
+      },
+      "inbound": {
+        "queue": "خط الهاتف المخصص / اسم الطابور *",
+        "queuePlaceholder": "مثال: +966 11 000 0000 أو support_main",
+        "volume": "حجم المكالمات المتوقع (يومياً)",
+        "volumePlaceholder": "مثال: 150",
+        "hours": "ساعات العمل",
+        "hoursTo": "إلى",
+        "ivr": "رسالة IVR",
+        "ivrPlaceholder": "مرحباً بكم في دعم الخوارزمي. يرجى الانتظار حتى نوصلكم بأقرب موظف متاح…",
+        "overflow": "إجراء الفائض"
+      },
+      "review": {
+        "summary": "ملخص الحملة",
+        "inboundTitle": "إعدادات الوارد",
+        "contactsTitle": "جهات الاتصال",
+        "name": "الاسم",
+        "type": "النوع",
+        "priority": "الأولوية",
+        "dates": "التواريخ",
+        "agents": "الموظفون",
+        "description": "الوصف",
+        "script": "النص",
+        "queue": "الطابور",
+        "volume": "الحجم",
+        "volumePerDay": "{{count}}/يوم",
+        "hours": "الساعات",
+        "overflow": "الفائض",
+        "ivr": "رسالة IVR",
+        "totalContacts": "إجمالي جهات الاتصال",
+        "targetsTitle": "المستهدفون",
+        "targetsHint": "بعد الإطلاق، أضف المستهدفين من تبويب المستهدفين في الحملة."
+      }
+    },
+    "edit": {
+      "tabInfo": "معلومات الحملة",
+      "tabAgents": "الوكلاء المعيّنون",
+      "tabTargets": "المستهدفون",
+      "save": "حفظ التغييرات",
+      "savedToast": "تم حفظ التغييرات",
+      "targetsNotApplicable": "المستهدفون غير متاحين لحملات المكالمات الواردة."
+    }
+  },
+  "usersMap": {
+    "title": "خريطة المستخدمين",
+    "subtitle": "تتبّع لحظي لكل متصل وموقعه عبر مسار الرد الآلي · يُحدَّث تلقائياً.",
+    "live": "مباشر",
+    "paused": "متوقف",
+    "search": "بحث برقم أو اسم المتصل…",
+    "view": {
+      "map": "الخريطة",
+      "list": "القائمة"
+    },
+    "tooltips": {
+      "togglePause": "إيقاف/تشغيل المحاكاة المباشرة",
+      "refresh": "تحديث"
+    },
+    "kpi": {
+      "activeNow": {
+        "label": "النشطون الآن",
+        "sub": "متصل داخل النظام حالياً"
+      },
+      "inQueue": {
+        "label": "في الانتظار",
+        "sub": "يحتاجون موظفاً"
+      },
+      "longestWait": {
+        "label": "أطول انتظار",
+        "sub": "في قائمة الانتظار"
+      },
+      "avgHandle": {
+        "label": "متوسط المعالجة",
+        "sub": "لدى الموظفين"
+      },
+      "abandoned": {
+        "label": "متروكة اليوم",
+        "sub": "مكالمات انقطعت بالانتظار"
+      },
+      "sla": {
+        "label": "مستوى الخدمة",
+        "sub": "الهدف {{pct}}%"
+      }
+    },
+    "rail": {
+      "title": "مسار الرد الآلي · التوزيع الحالي",
+      "sourceNote": "العقد مأخوذة من محرّر الرد الآلي «{{flow}}»"
+    },
+    "state": {
+      "ivr": "في الرد الآلي",
+      "ai": "مع الوكيل الذكي",
+      "agent": "مع موظف",
+      "queue": "في قائمة الانتظار",
+      "vm": "في البريد الصوتي",
+      "survey": "في الاستبيان"
+    },
+    "node": {
+      "start": "بداية المكالمة",
+      "hours": "ساعات العمل",
+      "menu_main": "القائمة الصوتية",
+      "queue_main": "قائمة الانتظار",
+      "transfer": "تحويل لموظف",
+      "call_start": "بداية المكالمة",
+      "working_hours": "ساعات العمل",
+      "ivr_menu": "القائمة الصوتية",
+      "sound_file": "تشغيل صوت",
+      "user_input": "إدخال المستخدم",
+      "messages": "الرسائل",
+      "rule_routing": "توجيه بالقواعد",
+      "set_flags": "ضبط العلامات",
+      "webhook": "ويب هوك",
+      "call_forwarding": "تحويل المكالمة",
+      "ai_agent": "الوكيل الذكي",
+      "voicemail": "البريد الصوتي",
+      "survey": "الاستبيان",
+      "end_call": "إنهاء المكالمة"
+    },
+    "zone": {
+      "ivrSub": "العقدة: القائمة الرئيسية",
+      "aiSub": "متوسط الثقة 92%",
+      "agentSub": "{{n}}/{{cap}} موظف مشغول",
+      "queueSub": "أطول انتظار {{time}}",
+      "vmSub": "{{n}} رسائل جديدة",
+      "surveySub": "متوسط الإكمال 78%",
+      "empty": "لا يوجد متصلون حالياً",
+      "viewAll": "+ {{n}} متصل آخر · عرض الكل"
+    },
+    "chip": {
+      "queueRank": "الترتيب #{{n}}",
+      "intent": "النيّة: {{value}}",
+      "surveyStep": "السؤال {{n}} من {{total}}",
+      "agentLine": "الموظف: {{name}}",
+      "leavingMessage": "يترك رسالة",
+      "mainMenu": "القائمة الرئيسية"
+    },
+    "forwardTarget": {
+      "phone": "هاتف: {{value}}",
+      "sip": "SIP: {{value}}",
+      "agent": "تحويلة الموظف: {{value}}",
+      "queue": "طابور: {{value}}"
+    },
+    "ivrChoice": {
+      "mainMenu": "القائمة الرئيسية",
+      "sales": "اختار 1 · المبيعات",
+      "stores": "اختار 2 · المتاجر",
+      "support": "اختار 3 · الدعم",
+      "agent": "اختار 0 · موظف"
+    },
+    "intent": {
+      "billing": "الفوترة",
+      "tech": "الدعم الفني",
+      "inquiry": "الاستفسار",
+      "sales": "المبيعات",
+      "complaints": "الشكاوى"
+    },
+    "table": {
+      "caller": "المتصل",
+      "state": "الحالة",
+      "location": "الموقع في المسار",
+      "stateDuration": "المدة بالحالة",
+      "totalDuration": "إجمالي المكالمة",
+      "details": "التفاصيل",
+      "actions": "إجراءات",
+      "noResults": "لا توجد نتائج مطابقة",
+      "act": {
+        "listen": "الاستماع",
+        "transfer": "تحويل",
+        "hangup": "إنهاء"
+      }
+    },
+    "filter": {
+      "all": "الكل"
+    },
+    "drawer": {
+      "since": "منذ {{time}}",
+      "currentLocation": "الموقع الحالي",
+      "totalTime": "إجمالي زمن المكالمة",
+      "channel": "القناة",
+      "channelValue": "صوت · 966",
+      "ctx": {
+        "agent": "الموظف المسؤول",
+        "queue": "الترتيب بالطابور",
+        "ai": "النيّة المكتشفة",
+        "ivr": "الخيار الحالي",
+        "vm": "الحالة",
+        "survey": "تقدم الاستبيان"
+      },
+      "journeyTitle": "رحلة المتصل عبر الرد الآلي",
+      "now": "· الآن",
+      "actions": {
+        "listen": "استماع",
+        "whisper": "همس",
+        "barge": "اقتحام",
+        "transfer": "تحويل",
+        "hangup": "إنهاء المكالمة"
+      }
+    },
+    "tags": {
+      "vip": "عميل مميز",
+      "lang": "اللغة: العربية"
+    },
+    "toast": {
+      "listen": "بدأ الاستماع لمكالمة {{name}}",
+      "whisper": "بدأ الهمس مع {{name}}",
+      "barge": "تم الاقتحام لمكالمة {{name}}",
+      "transfer": "تم تحويل مكالمة {{name}}",
+      "hangup": "تم إنهاء مكالمة {{name}}",
+      "paused": "أوقفت المحاكاة المباشرة",
+      "resumed": "استُؤنفت المحاكاة المباشرة",
+      "refreshed": "تم تحديث البيانات"
+    }
+  },
+  "queues": {
+    "list": {
+      "title": "قوائم الانتظار",
+      "subtitle": "أنشئ وأدر قوائم انتظار المكالمات واستراتيجيات التوجيه والمهارات المعيّنة والوكلاء المؤهلين.",
+      "createButton": "إنشاء قائمة انتظار",
+      "stats": {
+        "total": "إجمالي قوائم الانتظار",
+        "active": "قوائم الانتظار النشطة",
+        "assigned": "الوكلاء المعيّنون",
+        "skillsBased": "قوائم قائمة على المهارات"
+      },
+      "filters": {
+        "searchPlaceholder": "ابحث باسم قائمة الانتظار أو الكود أو الوصف",
+        "allStatuses": "جميع الحالات",
+        "allRoutingTypes": "جميع أنواع التوجيه",
+        "allChannels": "جميع القنوات",
+        "allGroups": "جميع المجموعات",
+        "reset": "إعادة تعيين المرشّحات"
+      },
+      "table": {
+        "name": "اسم قائمة الانتظار",
+        "code": "الكود",
+        "channel": "القناة",
+        "routing": "التوجيه",
+        "requiredSkills": "المهارات المطلوبة",
+        "qualified": "المؤهلون",
+        "strategy": "الاستراتيجية",
+        "status": "الحالة",
+        "updated": "آخر تحديث"
+      },
+      "actions": {
+        "view": "عرض",
+        "edit": "تعديل",
+        "duplicate": "تكرار",
+        "enable": "تفعيل",
+        "disable": "تعطيل",
+        "previewQualified": "معاينة الوكلاء المؤهلين",
+        "delete": "حذف"
+      },
+      "skills": {
+        "moreSuffix": "+{{count}} المزيد"
+      },
+      "empty": {
+        "title": "لا توجد قوائم انتظار بعد",
+        "body": "أنشئ أول قائمة انتظار لتحديد كيفية توزيع تفاعلات العملاء على الوكلاء المؤهلين."
+      },
+      "deleteDialog": {
+        "title": "حذف قائمة الانتظار",
+        "body": "هل أنت متأكد من حذف هذه القائمة؟ لا يمكن التراجع عن هذا الإجراء، وقد تتأثر تدفقات الرد الآلي التي تشير إليها.",
+        "confirm": "حذف القائمة"
+      },
+      "previewSheet": {
+        "title": "الوكلاء المؤهلون",
+        "qualifyCount": "{{count}} وكيلًا مؤهلًا حاليًا.",
+        "extLine": "تحويلة {{ext}} · {{group}}"
+      },
+      "toasts": {
+        "deleted": "تم حذف القائمة بنجاح.",
+        "duplicated": "تم تكرار القائمة بنجاح.",
+        "enabled": "تم تفعيل القائمة.",
+        "disabled": "تم تعطيل القائمة."
+      }
+    },
+    "createDialog": {
+      "title": "إنشاء قائمة انتظار",
+      "description": "اضبط الأساسيات الآن، ويمكنك إعداد المهارات والوكلاء والتوجيه في الخطوة التالية.",
+      "name": "اسم قائمة الانتظار",
+      "namePlaceholder": "الدعم الفني العربي",
+      "description2": "الوصف",
+      "channel": "القناة",
+      "group": "المجموعة",
+      "groupNone": "— بدون —",
+      "routingMode": "وضع التوجيه",
+      "routingDesc": {
+        "skills_based": "مطابقة الوكلاء عبر قواعد المهارات.",
+        "static": "أعضاء مُختارون يدويًا فقط.",
+        "hybrid": "يدوي + تأهيل عبر المهارات."
+      },
+      "tags": "الوسوم",
+      "tagsPlaceholder": "اكتب وسمًا واضغط Enter",
+      "removeTag": "إزالة {{tag}}",
+      "saveDraft": "حفظ كمسودة",
+      "createConfigure": "إنشاء وإعداد",
+      "errors": {
+        "nameRequired": "اسم قائمة الانتظار مطلوب."
+      },
+      "toasts": {
+        "draft": "تم حفظ القائمة كمسودة.",
+        "created": "تم إنشاء القائمة بنجاح."
+      }
+    },
+    "editor": {
+      "headerEdit": "تعديل قائمة الانتظار",
+      "headerCreate": "إنشاء قائمة انتظار",
+      "untitled": "بدون عنوان",
+      "duplicate": "تكرار",
+      "enable": "تفعيل",
+      "disable": "تعطيل",
+      "saveDraft": "حفظ كمسودة",
+      "saveQueue": "حفظ القائمة",
+      "draft": "مسودة",
+      "save": "حفظ",
+      "tabs": {
+        "general": "عام",
+        "skills": "المهارات والتوجيه",
+        "agents": "الوكلاء",
+        "settings": "الإعدادات",
+        "overflow": "الفائض",
+        "review": "مراجعة"
+      },
+      "discard": {
+        "title": "تجاهل التغييرات غير المحفوظة؟",
+        "body": "لديك تغييرات غير محفوظة في إعدادات القائمة، وستفقدها عند مغادرة الصفحة.",
+        "keep": "متابعة التعديل",
+        "discard": "تجاهل التغييرات"
+      },
+      "toasts": {
+        "validationErrors": "يرجى إصلاح أخطاء التحقق.",
+        "savedDraft": "تم حفظ القائمة كمسودة.",
+        "updated": "تم تحديث القائمة بنجاح.",
+        "created": "تم إنشاء القائمة بنجاح.",
+        "duplicated": "تم تكرار القائمة بنجاح.",
+        "toggled": "تم تحديث القائمة.",
+        "allSkillsAdded": "تمت إضافة جميع المهارات بالفعل."
+      },
+      "general": {
+        "title": "المعلومات العامة",
+        "name": "اسم قائمة الانتظار",
+        "namePlaceholder": "الدعم الفني العربي",
+        "code": "كود قائمة الانتظار",
+        "codePlaceholder": "TECH_AR",
+        "codeHelp": "يُستخدم داخليًا عند تكامل القائمة مع أنظمة الهاتف والتوجيه.",
+        "description": "الوصف",
+        "descriptionPlaceholder": "يخدم العملاء الناطقين بالعربية الذين يحتاجون دعمًا فنيًا.",
+        "channel": "القناة",
+        "group": "المجموعة",
+        "groupHelp": "للتنظيم الإداري فقط، ولا يحدد عضوية القائمة.",
+        "groupNone": "— بدون —",
+        "status": "الحالة",
+        "tags": "الوسوم",
+        "tagsPlaceholder": "اكتب وسمًا واضغط Enter",
+        "removeTag": "إزالة {{tag}}"
+      },
+      "skills": {
+        "modeTitle": "وضع التوجيه",
+        "modeDescription": "كيفية مطابقة الوكلاء مع التفاعلات في هذه القائمة.",
+        "modeDesc": {
+          "skills_based": "فقط الوكلاء المطابقون لقواعد المهارات المطلوبة مؤهلون.",
+          "static": "فقط أعضاء القائمة المختارون يدويًا مؤهلون.",
+          "hybrid": "يجب إضافة الوكلاء يدويًا وأن يستوفوا قواعد المهارات المطلوبة."
+        },
+        "staticAlertTitle": "وضع الأعضاء الثابتين",
+        "staticAlertBody": "توجّه هذه القائمة المكالمات فقط للوكلاء المعيّنين يدويًا. لا تُستخدم متطلبات المهارات أو منطق التأهيل أو تخفيف المهارات. أدر الوكلاء المعيّنين من تبويب الوكلاء.",
+        "rulesTitle": "التوجيه القائم على المهارات",
+        "rulesDescription": "حدد المهارات التي يجب أن يمتلكها الوكيل ليكون مؤهلًا لهذه القائمة. يقارن النظام متطلبات القائمة بمستويات إتقان الوكيل.",
+        "noRules": "لا توجد متطلبات مهارات بعد.",
+        "skill": "المهارة",
+        "minLevel": "الحد الأدنى للمستوى — {{level}} ({{label}})",
+        "requirement": "نوع المتطلب",
+        "mandatory": "إلزامي",
+        "preferred": "مفضل",
+        "weight": "الوزن: {{value}}٪",
+        "remove": "إزالة",
+        "addSkill": "إضافة متطلب مهارة",
+        "weightCheckTitle": "فحص الأوزان",
+        "weightCheckBody": "إجمالي أوزان المهارات المفضلة حاليًا {{total}}٪. يجب أن يكون الإجمالي 100٪.",
+        "logicTitle": "منطق التأهيل",
+        "logicAll": "مطابقة جميع المهارات الإلزامية",
+        "logicAllDesc": "يجب أن يستوفي الوكيل كل متطلب مهارة إلزامي.",
+        "logicAny": "مطابقة أي مهارة إلزامية",
+        "logicAnyDesc": "يكفي أن يستوفي الوكيل متطلبًا إلزاميًا واحدًا.",
+        "logicAnyWarn": "استخدام «مطابقة أي» قد يوجه التفاعلات لوكلاء لا يمتلكون كل الإمكانات المطلوبة.",
+        "exampleTitle": "مثال مطابقة المهارات",
+        "exampleDesc": "معاينة مباشرة وفق القواعد الحالية.",
+        "queueRequirements": "متطلبات القائمة",
+        "qualified": "مؤهل",
+        "notQualified": "غير مؤهل",
+        "strategyTitle": "استراتيجية التوجيه",
+        "tieBreaker": "كاسر التعادل",
+        "relaxTitle": "تخفيف المهارات",
+        "relaxDescription": "خفّض متطلبات المهارات تدريجيًا عند انتظار العميل.",
+        "relaxWarn": "قد يوجّه تخفيف المهارات العملاء إلى وكلاء أقل تأهيلًا لتقليل وقت الانتظار.",
+        "after": "بعد (ثوانٍ)",
+        "action": "الإجراء",
+        "skillScope": "نطاق المهارات",
+        "reduction": "التخفيض",
+        "scope": {
+          "all": "الكل",
+          "mandatory": "إلزامية",
+          "preferred": "مفضلة"
+        },
+        "relaxAction": {
+          "reduce_minimum_level": "تخفيض الحد الأدنى للمهارة",
+          "ignore_preferred": "تجاهل المهارات المفضلة",
+          "allow_fallback": "السماح بوكلاء احتياطيين",
+          "route_to_queue": "التوجيه إلى قائمة أخرى"
+        },
+        "addRelax": "إضافة قاعدة تخفيف"
+      },
+      "agents": {
+        "staticAlert": "وضع الأعضاء الثابتين: التوجيه يعتمد فقط على الوكلاء المعيّنين يدويًا أدناه. لا يُستخدم تأهيل المهارات.",
+        "qualifiedTitle": "الوكلاء المؤهلون",
+        "qualifiedDesc": "{{count}} وكيلًا مؤهلًا حاليًا لهذه القائمة.",
+        "searchPlaceholder": "ابحث عن الوكلاء",
+        "allGroups": "جميع المجموعات",
+        "allAvailability": "كل حالات التوفر",
+        "availability": {
+          "available": "متاح",
+          "busy": "مشغول",
+          "paused": "موقوف مؤقتًا",
+          "offline": "غير متصل"
+        },
+        "qualifiedOnly": "المؤهلون فقط",
+        "cols": {
+          "agent": "الوكيل",
+          "ext": "التحويلة",
+          "group": "المجموعة",
+          "role": "الدور",
+          "skills": "المهارات",
+          "score": "درجة المطابقة",
+          "availability": "التوفر",
+          "membership": "العضوية"
+        },
+        "noMatch": "لا يوجد وكلاء يطابقون المرشّحات الحالية.",
+        "manuallyAssigned": "معيّن يدويًا",
+        "autoQualified": "مؤهل تلقائيًا",
+        "manualTitle": "الوكلاء المعيّنون يدويًا",
+        "manualDesc": "تُختار قيم العقوبة الأقل قبل الأعلى.",
+        "addAgents": "إضافة وكلاء",
+        "noManual": "لا يوجد وكلاء معيّنون يدويًا بعد.",
+        "manualCols": {
+          "priority": "الأولوية",
+          "penalty": "العقوبة",
+          "maxConcurrent": "الحد الأقصى المتزامن",
+          "wrapUpOverride": "تجاوز الانتهاء",
+          "enabled": "مفعل",
+          "qualification": "التأهيل"
+        },
+        "missingSkills": "مهارات ناقصة",
+        "fallbackTitle": "الوكلاء الاحتياطيون",
+        "fallbackDesc": "يستقبلون التفاعل بعد بلوغ قواعد التخفيف أو الفائض.",
+        "addFallback": "إضافة احتياطي",
+        "noFallback": "لا يوجد وكلاء احتياطيون.",
+        "triggerAfter": "التشغيل بعد (ثوانٍ)",
+        "drawerTitle": "تفاصيل تأهيل الوكيل",
+        "extension": "التحويلة",
+        "status": "الحالة",
+        "matchScore": "درجة المطابقة",
+        "requiredSkills": "المهارات المطلوبة",
+        "required": "المطلوب",
+        "agentLevel": "الوكيل",
+        "result": "النتيجة",
+        "passed": "ناجح",
+        "failed": "فاشل",
+        "assignTitle": "إضافة وكلاء",
+        "assignDesc": "اختر الوكلاء لتعيينهم لهذه القائمة.",
+        "addSelected": "إضافة {{count}} المحدد"
+      },
+      "settings": {
+        "capacity": "السعة",
+        "maxQueueLength": "الحد الأقصى لطول القائمة",
+        "maxWait": "الحد الأقصى لوقت الانتظار (ثانية)",
+        "maxConcurrent": "الحد الأقصى للتفاعلات المتزامنة",
+        "maxPerAgent": "الحد الأقصى المتزامن لكل وكيل",
+        "ringing": "رنين الوكيل",
+        "ringTimeout": "مهلة الرنين (ثانية)",
+        "retryDelay": "تأخير إعادة المحاولة (ثانية)",
+        "wrapUp": "وقت الإنهاء (ثانية)",
+        "wrapUpEnabled": "تفعيل الإنهاء",
+        "autoAnswer": "رد تلقائي",
+        "allowReject": "السماح للوكيل بالرفض",
+        "reOffer": "إعادة عرض المرفوضة",
+        "cx": "تجربة العميل",
+        "moh": "موسيقى الانتظار",
+        "welcome": "إعلان الترحيب",
+        "periodic": "الإعلان الدوري",
+        "announcementInterval": "فاصل الإعلان (ثانية)",
+        "positionAnn": "إعلان الموقع",
+        "etaAnn": "وقت الانتظار المتوقع",
+        "callback": "عرض معاودة الاتصال",
+        "voicemail": "عرض البريد الصوتي",
+        "sla": "اتفاقية مستوى الخدمة",
+        "slaTarget": "الوقت المستهدف (ثانية)",
+        "slaPercent": "النسبة المستهدفة",
+        "slaWarn": "عتبة التحذير (٪)",
+        "slaCrit": "العتبة الحرجة (٪)",
+        "slaPreviewLabel": "معاينة SLA",
+        "slaPreview": "الهدف: الرد على {{percent}}٪ من المكالمات خلال {{seconds}} ثانية",
+        "slaSummary": "SLA: {{percent}}/{{seconds}}"
+      },
+      "overflow": {
+        "title": "قواعد الفائض والاحتياط",
+        "desc": "ماذا يحدث عندما لا يمكن للقائمة التعامل مع تفاعل.",
+        "addRule": "إضافة قاعدة فائض",
+        "noRules": "لا توجد قواعد فائض.",
+        "when": "عند",
+        "action": "الإجراء",
+        "destination": "الوجهة",
+        "selectPlaceholder": "اختر...",
+        "delay": "التأخير",
+        "priority": "الأولوية",
+        "remove": "إزالة",
+        "circular": "هذه الوجهة الاحتياطية تنشئ مسار قائمة دائريًا.",
+        "defaultVoicemail": "البريد الصوتي الافتراضي",
+        "hoursTitle": "ساعات عمل القائمة",
+        "hoursMode": {
+          "always": "مفتوحة دائمًا",
+          "existing": "استخدام جدول موجود",
+          "custom": "جدول مخصص"
+        },
+        "schedule": "الجدول",
+        "selectSchedule": "اختر جدولًا",
+        "timezone": "المنطقة الزمنية",
+        "outsideAction": "إجراء خارج ساعات العمل"
+      },
+      "review": {
+        "validationErrors": "أخطاء التحقق",
+        "fieldErrors": "أخطاء الحقول",
+        "warnings": "تحذيرات",
+        "fewAgentsWarn": "تحذير: فقط {{count}} وكلاء يستوفون جميع متطلبات المهارات الإلزامية حاليًا.",
+        "edit": "تعديل",
+        "general": "المعلومات العامة",
+        "name": "الاسم",
+        "code": "الكود",
+        "channel": "القناة",
+        "status": "الحالة",
+        "tags": "الوسوم",
+        "routingTitle": "وضع واستراتيجية التوجيه",
+        "mode": "الوضع",
+        "strategy": "الاستراتيجية",
+        "tieBreaker": "كاسر التعادل",
+        "matchLogic": "منطق مطابقة المهارات",
+        "matchAll": "مطابقة الكل",
+        "matchAny": "مطابقة أي",
+        "reqSkills": "المهارات المطلوبة",
+        "noReqSkills": "لا توجد متطلبات مهارات.",
+        "agents": "الوكلاء",
+        "qualifiedAgents": "الوكلاء المؤهلون",
+        "manuallyAssigned": "معيّن يدويًا",
+        "fallbackAgents": "الوكلاء الاحتياطيون",
+        "relax": "تخفيف المهارات",
+        "relaxEnabled": "مفعّل — {{count}} قاعدة",
+        "relaxDisabled": "معطّل",
+        "capSla": "السعة و SLA",
+        "maxQueueLen": "الحد الأقصى لطول القائمة",
+        "maxWait": "أقصى انتظار",
+        "sla": "SLA",
+        "overflowTitle": "قواعد الفائض",
+        "noOverflow": "لا توجد قواعد فائض.",
+        "overflowConfigured": "{{count}} قاعدة تم إعدادها.",
+        "hoursTitle": "ساعات العمل",
+        "hoursSummary": "الوضع: {{mode}} · المنطقة الزمنية: {{tz}}"
+      }
+    },
+    "labels": {
+      "channel": {
+        "voice": "صوت",
+        "chat": "دردشة مباشرة",
+        "whatsapp": "واتساب",
+        "omnichannel": "متعدد القنوات"
+      },
+      "status": {
+        "active": "نشط",
+        "inactive": "غير نشط",
+        "draft": "مسودة"
+      },
+      "routingMode": {
+        "skills_based": "قائم على المهارات",
+        "static": "أعضاء ثابتون",
+        "hybrid": "هجين"
+      },
+      "routingStrategy": {
+        "best_skill_match": "أفضل مطابقة للمهارات",
+        "longest_idle": "الأطول خمولًا بين المؤهلين",
+        "fewest_calls": "الأقل مكالمات بين المؤهلين",
+        "round_robin": "دوري بين المؤهلين",
+        "priority_penalty": "الأولوية والعقوبة",
+        "ringall": "رنين الجميع",
+        "leastrecent": "الأقدم اتصالًا",
+        "fewestcalls": "الأقل مكالمات",
+        "random": "عشوائي",
+        "rrmemory": "دوري (بذاكرة)",
+        "linear": "خطي",
+        "wrandom": "عشوائي مرجّح"
+      },
+      "strategyDesc": {
+        "best_skill_match": "وجّه التفاعل إلى الوكيل المتاح صاحب أعلى درجة مطابقة للمهارات.",
+        "longest_idle": "من بين الوكلاء المؤهلين، اختر الذي ظل خاملًا الأطول.",
+        "fewest_calls": "من بين المؤهلين، اختر الوكيل الأقل عددًا من التفاعلات المُعالجة.",
+        "round_robin": "وزّع التفاعلات بالتساوي بين الوكلاء المؤهلين.",
+        "priority_penalty": "اختر الوكلاء بناءً على أولوية أو عقوبة عضو القائمة.",
+        "ringall": "يرن لكل الأعضاء المتاحين معًا حتى يجيب أحدهم (Asterisk: ringall).",
+        "leastrecent": "يرن للعضو الأقدم اتصالًا (Asterisk: leastrecent).",
+        "fewestcalls": "يرن للعضو الأقل مكالمات (Asterisk: fewestcalls).",
+        "random": "يرن لعضو عشوائي متاح (Asterisk: random).",
+        "rrmemory": "دوري بذاكرة آخر عضو رنّ له (Asterisk: rrmemory).",
+        "linear": "يرن للأعضاء بالترتيب المحدد (Asterisk: linear).",
+        "wrandom": "اختيار عشوائي مرجّح حسب عقوبة العضو (Asterisk: wrandom)."
+      },
+      "tieBreaker": {
+        "longest_idle": "الأطول خمولًا",
+        "fewest_calls": "الأقل مكالمات",
+        "highest_priority": "أعلى أولوية للوكيل",
+        "round_robin": "دوري",
+        "random": "عشوائي"
+      },
+      "proficiency": {
+        "1": "مبتدئ",
+        "2": "أساسي",
+        "3": "متوسط",
+        "4": "متقدم",
+        "5": "خبير"
+      },
+      "overflowTrigger": {
+        "no_qualified_agents": "لا يوجد وكلاء مؤهلون",
+        "no_available_agents": "لا يوجد وكلاء متاحون",
+        "queue_full": "القائمة ممتلئة",
+        "max_wait_reached": "بلوغ أقصى وقت انتظار",
+        "outside_hours": "خارج ساعات العمل",
+        "routing_failure": "فشل التوجيه"
+      },
+      "overflowAction": {
+        "route_to_queue": "التوجيه إلى قائمة أخرى",
+        "route_to_ivr": "التوجيه إلى تدفق رد آلي",
+        "route_to_voicemail": "التوجيه إلى البريد الصوتي",
+        "offer_callback": "عرض معاودة الاتصال",
+        "route_external": "التوجيه إلى رقم خارجي",
+        "announce_hangup": "تشغيل إعلان وإنهاء",
+        "route_to_supervisor": "التوجيه إلى مجموعة المشرفين"
+      },
+      "tier": {
+        "excellent": "مطابقة ممتازة",
+        "good": "مطابقة جيدة",
+        "partial": "مطابقة جزئية",
+        "not_qualified": "غير مؤهل"
+      }
+    }
+  },
+  "systemSettings": {
+    "subtitle": "إعدادات على مستوى المستأجر: المهارات، أكواد إنهاء المكالمة، وميزات الذكاء الاصطناعي.",
+    "tabs": {
+      "skills": "كتالوج المهارات",
+      "wrapUpCodes": "أكواد إنهاء المكالمة",
+      "ai": "إعدادات الذكاء الاصطناعي"
+    },
+    "skills": {
+      "title": "إدارة كتالوج المهارات",
+      "categoryCount_one": "فئة واحدة",
+      "categoryCount_other": "{{count}} فئات",
+      "optionCount_one": "خيار واحد",
+      "optionCount_other": "{{count}} خيارات",
+      "newCategory": "فئة جديدة",
+      "selectCategory": "اختر فئة",
+      "loading": "جاري تحميل الكتالوج…",
+      "empty": "لا توجد فئات بعد. أنشئ واحدة للبدء.",
+      "footerHint": "تحدّث هذه التغييرات قوائم أسماء المهارات الظاهرة في محرر المستخدم.",
+      "unsaved": "تغييرات غير محفوظة",
+      "cancel": "إلغاء",
+      "save": "حفظ الكتالوج",
+      "toast": {
+        "saved": "تم حفظ الكتالوج",
+        "saveFailed": "تعذّر حفظ الكتالوج"
+      }
+    },
+    "wrapup": {
+      "title": "أكواد إنهاء المكالمة",
+      "subtitle": "إدارة أكواد إنهاء المكالمات المتاحة للموظفين.",
+      "codeCount_one": "كود واحد",
+      "codeCount_other": "{{count}} أكواد",
+      "newCode": "كود جديد",
+      "loading": "جاري التحميل…",
+      "empty": "لا توجد أكواد بعد. أنشئ الأول.",
+      "table": {
+        "label": "التسمية",
+        "category": "الفئة",
+        "arabic": "بالعربية",
+        "active": "مفعّل",
+        "actions": "إجراءات"
+      },
+      "dialog": {
+        "editTitle": "تعديل كود إنهاء",
+        "newTitle": "كود إنهاء جديد",
+        "labelField": "التسمية *",
+        "arabicLabel": "التسمية بالعربية",
+        "category": "الفئة",
+        "color": "اللون",
+        "sortOrder": "ترتيب العرض",
+        "active": "مفعّل",
+        "placeholder": "تم الحل",
+        "cancel": "إلغاء",
+        "save": "حفظ"
+      },
+      "confirmDelete": "حذف \"{{label}}\"؟",
+      "toast": {
+        "labelRequired": "التسمية مطلوبة",
+        "created": "تم إنشاء الكود",
+        "updated": "تم تحديث الكود",
+        "deleted": "تم الحذف",
+        "saveFailed": "فشل الحفظ",
+        "updateFailed": "فشل التحديث",
+        "deleteFailed": "فشل الحذف"
+      }
+    }
+  },
+  "aiSettings": {
+    "tabs": {
+      "autoTags": "الوسوم التلقائية",
+      "keywordAlerts": "تنبيهات الكلمات المفتاحية"
+    }
+  }
+}

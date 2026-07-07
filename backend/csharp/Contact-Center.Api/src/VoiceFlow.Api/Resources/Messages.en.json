@@ -1,0 +1,74 @@
+{
+  "Auth": {
+    "InvalidCredentials": "Invalid email or password.",
+    "AccountNotFound": "Account not found.",
+    "EmailAlreadyExists": "An account with this email already exists.",
+    "TokenExpired": "Your session has expired. Please log in again.",
+    "TokenInvalid": "Invalid authentication token.",
+    "RefreshTokenInvalid": "Invalid or expired refresh token.",
+    "Unauthorized": "Authentication is required to access this resource.",
+    "Forbidden": "You do not have permission to perform this action.",
+    "PasswordResetSent": "If this email exists, a password reset link has been sent.",
+    "PasswordResetSuccess": "Your password has been reset successfully.",
+    "LogoutSuccess": "Logged out successfully."
+  },
+  "Validation": {
+    "Required": "The {0} field is required.",
+    "EmailInvalid": "Please provide a valid email address.",
+    "PasswordTooShort": "Password must be at least 8 characters long.",
+    "StringTooLong": "The {0} field must not exceed {1} characters."
+  },
+  "Common": {
+    "NotFound": "{0} not found.",
+    "Created": "{0} created successfully.",
+    "Updated": "{0} updated successfully.",
+    "Deleted": "{0} deleted successfully.",
+    "InternalError": "An unexpected error occurred. Please try again later."
+  },
+  "Calls": {
+    "NotFound": "Call record not found.",
+    "RecordingNotAvailable": "Recording is not available for this call.",
+    "SummaryGenerating": "AI summary generation has been queued.",
+    "TranscriptNotAvailable": "Transcript is not available for this call."
+  },
+  "Flows": {
+    "NotFound": "IVR flow not found.",
+    "ValidationFailed": "Flow validation failed. Please fix the errors before publishing.",
+    "Published": "Flow published successfully.",
+    "ExportReady": "Asterisk configuration exported successfully.",
+    "MissingStartNode": "Flow must have exactly one start node.",
+    "DisconnectedNode": "Flow contains disconnected nodes."
+  },
+  "VoiceLibrary": {
+    "NotFound": "Voice library item not found.",
+    "UnsupportedFormat": "Unsupported audio format. Supported formats: WAV, MP3, OGG.",
+    "FileTooLarge": "Audio file size exceeds the maximum allowed size.",
+    "TtsGenerated": "Text-to-speech audio generated successfully."
+  },
+  "Contacts": {
+    "NotFound": "Contact not found.",
+    "PhoneExists": "A contact with this phone number already exists."
+  },
+  "Tags": {
+    "NotFound": "Tag not found.",
+    "NameExists": "A tag with this name already exists."
+  },
+  "SipAccounts": {
+    "NotFound": "SIP account not found.",
+    "AlreadyExists": "A SIP account is already configured for this user."
+  },
+  "Invoices": {
+    "NotFound": "Invoice not found.",
+    "CannotDelete": "Paid invoices cannot be deleted."
+  },
+  "EditLogs": {
+    "NotFound": "Audit log entry not found."
+  },
+  "RateLimit": {
+    "Exceeded": "Too many requests. Please wait before trying again."
+  },
+  "report.not_found": "Report not found.",
+  "report.forbidden": "You don't have permission to perform this action.",
+  "report.invalid": "The request is invalid.",
+  "report.bad_status": "Unknown status."
+}

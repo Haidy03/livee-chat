@@ -1,0 +1,14 @@
+services:
+  api:
+    image: cr.alkhwarizmi.online/cti-backend:${IMAGE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: MicroServicesCore/contact-center.web/backend/csharp/CTI_Backend/Dockerfile
+    container_name: cti-backend
+    restart: unless-stopped
+    environment:
+      ASPNETCORE_ENVIRONMENT: Production
+      MongoDB__ConnectionString: ${MONGO_URI:-mongodb://host.docker.internal:27017/}
+      MongoDB__Database: ${MONGO_DATABASE:-voiceflow}
+    ports:
+      - "15220:8080"

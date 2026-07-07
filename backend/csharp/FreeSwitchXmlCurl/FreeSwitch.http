@@ -1,0 +1,6 @@
+@FreeSwitch_HostAddress = http://localhost:5091
+
+GET {{FreeSwitch_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###

@@ -1,0 +1,12 @@
+---
+description: Coding conventions for frontend files.
+globs: ["**/*.tsx", "**/*.ts"]
+alwaysApply: false
+---
+
+- Functional components only, with TypeScript props interfaces (no `any`).
+- Co-locate component-specific types in the same file unless shared across multiple components (then src/types/).
+- Use existing hooks/utilities (check src/hooks/, src/lib/) before writing new ones.
+- Absolute imports via configured path aliases (@/components, @/lib), not deep relative paths.
+- No new dependencies without flagging it in the summary — don't silently add packages.
+- One component per file, small and focused. Split when a file exceeds ~150-200 lines or handles more than one concern.

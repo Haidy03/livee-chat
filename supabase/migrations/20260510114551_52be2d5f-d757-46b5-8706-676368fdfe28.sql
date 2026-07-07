@@ -1,0 +1,1 @@
+DROP TABLE IF EXISTS public.agents CASCADE; DROP TABLE IF EXISTS public.pipelines CASCADE;

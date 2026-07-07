@@ -1,0 +1,200 @@
+openapi: 3.0.3
+info:
+  title: VoiceFlow Calls Search API
+  version: 1.0.0
+  description: |
+    Search and faceted-filter endpoint that powers the enhanced Calls page
+    filter panel. Accepts the full filter model (type, states, properties,
+    sentiment, abandonment, durations, keyword + operator, etc.) and returns
+    paginated call records.
+servers:
+  - url: https://contact-center.alkhwarizmi.pro/api/v1
+    description: Production
+security:
+  - bearerAuth: []
+paths:
+  /calls/search:
+    post:
+      summary: Search calls with advanced filters
+      operationId: searchCalls
+      tags: [Calls]
+      parameters:
+        - $ref: '#/components/parameters/TenantHeader'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/CallSearchRequest'
+      responses:
+        '200':
+          description: Paginated matching calls.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CallSearchResponse'
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /calls/filters/options:
+    get:
+      summary: Lookup values for filter dropdowns
+      operationId: getCallFilterOptions
+      tags: [Calls]
+      parameters:
+        - $ref: '#/components/parameters/TenantHeader'
+      responses:
+        '200':
+          description: Allowed values for agents, groups, tags, etc.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/CallFilterOptions'
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  parameters:
+    TenantHeader:
+      name: X-Tenant-Id
+      in: header
+      required: true
+      schema: { type: string, format: uuid }
+  responses:
+    BadRequest:
+      description: Invalid filter payload.
+    Unauthorized:
+      description: Missing or invalid auth token.
+  schemas:
+    DurationFilter:
+      type: object
+      properties:
+        enabled: { type: boolean, default: false }
+        min:     { type: integer, minimum: 0, description: "Lower bound in seconds" }
+        max:     { type: integer, minimum: 0, description: "Upper bound in seconds" }
+      required: [enabled, min, max]
+
+    CallType:
+      type: string
+      enum: [incoming, outgoing, internal, self]
+
+    CallProperty:
+      type: string
+      enum: [recording, voicemail, transfer, hold]
+
+    Sentiment:
+      type: string
+      enum: [positive, neutral, negative]
+
+    HandledBy:
+      type: string
+      enum: [any, agent, ai, ivr]
+
+    SearchOperator:
+      type: string
+      enum: [and, or, phrase]
+
+    CallSearchRequest:
+      type: object
+      properties:
+        dateRange: { type: string, enum: [today, yesterday, 7d, 30d, all], default: all }
+        dateFrom:  { type: string, format: date-time, nullable: true }
+        dateTo:    { type: string, format: date-time, nullable: true }
+        types:               { type: array, items: { $ref: '#/components/schemas/CallType' } }
+        inboundStates:       { type: array, items: { type: string } }
+        outboundStates:      { type: array, items: { type: string } }
+        campaignStates:      { type: array, items: { type: string } }
+        internalStates:      { type: array, items: { type: string } }
+        statuses:            { type: array, items: { type: string } }
+        properties:          { type: array, items: { $ref: '#/components/schemas/CallProperty' } }
+        sentiment:           { type: array, items: { $ref: '#/components/schemas/Sentiment' } }
+        hangUpByAgent:       { type: boolean, default: false }
+        abandonmentReasons:  { type: array, items: { type: string } }
+        agentIds:            { type: array, items: { type: string, format: uuid } }
+        groupIds:            { type: array, items: { type: string } }
+        tagIds:              { type: array, items: { type: string } }
+        caller:              { type: string }
+        callee:              { type: string }
+        handledBy:           { $ref: '#/components/schemas/HandledBy' }
+        callId:              { type: string }
+        referenceId:         { type: string }
+        keyword:             { type: string }
+        searchOperator:      { $ref: '#/components/schemas/SearchOperator' }
+        duration:            { $ref: '#/components/schemas/DurationFilter' }
+        handlingDuration:    { $ref: '#/components/schemas/DurationFilter' }
+        waitingDuration:     { $ref: '#/components/schemas/DurationFilter' }
+        holdingDuration:     { $ref: '#/components/schemas/DurationFilter' }
+        page:     { type: integer, minimum: 1, default: 1 }
+        pageSize: { type: integer, minimum: 1, maximum: 200, default: 25 }
+        sortBy:   { type: string, default: startedAt }
+        sortDir:  { type: string, enum: [asc, desc], default: desc }
+
+    CallRecord:
+      type: object
+      properties:
+        id:               { type: string }
+        direction:        { $ref: '#/components/schemas/CallType' }
+        status:           { type: string }
+        startedAt:        { type: string, format: date-time }
+        ringSeconds:      { type: integer }
+        holdSeconds:      { type: integer }
+        activeSeconds:    { type: integer }
+        totalSeconds:     { type: integer }
+        agentId:          { type: string, nullable: true }
+        groupId:          { type: string, nullable: true }
+        caller:           { type: string }
+        called:           { type: string }
+        tagIds:           { type: array, items: { type: string } }
+        autoTagIds:       { type: array, items: { type: string } }
+        sentiment:        { $ref: '#/components/schemas/Sentiment', nullable: true }
+        handledBy:        { $ref: '#/components/schemas/HandledBy' }
+        referenceId:      { type: string, nullable: true }
+        inputs:           { type: string }
+        hasRecording:     { type: boolean }
+        properties:       { type: array, items: { $ref: '#/components/schemas/CallProperty' } }
+        abandonmentReason:{ type: string, nullable: true }
+        notes:            { type: string }
+
+    CallSearchResponse:
+      type: object
+      properties:
+        items:    { type: array, items: { $ref: '#/components/schemas/CallRecord' } }
+        total:    { type: integer }
+        page:     { type: integer }
+        pageSize: { type: integer }
+      required: [items, total, page, pageSize]
+
+    CallFilterOptions:
+      type: object
+      properties:
+        agents:
+          type: array
+          items:
+            type: object
+            properties:
+              id:   { type: string }
+              name: { type: string }
+        groups:
+          type: array
+          items:
+            type: object
+            properties:
+              id:   { type: string }
+              name: { type: string }
+        tags:
+          type: array
+          items:
+            type: object
+            properties:
+              id:    { type: string }
+              label: { type: string }
+              color: { type: string, nullable: true }
+        abandonmentReasons:
+          type: array
+          items: { type: string }
+        handledByOptions:
+          type: array
+          items: { $ref: '#/components/schemas/HandledBy' }

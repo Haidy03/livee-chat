@@ -1,0 +1,666 @@
+openapi: 3.0.3
+info:
+  title: VoiceFlow Surveys API
+  version: 1.0.0
+  description: |
+    CRUD and lifecycle endpoints for IVR voice surveys, plus read-only access
+    to collected survey responses. Powers the Surveys list, detail, and editor
+    pages in the contact-center frontend.
+
+    All responses are wrapped in the standard `ApiEnvelope` shape used across
+    the platform. Authentication uses bearer JWTs; tenant scoping is derived
+    from the token (and may optionally be overridden via the `X-Tenant-Id`
+    header for service-to-service calls).
+servers:
+  - url: https://contact-center.alkhwarizmi.pro/api/v1
+    description: Production
+security:
+  - bearerAuth: []
+
+paths:
+  /surveys:
+    get:
+      summary: List surveys for the current tenant
+      operationId: listSurveys
+      tags: [Surveys]
+      parameters:
+        - $ref: '#/components/parameters/TenantHeader'
+        - in: query
+          name: search
+          schema: { type: string }
+          description: Case-insensitive substring match on `name`.
+        - in: query
+          name: status
+          schema: { $ref: '#/components/schemas/SurveyStatus' }
+        - in: query
+          name: language
+          schema: { $ref: '#/components/schemas/SurveyLanguage' }
+      responses:
+        '200':
+          description: List of surveys.
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/schemas/SurveyListEnvelope'
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+    post:
+      summary: Create a survey
+      operationId: createSurvey
+      tags: [Surveys]
+      parameters:
+        - $ref: '#/components/parameters/TenantHeader'
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema:
+              $ref: '#/components/schemas/SurveyCreateRequest'
+      responses:
+        '201':
+          description: Survey created.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyEnvelope' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401': { $ref: '#/components/responses/Unauthorized' }
+
+  /surveys/{id}:
+    parameters:
+      - $ref: '#/components/parameters/TenantHeader'
+      - $ref: '#/components/parameters/SurveyId'
+    get:
+      summary: Get a survey by id
+      operationId: getSurvey
+      tags: [Surveys]
+      responses:
+        '200':
+          description: Survey detail.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyEnvelope' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+    patch:
+      summary: Update a survey (partial)
+      operationId: updateSurvey
+      tags: [Surveys]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SurveyUpdateRequest' }
+      responses:
+        '200':
+          description: Survey updated.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyEnvelope' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+    delete:
+      summary: Permanently delete a survey
+      operationId: deleteSurvey
+      tags: [Surveys]
+      description: |
+        Hard-delete. Prefer the status endpoint with `archived` for reversible
+        disable in regular UI flows.
+      responses:
+        '204':
+          description: Deleted.
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /surveys/{id}/status:
+    parameters:
+      - $ref: '#/components/parameters/TenantHeader'
+      - $ref: '#/components/parameters/SurveyId'
+    patch:
+      summary: Change survey status (publish / unpublish / archive)
+      operationId: setSurveyStatus
+      tags: [Surveys]
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SetStatusRequest' }
+      responses:
+        '200':
+          description: Updated survey.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyEnvelope' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /surveys/{id}/duplicate:
+    parameters:
+      - $ref: '#/components/parameters/TenantHeader'
+      - $ref: '#/components/parameters/SurveyId'
+    post:
+      summary: Duplicate a survey
+      operationId: duplicateSurvey
+      tags: [Surveys]
+      responses:
+        '201':
+          description: New survey created from the source.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyEnvelope' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /surveys/{id}/webhook:
+    parameters:
+      - $ref: '#/components/parameters/SurveyId'
+    post:
+      summary: Ingest a completed-survey webhook from the telephony layer
+      operationId: ingestSurveyWebhook
+      tags: [Surveys]
+      security: []
+      description: |
+        Anonymous endpoint called by the IVR/dialer when a survey ends.
+        If the survey has a `webhookSecret`, the request MUST include an
+        `X-Survey-Signature` header containing the HMAC-SHA256 hex digest
+        of the raw JSON body (optionally prefixed with `sha256=`).
+        Idempotent on `call_id` — duplicate posts return 200 with
+        `message: "duplicate"` and the existing response.
+      parameters:
+        - in: header
+          name: X-Survey-Signature
+          required: false
+          schema: { type: string }
+          description: HMAC-SHA256 hex digest of the raw request body.
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SurveyWebhookPayload' }
+      responses:
+        '200':
+          description: Accepted (or duplicate).
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiEnvelope'
+                  - type: object
+                    properties:
+                      data: { $ref: '#/components/schemas/SurveyResponse' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401':
+          description: Invalid or missing webhook signature.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+  /surveys/webhook:
+    post:
+      summary: Ingest a completed-survey webhook (survey id in body)
+      operationId: ingestSurveyWebhookNoId
+      tags: [Surveys]
+      security: []
+      description: |
+        Same as `/surveys/{id}/webhook` but reads `survey_id` from the JSON
+        body. Used by dialplans that post to a fixed URL.
+      parameters:
+        - in: header
+          name: X-Survey-Signature
+          required: false
+          schema: { type: string }
+      requestBody:
+        required: true
+        content:
+          application/json:
+            schema: { $ref: '#/components/schemas/SurveyWebhookPayload' }
+      responses:
+        '200':
+          description: Accepted (or duplicate).
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiEnvelope'
+                  - type: object
+                    properties:
+                      data: { $ref: '#/components/schemas/SurveyResponse' }
+        '400': { $ref: '#/components/responses/BadRequest' }
+        '401':
+          description: Invalid or missing webhook signature.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+
+  /surveys/{id}/responses:
+    parameters:
+      - $ref: '#/components/parameters/TenantHeader'
+      - $ref: '#/components/parameters/SurveyId'
+    get:
+      summary: List collected responses for a survey
+      operationId: listSurveyResponses
+      tags: [Surveys]
+      parameters:
+        - in: query
+          name: limit
+          schema: { type: integer, minimum: 1, maximum: 500, default: 50 }
+        - in: query
+          name: from
+          schema: { type: string, format: date-time }
+        - in: query
+          name: to
+          schema: { type: string, format: date-time }
+      responses:
+        '200':
+          description: Responses, newest first.
+          content:
+            application/json:
+              schema: { $ref: '#/components/schemas/SurveyResponseListEnvelope' }
+        '404': { $ref: '#/components/responses/NotFound' }
+
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+
+  parameters:
+    TenantHeader:
+      in: header
+      name: X-Tenant-Id
+      required: false
+      schema: { type: string, format: uuid }
+      description: Optional tenant override (service tokens only).
+    SurveyId:
+      in: path
+      name: id
+      required: true
+      schema: { type: string, format: uuid }
+
+  responses:
+    BadRequest:
+      description: Invalid request payload.
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+    Unauthorized:
+      description: Missing or invalid token.
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+    NotFound:
+      description: Resource not found.
+      content:
+        application/json:
+          schema: { $ref: '#/components/schemas/ErrorEnvelope' }
+
+  schemas:
+    # ---------- Envelopes ----------
+    ApiEnvelope:
+      type: object
+      required: [success]
+      properties:
+        success: { type: boolean }
+        message: { type: string, nullable: true }
+        errors:
+          type: array
+          nullable: true
+          items: { type: string }
+    ErrorEnvelope:
+      allOf:
+        - $ref: '#/components/schemas/ApiEnvelope'
+        - type: object
+          properties:
+            success: { type: boolean, enum: [false] }
+    SurveyEnvelope:
+      allOf:
+        - $ref: '#/components/schemas/ApiEnvelope'
+        - type: object
+          properties:
+            data: { $ref: '#/components/schemas/Survey' }
+    SurveyListEnvelope:
+      allOf:
+        - $ref: '#/components/schemas/ApiEnvelope'
+        - type: object
+          properties:
+            data:
+              type: array
+              items: { $ref: '#/components/schemas/Survey' }
+    SurveyResponseListEnvelope:
+      allOf:
+        - $ref: '#/components/schemas/ApiEnvelope'
+        - type: object
+          properties:
+            data:
+              type: array
+              items: { $ref: '#/components/schemas/SurveyResponse' }
+
+    # ---------- Enums ----------
+    SurveyStatus:
+      type: string
+      enum: [draft, published, archived]
+    SurveyLanguage:
+      type: string
+      enum: [ar, en, both]
+    TtsVoice:
+      type: string
+      enum: [male, female]
+    Abandonment:
+      type: string
+      enum: [save_partial, discard]
+    QuestionType:
+      type: string
+      enum: [rating, yesNo, multiple_choice, numeric, voice, nps]
+    BranchActionKind:
+      type: string
+      enum: [goto, end]
+
+    # ---------- Survey ----------
+    Survey:
+      type: object
+      required:
+        - id
+        - name
+        - description
+        - language
+        - ttsVoice
+        - welcomeMessage
+        - completionMessage
+        - webhookUrl
+        - maxRetries
+        - inputTimeoutSec
+        - abandonment
+        - status
+        - createdAt
+        - updatedAt
+        - questions
+        - usedInFlowIds
+      properties:
+        id: { type: string, format: uuid }
+        name: { type: string, maxLength: 200 }
+        description: { type: string, maxLength: 2000 }
+        language: { $ref: '#/components/schemas/SurveyLanguage' }
+        ttsVoice: { $ref: '#/components/schemas/TtsVoice' }
+        welcomeMessage: { type: string }
+        completionMessage: { type: string }
+        webhookUrl: { type: string, format: uri }
+        webhookSecret: { type: string, nullable: true }
+        maxRetries: { type: integer, minimum: 0, maximum: 10 }
+        inputTimeoutSec: { type: integer, minimum: 1, maximum: 60 }
+        abandonment: { $ref: '#/components/schemas/Abandonment' }
+        status: { $ref: '#/components/schemas/SurveyStatus' }
+        createdAt: { type: string, format: date-time }
+        updatedAt: { type: string, format: date-time }
+        questions:
+          type: array
+          items: { $ref: '#/components/schemas/Question' }
+        usedInFlowIds:
+          type: array
+          items: { type: string, format: uuid }
+
+    SurveyCreateRequest:
+      type: object
+      required:
+        - name
+        - language
+        - ttsVoice
+        - webhookUrl
+        - maxRetries
+        - inputTimeoutSec
+        - abandonment
+        - status
+        - questions
+      properties:
+        name: { type: string, maxLength: 200 }
+        description: { type: string, maxLength: 2000 }
+        language: { $ref: '#/components/schemas/SurveyLanguage' }
+        ttsVoice: { $ref: '#/components/schemas/TtsVoice' }
+        welcomeMessage: { type: string }
+        completionMessage: { type: string }
+        webhookUrl: { type: string, format: uri }
+        webhookSecret: { type: string, nullable: true }
+        maxRetries: { type: integer, minimum: 0, maximum: 10 }
+        inputTimeoutSec: { type: integer, minimum: 1, maximum: 60 }
+        abandonment: { $ref: '#/components/schemas/Abandonment' }
+        status: { $ref: '#/components/schemas/SurveyStatus' }
+        questions:
+          type: array
+          items: { $ref: '#/components/schemas/Question' }
+        usedInFlowIds:
+          type: array
+          items: { type: string, format: uuid }
+
+    SurveyUpdateRequest:
+      description: Partial update. Only provided fields are modified.
+      type: object
+      properties:
+        name: { type: string }
+        description: { type: string }
+        language: { $ref: '#/components/schemas/SurveyLanguage' }
+        ttsVoice: { $ref: '#/components/schemas/TtsVoice' }
+        welcomeMessage: { type: string }
+        completionMessage: { type: string }
+        webhookUrl: { type: string, format: uri }
+        webhookSecret: { type: string, nullable: true }
+        maxRetries: { type: integer }
+        inputTimeoutSec: { type: integer }
+        abandonment: { $ref: '#/components/schemas/Abandonment' }
+        status: { $ref: '#/components/schemas/SurveyStatus' }
+        questions:
+          type: array
+          items: { $ref: '#/components/schemas/Question' }
+        usedInFlowIds:
+          type: array
+          items: { type: string, format: uuid }
+
+    SetStatusRequest:
+      type: object
+      required: [status]
+      properties:
+        status: { $ref: '#/components/schemas/SurveyStatus' }
+
+    # ---------- Question ----------
+    Question:
+      type: object
+      required: [id, order, type, text, required, config, branchingRules]
+      properties:
+        id: { type: string }
+        order: { type: integer, minimum: 1 }
+        type: { $ref: '#/components/schemas/QuestionType' }
+        text: { type: string }
+        required: { type: boolean }
+        config: { $ref: '#/components/schemas/QuestionConfig' }
+        branchingRules:
+          type: array
+          items: { $ref: '#/components/schemas/BranchingRule' }
+        soundFile: { $ref: '#/components/schemas/QuestionSoundFile' }
+
+    QuestionSoundFile:
+      type: object
+      required: [source]
+      properties:
+        source: { type: string, enum: [library, upload] }
+        voiceLibraryId: { type: string }
+        url: { type: string }
+        fileName: { type: string }
+
+    QuestionConfig:
+      oneOf:
+        - $ref: '#/components/schemas/RatingConfig'
+        - $ref: '#/components/schemas/YesNoConfig'
+        - $ref: '#/components/schemas/MultipleChoiceConfig'
+        - $ref: '#/components/schemas/NumericConfig'
+        - $ref: '#/components/schemas/VoiceConfig'
+        - $ref: '#/components/schemas/NpsConfig'
+      discriminator:
+        propertyName: type
+        mapping:
+          rating: '#/components/schemas/RatingConfig'
+          yesNo: '#/components/schemas/YesNoConfig'
+          multiple_choice: '#/components/schemas/MultipleChoiceConfig'
+          numeric: '#/components/schemas/NumericConfig'
+          voice: '#/components/schemas/VoiceConfig'
+          nps: '#/components/schemas/NpsConfig'
+
+    RatingConfig:
+      type: object
+      required: [type, min, max]
+      properties:
+        type: { type: string, enum: [rating] }
+        min: { type: integer }
+        max: { type: integer }
+        description: { type: string }
+    YesNoConfig:
+      type: object
+      required: [type, yesKey, noKey]
+      properties:
+        type: { type: string, enum: [yesNo] }
+        yesKey: { type: string }
+        noKey: { type: string }
+    MultipleChoiceChoice:
+      type: object
+      required: [key, label]
+      properties:
+        key: { type: string }
+        label: { type: string }
+    MultipleChoiceConfig:
+      type: object
+      required: [type, choices]
+      properties:
+        type: { type: string, enum: [multiple_choice] }
+        choices:
+          type: array
+          items: { $ref: '#/components/schemas/MultipleChoiceChoice' }
+    NumericConfig:
+      type: object
+      required: [type, minDigits, maxDigits, terminator]
+      properties:
+        type: { type: string, enum: [numeric] }
+        minDigits: { type: integer }
+        maxDigits: { type: integer }
+        terminator: { type: string, maxLength: 1 }
+    VoiceConfig:
+      type: object
+      required: [type, maxDurationSec, beepBefore]
+      properties:
+        type: { type: string, enum: [voice] }
+        maxDurationSec: { type: integer }
+        beepBefore: { type: boolean }
+    NpsConfig:
+      type: object
+      required: [type]
+      properties:
+        type: { type: string, enum: [nps] }
+        description: { type: string }
+
+    # ---------- Branching ----------
+    BranchingRule:
+      type: object
+      required: [id, condition, action]
+      properties:
+        id: { type: string }
+        condition:
+          type: string
+          description: Expected answer value (e.g. `"1"`, `"yes"`, `"5"`).
+        action: { $ref: '#/components/schemas/BranchAction' }
+
+    BranchAction:
+      oneOf:
+        - $ref: '#/components/schemas/GotoBranchAction'
+        - $ref: '#/components/schemas/EndBranchAction'
+      discriminator:
+        propertyName: kind
+        mapping:
+          goto: '#/components/schemas/GotoBranchAction'
+          end: '#/components/schemas/EndBranchAction'
+
+    GotoBranchAction:
+      type: object
+      required: [kind, questionId]
+      properties:
+        kind: { type: string, enum: [goto] }
+        questionId: { type: string }
+    EndBranchAction:
+      type: object
+      required: [kind]
+      properties:
+        kind: { type: string, enum: [end] }
+
+    # ---------- Response ----------
+    SurveyResponse:
+      type: object
+      required: [id, surveyId, callerPhone, at, completed, answers]
+      properties:
+        id: { type: string, format: uuid }
+        surveyId: { type: string, format: uuid }
+        callerPhone: { type: string }
+        at: { type: string, format: date-time }
+        completed: { type: boolean }
+        answers:
+          type: object
+          additionalProperties:
+            oneOf:
+              - { type: string }
+              - { type: number }
+              - { type: 'null' }
+          description: |
+            Map of `questionId -> answer`. Voice questions store a recording
+            URL or placeholder; numeric/rating store numbers; everything else
+            is a string.
+        callId: { type: string, nullable: true }
+        startedAt: { type: string, format: date-time, nullable: true }
+        endedAt: { type: string, format: date-time, nullable: true }
+        durationSeconds: { type: integer, nullable: true }
+        completionStatus: { type: string, nullable: true }
+        language: { type: string, nullable: true }
+        customFields:
+          type: object
+          additionalProperties: { type: string }
+        passedVariables:
+          type: object
+          additionalProperties: { type: string }
+
+    # ---------- Webhook ----------
+    SurveyWebhookAnswer:
+      type: object
+      required: [question_id]
+      properties:
+        question_id: { type: string }
+        question_text: { type: string }
+        type: { type: string }
+        answer:
+          oneOf:
+            - { type: string }
+            - { type: number }
+            - { type: boolean }
+            - { type: 'null' }
+        answered_at: { type: string, format: date-time }
+
+    SurveyWebhookPayload:
+      type: object
+      required: [survey_id, call_id, answers]
+      properties:
+        event: { type: string, example: survey_completed }
+        survey_id: { type: string, format: uuid }
+        survey_name: { type: string }
+        call_id: { type: string }
+        phone_number: { type: string }
+        started_at: { type: string, format: date-time }
+        ended_at: { type: string, format: date-time }
+        duration_seconds: { type: integer }
+        completion_status:
+          type: string
+          enum: [complete, partial, abandoned]
+        language: { $ref: '#/components/schemas/SurveyLanguage' }
+        custom_fields:
+          type: object
+          additionalProperties: { type: string }
+        passed_variables:
+          type: object
+          additionalProperties: { type: string }
+        answers:
+          type: array
+          items: { $ref: '#/components/schemas/SurveyWebhookAnswer' }
+

@@ -1,0 +1,20 @@
+services:
+  contactcenter-service:
+    image: cr.alkhwarizmi.online/contactcenterservice:${IMAGE_TAG:-local}
+    build:
+      context: ../..
+      dockerfile: MicroServicesCore/contact-center.web/backend/csharp/ContactCenterService/Dockerfile
+    container_name: ContactCenterService
+    restart: unless-stopped
+    environment:
+      DOTNET_ENVIRONMENT: Production
+      MongoDB__ConnectionString: ${MONGO_URI:-mongodb://host.docker.internal:27017/}
+      RabbitMq__HostName: ${RABBITMQ_HOST:-host.docker.internal}
+      RabbitMq__Port: ${RABBITMQ_PORT:-5672}
+      RabbitMq__UserName: ${RABBITMQ_USER:-guest}
+      RabbitMq__Password: ${RABBITMQ_PASSWORD:-guest}
+      RabbitMq__VirtualHost: ${RABBITMQ_VHOST:-/}
+      VoicemailAmi__Host: ${AMI_HOST:-alkhwarizmi.cloud}
+      VoicemailAmi__Port: ${AMI_PORT:-5038}
+      VoicemailAmi__Username: ${AMI_USER:-voicemail-worker}
+      VoicemailAmi__Password: ${AMI_PASSWORD:-Soft_123}

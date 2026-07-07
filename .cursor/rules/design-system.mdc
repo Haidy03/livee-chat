@@ -1,0 +1,28 @@
+---
+description: Design tokens and component inventory. Always loaded for frontend work.
+globs: ["src/components/**", "src/pages/**", "src/styles/**", "tailwind.config.*"]
+alwaysApply: true
+---
+
+# Strict token rule
+- NEVER use text-white, bg-white, text-black, bg-black, or any raw Tailwind color utility in a component's className.
+- ALL colors, gradients, and shadows must be defined as CSS variables in index.css (or your equivalent) and referenced via semantic Tailwind tokens (bg-primary, text-foreground, border-muted, etc.).
+- If a needed token doesn't exist yet, add it to the design system file first — don't inline an override.
+- Gradients and box-shadows using brand colors should also be defined as tokens (e.g. --gradient-primary, --shadow-elegant), not written ad hoc in a component.
+- Use HSL colors in index.css. Don't mix rgb and hsl() wrapping in tailwind.config — this produces wrong colors.
+
+# Design Tokens
+<!-- Replace with your actual tailwind.config values -->
+- Colors: use only tokens defined in tailwind.config (primary, secondary, muted, destructive, accent, etc.)
+- Spacing: default Tailwind scale (4px increments) unless a custom scale is defined.
+- Typography: use the defined font-size scale (text-sm, text-base, text-lg...) and the project's font family token.
+- Border radius: use the project's radius tokens consistently — check existing components for the standard.
+
+# Component Inventory
+- Base primitives live in src/components/ui/ (shadcn/ui). Always check here first.
+- Do not reinstall or recreate a shadcn component that already exists. If a new primitive is genuinely needed, use `npx shadcn add <component>` rather than hand-rolling one.
+- Composite/domain components live in src/components/[feature]/ — check for an existing pattern before building a new one.
+
+# Responsive rules
+- Mobile-first: base styles are mobile, use sm:/md:/lg: to scale up.
+- Verify at both mobile (375px) and desktop (1280px) when a layout changes — screenshot both.

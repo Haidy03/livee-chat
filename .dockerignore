@@ -1,0 +1,51 @@
+# Git
+.git
+.gitignore
+
+# IDE
+.idea
+.vscode
+*.suo
+*.user
+.vs
+
+# Build outputs
+**/bin
+**/obj
+**/out
+**/dist
+**/build
+
+# Node
+**/node_modules
+**/.pnp
+**/.pnp.js
+
+# Logs
+**/*.log
+**/npm-debug.log*
+
+# Environment files with secrets
+**/.env.local
+**/.env.*.local
+**/appsettings.Development.json
+**/appsettings.Production.json
+
+# Test files
+**/coverage
+**/*.test.ts
+**/*.spec.ts
+
+# Documentation
+**/docs
+**/*.md
+!README.md
+
+# Cursor / spec files
+.cursor/
+.specify/
+specs/
+
+# OS files
+.DS_Store
+Thumbs.db

@@ -1,0 +1,96 @@
+/* -----------------------------------------------------------------------------
+ * Copilot inline side panel — sibling flex layout.
+ *
+ * We suppress CopilotKit's default floating/fixed drawer positioning and turn
+ * the sidebar into an inline column that animates its width when
+ * `data-copilot-open` is set on the outer `.alk-copilot-shell`.
+ * --------------------------------------------------------------------------- */
+
+.alk-copilot-shell {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.alk-copilot-shell > .alk-shell-content {
+  flex: 1 1 auto;
+  min-width: 0;
+  min-height: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.alk-copilot-overlay {
+  flex: 0 0 0px;
+  width: 0;
+  min-width: 0;
+  max-width: 100vw;
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  align-self: flex-start;
+  overflow: hidden;
+  background: hsl(var(--background));
+  border-inline-start: 1px solid hsl(var(--border));
+  transition: flex-basis 0.25s ease, width 0.25s ease;
+  box-shadow: -8px 0 24px -12px rgba(0, 0, 0, 0.18);
+  z-index: 40;
+}
+
+.alk-copilot-shell[data-copilot-open] > .alk-copilot-overlay {
+  flex-basis: 380px;
+  width: 380px;
+}
+
+@media (max-width: 640px) {
+  .alk-copilot-shell[data-copilot-open] > .alk-copilot-overlay {
+    flex-basis: 100vw;
+    width: 100vw;
+  }
+}
+
+/* -----------------------------------------------------------------------------
+ * Neutralize CopilotKit's built-in fixed positioning so the sidebar fills the
+ * `.alk-copilot-overlay` container instead of floating above the viewport.
+ * --------------------------------------------------------------------------- */
+
+.alk-copilot-overlay .copilotKitSidebarContentWrapper,
+.alk-copilot-overlay .copilotKitSidebar,
+.alk-copilot-overlay .copilotKitWindow {
+  position: relative !important;
+  inset: auto !important;
+  top: auto !important;
+  right: auto !important;
+  bottom: auto !important;
+  left: auto !important;
+  transform: none !important;
+  width: 100% !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  max-height: 100% !important;
+  margin: 0 !important;
+  border-radius: 0 !important;
+  box-shadow: none !important;
+  display: flex !important;
+  flex-direction: column !important;
+  background: transparent !important;
+}
+
+/* Hide the modal backdrop CopilotKit renders behind its window. */
+.alk-copilot-overlay .copilotKitBackdrop,
+.alk-copilot-overlay [class*="Backdrop"] {
+  display: none !important;
+}
+
+/* Messages fill available space and scroll; input pinned at bottom. */
+.alk-copilot-overlay .copilotKitMessages {
+  flex: 1 1 auto !important;
+  min-height: 0 !important;
+  overflow-y: auto !important;
+}
+
+.alk-copilot-overlay .copilotKitInput {
+  flex: 0 0 auto !important;
+}

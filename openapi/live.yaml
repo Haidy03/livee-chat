@@ -1,0 +1,113 @@
+openapi: 3.0.3
+info:
+  title: VoiceFlow Live Snapshot API
+  version: 1.0.0
+  description: |
+    Rollup endpoint that powers the Live page in the Lovable VoiceFlow UI.
+    Returns the currently active calls, queue waiting metrics, and per-agent
+    presence in a single payload so the UI can poll one URL.
+servers:
+  - url: https://contact-center.alkhwarizmi.pro/api/v1
+    description: Production
+paths:
+  /live/snapshot:
+    get:
+      summary: Real-time center snapshot
+      description: |
+        Returns active calls, queue metrics, and agent presence for the caller's
+        tenant. Intended to be polled every few seconds by the UI.
+      operationId: getLiveSnapshot
+      tags: [Live]
+      security:
+        - bearerAuth: []
+      responses:
+        '200':
+          description: Snapshot payload wrapped in the standard API envelope.
+          content:
+            application/json:
+              schema:
+                allOf:
+                  - $ref: '#/components/schemas/ApiEnvelope'
+                  - type: object
+                    properties:
+                      data:
+                        $ref: '#/components/schemas/LiveSnapshot'
+        '401':
+          description: Missing or invalid bearer token.
+components:
+  securitySchemes:
+    bearerAuth:
+      type: http
+      scheme: bearer
+      bearerFormat: JWT
+  schemas:
+    ApiEnvelope:
+      type: object
+      required: [success]
+      properties:
+        success: { type: boolean }
+        message: { type: string, nullable: true }
+        errors:
+          type: array
+          nullable: true
+          items: { type: string }
+    LiveSnapshot:
+      type: object
+      required: [activeCalls, queue, agents]
+      properties:
+        activeCalls:
+          type: array
+          items: { $ref: '#/components/schemas/ActiveCall' }
+        queue:
+          $ref: '#/components/schemas/QueueStats'
+        agents:
+          type: array
+          items: { $ref: '#/components/schemas/LiveAgent' }
+    ActiveCall:
+      type: object
+      required: [id, caller, called, startedAt, status]
+      properties:
+        id: { type: string }
+        caller: { type: string }
+        called: { type: string }
+        agentId: { type: string, nullable: true }
+        groupId: { type: string, nullable: true }
+        startedAt: { type: string, format: date-time }
+        answeredAt: { type: string, format: date-time, nullable: true }
+        status:
+          type: string
+          enum: [ringing, answered, hold]
+        asteriskChannel:
+          type: string
+          nullable: true
+          description: |
+            Full Asterisk channel name (e.g. `PJSIP/1001-xxx-0000001a`).
+            Required by ChanSpy-based supervisor features (Listen/Whisper/Barge).
+        asteriskUniqueId:
+          type: string
+          nullable: true
+          description: |
+            Asterisk channel uniqueid (e.g. `1780322607.42`). Preferred by the
+            UI for ChanSpy targets because it is safe in a SIP user-info part.
+    QueueStats:
+      type: object
+      required: [waiting, longestWaitSeconds]
+      properties:
+        waiting: { type: integer, minimum: 0 }
+        longestWaitSeconds: { type: integer, minimum: 0 }
+    LiveAgent:
+      type: object
+      required: [userId, displayName, status, lastChangeAt]
+      properties:
+        userId: { type: string, format: uuid }
+        displayName: { type: string }
+        extension:
+          type: integer
+          nullable: true
+        status:
+          type: string
+          enum: [available, busy, break, offline]
+        currentCallId:
+          type: string
+          nullable: true
+        lastChangeAt: { type: string, format: date-time }

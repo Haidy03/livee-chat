@@ -1,0 +1,41 @@
+## .NET / C#
+bin/
+obj/
+*.user
+*.suo
+*.userosscache
+*.sln.docstates
+.vs/
+packages/
+*.nupkg
+*.snupkg
+
+## ASP.NET
+appsettings.Development.json
+appsettings.*.json
+!appsettings.json
+
+
+
+## Test results
+TestResults/
+coverage/
+*.trx
+*.coveragexml
+
+## Build
+publish/
+
+## IDE
+.vscode/
+.idea/
+*.DotSettings.user
+
+## OS
+.DS_Store
+Thumbs.db
+*.tmp
+*.swp
+
+## Docker
+.dockerignore

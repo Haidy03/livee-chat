@@ -1,0 +1,44 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\..\..\ClassLibraryCore\Utilities\HelperLib\HelperLib\HelperLib.csproj" />
+    <ProjectReference Include="..\VoiceFlow.Core\VoiceFlow.Core.csproj" />
+    <ProjectReference Include="..\VoiceFlow.Application\VoiceFlow.Application.csproj" />
+    <ProjectReference Include="..\VoiceFlow.Contracts\VoiceFlow.Contracts.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="16.1.1" />
+    <PackageReference Include="BCrypt.Net-Next" Version="4.2.0" />
+    <PackageReference Include="ClosedXML" Version="0.104.2" />
+    <PackageReference Include="CsvHelper" Version="33.0.1" />
+    <PackageReference Include="MailKit" Version="4.17.0" />
+    <PackageReference Include="PuppeteerSharp" Version="20.0.5" />
+    <PackageReference Include="Microsoft.Extensions.Http.Polly" Version="10.0.7" />
+    <PackageReference Include="Microsoft.IdentityModel.Tokens" Version="8.18.0" />
+    <PackageReference Include="MongoDB.Driver" Version="3.8.0" />
+    <PackageReference Include="MySqlConnector" Version="2.4.0" />
+    <PackageReference Include="RabbitMQ.Client" Version="7.2.1" />
+    <PackageReference Include="System.IdentityModel.Tokens.Jwt" Version="8.18.0" />
+  </ItemGroup>
+
+  <PropertyGroup>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <FrameworkReference Include="Microsoft.AspNetCore.App" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- The frontend-built chart bundle (npm run build:report-bundle) embedded by the HTML/PDF renderers.
+         Committed to the repo so both the API and worker images pick it up via COPY; guarded so a
+         fresh checkout that hasn't built it yet still publishes (the renderer errors clearly at runtime). -->
+    <None Include="Reports\Rendering\assets\report-charts.js"
+          Condition="Exists('Reports\Rendering\assets\report-charts.js')"
+          CopyToOutputDirectory="PreserveNewest" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,159 @@
+/* Resonance — restyled to use the host app's design tokens (semantic HSL vars from index.css).
+   We keep the .rs-* class API used throughout Resonance components and map the legacy
+   --rs-* variables to the app's semantic tokens so the suite inherits the app theme. */
+
+.resonance {
+  /* Map legacy resonance tokens → app semantic tokens */
+  --rs-bg: hsl(var(--app-bg));
+  --rs-surface: hsl(var(--card));
+  --rs-ink: hsl(var(--foreground));
+  --rs-ink2: hsl(var(--foreground) / 0.85);
+  --rs-muted: hsl(var(--muted-foreground));
+  --rs-subtle: hsl(var(--muted-foreground) / 0.7);
+  --rs-border: hsl(var(--border));
+  --rs-border-soft: hsl(var(--app-border));
+
+  --rs-accent: hsl(var(--primary));
+  --rs-accent-soft: hsl(var(--primary) / 0.12);
+  --rs-warm: hsl(var(--brand-accent));
+  --rs-warm-soft: hsl(var(--brand-accent) / 0.12);
+  --rs-rose: hsl(var(--destructive));
+  --rs-rose-soft: hsl(var(--destructive) / 0.12);
+  --rs-gold: hsl(38 92% 50%);
+  --rs-gold-soft: hsl(38 92% 50% / 0.15);
+
+  --rs-r-sm: calc(var(--radius) - 4px);
+  --rs-r-md: var(--radius);
+  --rs-r-pill: 999px;
+  --rs-shadow: 0 1px 2px hsl(var(--foreground) / 0.04);
+
+  background: hsl(var(--app-bg));
+  color: hsl(var(--foreground));
+  font-family: inherit;
+  min-height: 100%;
+}
+
+/* Drop the custom serif display — use the app's inherited typography */
+.resonance .rs-display {
+  font-family: inherit;
+  letter-spacing: -0.01em;
+  font-weight: 600;
+}
+
+.resonance .rs-num {
+  font-variant-numeric: tabular-nums;
+  font-feature-settings: "tnum";
+}
+
+.resonance[dir="rtl"] .lucide-chevron-right,
+.resonance[dir="rtl"] .lucide-chevron-left,
+.resonance[dir="rtl"] .lucide-arrow-right,
+.resonance[dir="rtl"] .lucide-arrow-left,
+.resonance[dir="rtl"] .lucide-arrow-up-right {
+  transform: scaleX(-1);
+}
+
+.resonance button { font-family: inherit; }
+.resonance input, .resonance textarea, .resonance select { font-family: inherit; color: hsl(var(--foreground)); }
+
+.rs-card {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--app-border-strong));
+  border-radius: var(--rs-r-md);
+  box-shadow: var(--rs-shadow);
+}
+
+.rs-input {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--input));
+  border-radius: var(--rs-r-sm);
+  padding: 10px 14px;
+  height: 40px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+}
+.rs-input:focus { border-color: hsl(var(--ring)); box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2); }
+
+.rs-textarea {
+  background: hsl(var(--card));
+  border: 1px solid hsl(var(--input));
+  border-radius: var(--rs-r-sm);
+  padding: 10px 14px;
+  width: 100%;
+  outline: none;
+  font-size: 14px;
+  resize: vertical;
+}
+.rs-textarea:focus { border-color: hsl(var(--ring)); box-shadow: 0 0 0 2px hsl(var(--ring) / 0.2); }
+
+.rs-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  height: 36px;
+  padding: 0 14px;
+  border-radius: var(--rs-r-sm);
+  font-size: 13px;
+  font-weight: 500;
+  transition: all 0.15s;
+  cursor: pointer;
+  border: 1px solid transparent;
+  white-space: nowrap;
+}
+.rs-btn-primary { background: hsl(var(--foreground)); color: hsl(var(--background)); }
+.rs-btn-primary:hover:not(:disabled) { opacity: 0.9; }
+.rs-btn-primary:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.rs-btn-ghost { background: transparent; color: hsl(var(--foreground)); border-color: hsl(var(--border)); }
+.rs-btn-ghost:hover { background: hsl(var(--muted)); }
+
+.rs-btn-quiet { background: transparent; color: hsl(var(--muted-foreground)); }
+.rs-btn-quiet:hover { color: hsl(var(--foreground)); background: hsl(var(--muted) / 0.6); }
+
+.rs-btn-accent { background: hsl(var(--primary)); color: hsl(var(--primary-foreground)); }
+.rs-btn-accent:hover:not(:disabled) { opacity: 0.92; }
+.rs-btn-accent:disabled { opacity: 0.4; cursor: not-allowed; }
+
+.rs-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 3px 10px;
+  border-radius: var(--rs-r-pill);
+  font-size: 11px;
+  font-weight: 500;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  color: hsl(var(--foreground) / 0.85);
+}
+
+.rs-row-hover:hover { background: hsl(var(--muted) / 0.5); }
+.rs-row-selected { background: hsl(var(--primary) / 0.08) !important; }
+
+.rs-label {
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  color: hsl(var(--muted-foreground));
+  font-weight: 500;
+}
+
+.rs-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 6px 12px;
+  border-radius: var(--rs-r-pill);
+  font-size: 13px;
+  border: 1px solid hsl(var(--border));
+  background: hsl(var(--card));
+  color: hsl(var(--foreground) / 0.85);
+  cursor: pointer;
+  transition: all 0.15s;
+}
+.rs-chip:hover { border-color: hsl(var(--foreground)); }
+.rs-chip-on-accent { background: hsl(var(--primary) / 0.12); border-color: hsl(var(--primary)); color: hsl(var(--primary)); }
+.rs-chip-on-ink { background: hsl(var(--foreground)); border-color: hsl(var(--foreground)); color: hsl(var(--background)); }
+
+.resonance ::placeholder { color: hsl(var(--muted-foreground) / 0.7); }
